@@ -38,20 +38,16 @@
 
     <section class="signup" id="email-signup">
       <h2>Free weekly tides &amp; marine weather</h2>
-      <p>Get a short email for your port: tides, marine weather links, and harbor notes. Unsubscribe any time. We do not sell your email. See our <a href="privacy.html">privacy policy</a>.</p>
-      <form class="signup-form" action="https://api.gopigeon.dev/f/f_53bjw6t5dcxahfdy" method="POST">
-        <input type="hidden" name="_subject" value="Pacific Tides email signup">
-        <div class="hp-field" aria-hidden="true"><label>Leave blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
-        <label for="email">Email
-          <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+      <p>Get a short email for your port. We do not sell your email. See our <a href="privacy.html">privacy policy</a>.</p>
+      <form class="signup-form" action="https://buttondown.com/api/emails/embed-subscribe/pacifictides" method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/pacifictides', 'popupwindow')">
+        <label for="bd-email">Email
+          <input id="bd-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
         </label>
-    <label for="port">Preferred port (optional)
-      <input id="port" name="port" type="text" placeholder="e.g. Petersburg, AK">
-    </label>
         <label class="consent"><input type="checkbox" name="consent" value="yes" required> I agree to receive the free weekly tides &amp; marine weather email and accept the <a href="privacy.html">privacy policy</a>.</label>
         <button type="submit">Subscribe free</button>
       </form>
-      <p style="margin:0.75rem 0 0;font-size:0.85rem;color:var(--muted);">Form deliveries go to the site operator via a free form relay (gopigeon). Weekly newsletter sending will use a free ESP once set up — see privacy page.</p>
+      <p style="margin:0.75rem 0 0;font-size:0.85rem;color:var(--muted);">Mailing list powered by <a href="https://buttondown.com" rel="noopener">Buttondown</a>.</p>
     </section>
 
 

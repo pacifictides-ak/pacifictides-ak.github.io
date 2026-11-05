@@ -206,7 +206,7 @@ def render_page(
 
 {directory_html(slug, "../")}
 {local_news_html(slug, name)}
-{signup_html(name, "../")}
+{signup_html(name, "../", slug)}
 {affiliate_html()}
 {ads_placeholder_html()}
 

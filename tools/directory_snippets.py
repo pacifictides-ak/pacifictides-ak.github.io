@@ -5,8 +5,8 @@ from html import escape
 from pathlib import Path
 
 SITE_ROOT = Path(__file__).resolve().parent.parent
-GOPIGEON = "https://api.gopigeon.dev/f/f_53bjw6t5dcxahfdy"
-MAIL = "jlmiller99833@gmail.com"
+BUTTONDOWN_SUBSCRIBE = "https://buttondown.com/api/emails/embed-subscribe/pacifictides"
+MAIL = "pacifictides.ak@gmail.com"
 
 CATEGORY_LABELS = {
     "shipyards_haulouts": "Shipyards & haul-outs",
@@ -66,18 +66,22 @@ def footer_html(prefix: str = "../") -> str:
     <p class="amazon-disclosure"><em>As an Amazon Associate I earn from qualifying purchases.</em></p>
   </footer>"""
 
-def signup_html(port_name: str, prefix: str = "../") -> str:
+def signup_html(port_name: str, prefix: str = "../", port_slug: str = "") -> str:
+    tag_line = ""
+    if port_slug:
+        tag_line = f'        <input type="hidden" name="tag" value="{escape(port_slug)}">\n'
     return f"""    <section class="signup" id="email-signup">
       <h2>Free weekly tides &amp; marine weather</h2>
       <p>Get a short email for your port. We do not sell your email. <a href="{prefix}privacy.html">Privacy</a>.</p>
-      <form class="signup-form" action="{GOPIGEON}" method="POST">
-        <input type="hidden" name="_subject" value="Pacific Tides email signup">
-        <div class="hp-field" aria-hidden="true"><label>Leave blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
-        <label for="email">Email<input id="email" name="email" type="email" required autocomplete="email"></label>
-        <label for="port">Port<input id="port" name="port" type="text" value="{escape(port_name)}" readonly></label>
-        <label class="consent"><input type="checkbox" name="consent" value="yes" required> I agree to receive the free weekly email and accept the privacy policy.</label>
+      <form class="signup-form" action="{BUTTONDOWN_SUBSCRIBE}" method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/pacifictides', 'popupwindow')">
+{tag_line}        <label for="bd-email">Email
+          <input id="bd-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+        </label>
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required> I agree to receive the free weekly tides &amp; marine weather email and accept the <a href="{prefix}privacy.html">privacy policy</a>.</label>
         <button type="submit">Subscribe free</button>
       </form>
+      <p style="margin:0.75rem 0 0;font-size:0.85rem;color:var(--muted);">Mailing list powered by <a href="https://buttondown.com" rel="noopener">Buttondown</a>.</p>
     </section>"""
 
 def sponsor_html(port_name: str, prefix: str = "../") -> str:
