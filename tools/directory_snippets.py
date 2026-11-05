@@ -115,13 +115,24 @@ def ads_placeholder_html() -> str:
 
 
 def local_news_html(port_slug: str, port_name: str = "") -> str:
-    """Render Local news links for a port from data/local_news.csv."""
+    """Render Local news links for a port from data/local_news.csv with UTM tags."""
     path = SITE_ROOT / "data" / "local_news.csv"
     rows = []
     if path.exists():
         with path.open() as f:
             rows = [r for r in csv.DictReader(f) if r.get("port_slug") == port_slug]
     title = escape(port_name) if port_name else escape(port_slug.replace("-", " ").title())
+    campaign = f"{port_slug}-news"
+
+    def with_utm(url: str) -> str:
+        from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
+        parts = urlparse(url.strip())
+        q = dict(parse_qsl(parts.query, keep_blank_values=True))
+        q["utm_source"] = "pacifictides"
+        q["utm_medium"] = "referral"
+        q["utm_campaign"] = campaign
+        return urlunparse(parts._replace(query=urlencode(q)))
+
     if not rows:
         return f"""    <section class="local-news" id="local-news">
       <h2>Local news — {title}</h2>
@@ -130,12 +141,12 @@ def local_news_html(port_slug: str, port_name: str = "") -> str:
     items = []
     for r in rows:
         name = escape(r["name"])
-        url = escape(r["url"])
+        url = escape(with_utm(r["url"]))
         items.append(f'        <li><a href="{url}" rel="noopener">{name}</a></li>')
     lis = "\n".join(items)
     return f"""    <section class="local-news" id="local-news">
       <h2>Local news — {title}</h2>
-      <p style="color:var(--muted);font-size:0.92rem;">Plain links to local outlets. Always check the source for the latest.</p>
+      <p style="color:var(--muted);font-size:0.92rem;">Plain links to local outlets. Always check the source for the latest. <a href="../advertise.html#news-partner">Local news partners</a> welcome.</p>
       <ul class="news-list">
 {lis}
       </ul>

@@ -50,3 +50,5 @@ Free basic listings: name, category, phone, website. Featured: top placement, hi
 
 Plain links to real local news outlets per port. Columns: `port_slug`, `name`, `url`, `notes`.
 Only verified working URLs. Do not invent outlets.
+
+Rendered links append `?utm_source=pacifictides&utm_medium=referral&utm_campaign=<port_slug>-news`.
