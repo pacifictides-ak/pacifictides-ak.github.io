@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pacifictides-ak.github.io/sitemap.xml
