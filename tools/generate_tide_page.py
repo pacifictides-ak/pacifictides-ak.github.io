@@ -27,6 +27,7 @@ from directory_snippets import (
     affiliate_html,
     ads_placeholder_html,
     directory_html,
+    local_news_html,
     footer_html,
     nav_html,
     signup_html,
@@ -204,6 +205,7 @@ def render_page(
     </section>
 
 {directory_html(slug, "../")}
+{local_news_html(slug, name)}
 {signup_html(name, "../")}
 {affiliate_html()}
 {ads_placeholder_html()}

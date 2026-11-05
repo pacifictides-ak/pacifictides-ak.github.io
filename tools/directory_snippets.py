@@ -113,6 +113,35 @@ def ads_placeholder_html() -> str:
       Display ads placeholder — AdSense later. No ad code yet.
     </aside>"""
 
+
+def local_news_html(port_slug: str, port_name: str = "") -> str:
+    """Render Local news links for a port from data/local_news.csv."""
+    path = SITE_ROOT / "data" / "local_news.csv"
+    rows = []
+    if path.exists():
+        with path.open() as f:
+            rows = [r for r in csv.DictReader(f) if r.get("port_slug") == port_slug]
+    title = escape(port_name) if port_name else escape(port_slug.replace("-", " ").title())
+    if not rows:
+        return f"""    <section class="local-news" id="local-news">
+      <h2>Local news — {title}</h2>
+      <p class="dir-empty">No verified local news links yet for this port.</p>
+    </section>"""
+    items = []
+    for r in rows:
+        name = escape(r["name"])
+        url = escape(r["url"])
+        items.append(f'        <li><a href="{url}" rel="noopener">{name}</a></li>')
+    lis = "\n".join(items)
+    return f"""    <section class="local-news" id="local-news">
+      <h2>Local news — {title}</h2>
+      <p style="color:var(--muted);font-size:0.92rem;">Plain links to local outlets. Always check the source for the latest.</p>
+      <ul class="news-list">
+{lis}
+      </ul>
+    </section>"""
+
+
 def directory_html(port_slug: str, prefix: str = "../") -> str:
     path = SITE_ROOT / "data" / "businesses.csv"
     rows = []

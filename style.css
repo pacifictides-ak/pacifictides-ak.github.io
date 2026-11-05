@@ -305,3 +305,8 @@ table.tides tr:last-child td { border-bottom: none; }
 
 .amazon-disclosure { font-size: 0.85rem; color: var(--muted); margin: 0.35rem 0 0.75rem; }
 .site-footer .amazon-disclosure { margin: 0.5rem 0 0; }
+
+.local-news { margin: 1.5rem 0; }
+.local-news h2 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+.news-list { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+.news-list li { margin: 0.35rem 0; }

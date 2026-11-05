@@ -44,3 +44,9 @@ shipyards_haulouts, boat_repair_mechanics, fuel_docks, marine_suppliers_chandler
 groceries_provisioning, hardware, liquor_stores, laundromats, showers, lodging, restaurants, medical_clinics, pharmacies, post_office_shipping, airport_floatplane, propane, auto_truck_rental
 
 Free basic listings: name, category, phone, website. Featured: top placement, highlight, logo, description.
+
+
+## local_news.csv
+
+Plain links to real local news outlets per port. Columns: `port_slug`, `name`, `url`, `notes`.
+Only verified working URLs. Do not invent outlets.
