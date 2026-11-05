@@ -1,0 +1,30 @@
+{
+  "site": "Pacific Tides",
+  "pages": [
+    {
+      "title": "Home / directory",
+      "path": "index.html",
+      "date_added": "2026-11-05",
+      "sources": []
+    },
+    {
+      "title": "About & disclaimer",
+      "path": "about.html",
+      "date_added": "2026-11-05",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/",
+        "https://marine.weather.gov/"
+      ]
+    },
+    {
+      "title": "Petersburg, AK tide predictions",
+      "path": "pages/petersburg-tides.html",
+      "date_added": "2026-11-05",
+      "station": "9451439",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451439",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
+      ]
+    }
+  ]
+}

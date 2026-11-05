@@ -1,0 +1,243 @@
+/* Pacific Tides — plain, fast, mobile-first */
+:root {
+  --bg: #f4f7f8;
+  --surface: #ffffff;
+  --ink: #14202b;
+  --muted: #4a5b6a;
+  --line: #d5dee6;
+  --sea: #0b6e7a;
+  --sea-dark: #085560;
+  --sand: #eef6f7;
+  --warn: #7a4a0b;
+  --warn-bg: #fff6e8;
+  --radius: 10px;
+  --max: 720px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+a { color: var(--sea); }
+a:hover { color: var(--sea-dark); }
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  padding: 0.9rem 1.25rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+}
+.site-header nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.site-header nav a:hover { color: var(--sea); }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.hero h1, main > h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.lede, .hero p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 1.25rem;
+}
+.crumb {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+.notice {
+  background: var(--warn-bg);
+  border: 1px solid #f0d7a8;
+  color: var(--warn);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  margin: 1rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+}
+.btn {
+  display: inline-block;
+  background: var(--sea);
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0.55rem 0.95rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.btn:hover { background: var(--sea-dark); }
+.btn-ghost {
+  background: var(--surface);
+  color: var(--sea) !important;
+  border: 1px solid var(--line);
+}
+
+.dir {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.dir a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+.dir a:hover { border-color: var(--sea); }
+.dir .meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: 0.25rem;
+}
+.upcoming {
+  margin-top: 2rem;
+  padding: 1rem 1.1rem;
+  background: var(--sand);
+  border-radius: var(--radius);
+  border: 1px dashed var(--line);
+}
+.upcoming h2 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.upcoming ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+
+.tide-tables h2 {
+  margin: 1.6rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+table.tides {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.98rem;
+}
+table.tides th,
+table.tides td {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+table.tides th {
+  background: var(--sand);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+table.tides tr:last-child td { border-bottom: none; }
+
+.sources {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.sources h2 { font-size: 1rem; color: var(--ink); }
+.sources code {
+  font-size: 0.85em;
+  word-break: break-all;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  background: var(--surface);
+}
+.site-footer p { margin: 0; }
+
+@media (max-width: 480px) {
+  table.tides th, table.tides td { padding: 0.5rem 0.55rem; font-size: 0.92rem; }
+}
+
+.audience {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75rem;
+  display: grid;
+  gap: 0.55rem;
+}
+.audience li {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.95rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.audience strong { color: var(--ink); }
+
+.regions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1.75rem;
+}
+.region {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+}
+.region h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+.region p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}

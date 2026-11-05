@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Pacific Tides</title>
+  <meta name="description" content="About Pacific Tides — Alaska and West Coast marine directory, data sources, audiences, and disclaimer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Pacific Tides</a>
+    <nav>
+      <a href="index.html">Directory</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>About</h1>
+    <p class="lede">
+      A small, fast directory for anyone who works or plays on the water along Alaska
+      and the U.S. and Canadian West Coast — recreational boaters and anglers,
+      independent vessel owners and operators, commercial fishermen, company vessels
+      and fleet operators, and coastal and maritime businesses.
+    </p>
+
+    <h2>Coverage plan</h2>
+    <p>
+      We ship one useful page at a time. Build order: all of Alaska first (Southeast,
+      Southcentral, Southwest / Aleutians / Bristol Bay, Arctic &amp; Western), then
+      Washington, Oregon, and California ports, then British Columbia. Folder path on
+      this machine stays <code>se-alaska-tides</code> for continuity.
+    </p>
+
+    <h2>What this is</h2>
+    <p>
+      Plain HTML pages with one useful prediction set or link hub at a time.
+      U.S. tide numbers come from the NOAA Center for Operational Oceanographic Products
+      and Services (CO-OPS) public API. British Columbia pages will use Canadian
+      Hydrographic Service / <a href="https://tides.gc.ca/" rel="noopener">tides.gc.ca</a>
+      / IWLS API stations. We do not invent heights or times.
+    </p>
+
+    <h2>Disclaimer — not for navigation</h2>
+    <aside class="notice">
+      <strong>Do not use this site alone for navigation, docking, voyage planning, or safety decisions.</strong>
+      Always verify tide predictions, currents, weather, and marine notices with
+      official sources before you go out. Conditions change. Equipment fails. Local
+      knowledge matters. Commercial operators remain responsible for their own voyage planning.
+    </aside>
+    <ul>
+      <li><a href="https://tidesandcurrents.noaa.gov/" rel="noopener">NOAA Tides &amp; Currents</a></li>
+      <li><a href="https://tides.gc.ca/" rel="noopener">Canadian tides.gc.ca / CHS</a></li>
+      <li><a href="https://marine.weather.gov/" rel="noopener">NWS Marine Weather</a></li>
+      <li><a href="https://www.navcen.uscg.gov/" rel="noopener">U.S. Coast Guard Navigation Center</a></li>
+    </ul>
+
+    <h2>How pages are made</h2>
+    <p>
+      A small Python script in <code>tools/generate_tide_page.py</code> pulls
+      high/low predictions from
+      <code>api.tidesandcurrents.noaa.gov</code> and writes a static HTML page.
+      Each page lists its station id and sources. Station ids are verified against the
+      NOAA MDAPI station list before use.
+    </p>
+
+    <h2>Contact / purpose</h2>
+    <p>
+      Built as a local directory experiment on a personal computer. Not affiliated
+      with NOAA, CHS, the State of Alaska, or any harbor or port authority.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Pacific Tides — Alaska &amp; West Coast marine directory. Official tide data © NOAA CO-OPS / CHS. Not for navigation.</p>
+  </footer>
+</body>
+</html>
