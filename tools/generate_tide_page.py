@@ -23,6 +23,16 @@ import urllib.request
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+from directory_snippets import (
+    affiliate_html,
+    ads_placeholder_html,
+    directory_html,
+    footer_html,
+    nav_html,
+    signup_html,
+    sponsor_html,
+)
+
 SITE_ROOT = Path(__file__).resolve().parent.parent
 PAGES_DIR = SITE_ROOT / "pages"
 MANIFEST = SITE_ROOT / "pages.json"
@@ -141,24 +151,22 @@ def render_page(
         f"{begin.isoformat()} through {end.isoformat()}."
     )
 
+    windy = ""
+    if lat is not None and lng is not None:
+        windy = f'      <a class="btn btn-ghost" href="https://www.windy.com/{lat}/{lng}" rel="noopener">View on Windy</a>\n'
+    print_link = f'      <a class="btn btn-ghost" href="../print/{slug}-tide-calendar.html">Printable tide calendar</a>\n'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{name} Tide Predictions | Pacific Tides</title>
-  <meta name="description" content="High and low tide predictions for {name} from NOAA CO-OPS station {station}.">
+  <meta name="description" content="High and low tide predictions for {name} from NOAA CO-OPS station {station}, plus local marine and shore directory.">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="../index.html">Pacific Tides</a>
-    <nav>
-      <a href="../index.html">Directory</a>
-      <a href="../about.html">About</a>
-    </nav>
-  </header>
-
+{nav_html("../")}
   <main class="wrap">
     <p class="crumb"><a href="../index.html">Directory</a> / {name}</p>
     <h1>{name} tide predictions</h1>
@@ -172,7 +180,7 @@ def render_page(
     <p class="actions">
       <a class="btn" href="{pred_url}" rel="noopener">Official NOAA predictions</a>
       <a class="btn btn-ghost" href="{station_url}" rel="noopener">Station home</a>
-    </p>
+{print_link}{windy}    </p>
 
     <aside class="notice">
       <strong>Not for navigation.</strong> Always verify with
@@ -180,9 +188,25 @@ def render_page(
       before you work or play on the water.
     </aside>
 
+{sponsor_html(name, "../")}
+
     <section class="tide-tables">
 {table_html}
     </section>
+
+    <section>
+      <h2>Marine weather &amp; cameras</h2>
+      <p class="actions">
+        <a class="btn btn-ghost" href="https://marine.weather.gov/" rel="noopener">NWS Marine Weather</a>
+        <a class="btn btn-ghost" href="https://www.ndbc.noaa.gov/" rel="noopener">NOAA buoys</a>
+{windy if windy else "      "}      </p>
+      <p style="color:var(--muted);font-size:0.92rem;">Harbor webcam links added when a free public camera is verified.</p>
+    </section>
+
+{directory_html(slug, "../")}
+{signup_html(name, "../")}
+{affiliate_html()}
+{ads_placeholder_html()}
 
     <section class="sources">
       <h2>Sources</h2>
@@ -193,13 +217,11 @@ def render_page(
       </ul>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>Pacific Tides — Alaska &amp; West Coast marine directory. Data © NOAA CO-OPS. Not for navigation.</p>
-  </footer>
+{footer_html("../")}
 </body>
 </html>
 """
+
 
 
 def update_manifest(entry: dict) -> None:

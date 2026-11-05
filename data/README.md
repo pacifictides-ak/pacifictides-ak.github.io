@@ -20,3 +20,27 @@
 - Stations: NOAA MDAPI `stations.json?type=tidepredictions` / `currentpredictions`; CHS `api-iwls.dfo-mpo.gc.ca/api/v1/stations`
 
 Do not invent station IDs. Re-verify before shipping a page.
+
+
+## businesses.csv
+
+Yellow-pages style marine + ashore directory for each port.
+
+### Columns
+
+- `port_slug` — matches the tide page slug (e.g. `petersburg`)
+- `name`, `category`, `phone`, `website`, `address`
+- `featured` — `yes` for paid featured listings ($10/mo or $100/yr); `no` for free basic
+- `description`, `logo_url` — used only when `featured=yes`
+- `source_url`, `verified_date` — public source used to verify; never invent businesses
+- `notes` — internal
+
+### Categories (marine)
+
+shipyards_haulouts, boat_repair_mechanics, fuel_docks, marine_suppliers_chandleries, electronics_sales_installation, welding_fabrication, canvas_upholstery, surveyors, towing_salvage, moorage_marinas, ice_bait, fishing_charters
+
+### Categories (ashore)
+
+groceries_provisioning, hardware, liquor_stores, laundromats, showers, lodging, restaurants, medical_clinics, pharmacies, post_office_shipping, airport_floatplane, propane, auto_truck_rental
+
+Free basic listings: name, category, phone, website. Featured: top placement, highlight, logo, description.

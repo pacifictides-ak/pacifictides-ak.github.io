@@ -12,10 +12,11 @@
     <a class="brand" href="index.html">Pacific Tides</a>
     <nav>
       <a href="index.html">Directory</a>
+      <a href="advertise.html">Advertise</a>
       <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </header>
-
   <main class="wrap">
     <section class="hero">
       <h1>Alaska &amp; West Coast tides &amp; marine directory</h1>
@@ -24,7 +25,7 @@
         independent vessel owners and operators, commercial fishermen, company vessels
         and fleet operators, and coastal and maritime businesses.
         One useful page at a time: tide predictions from official sources, harbor and
-        port links, fleet planning notes. Fast, plain HTML. Not for navigation.
+        port links, local marine &amp; shore directories. Fast, plain HTML. Not for navigation.
       </p>
     </section>
 
@@ -35,49 +36,44 @@
       and marine notices.
     </aside>
 
+    <section class="signup" id="email-signup">
+      <h2>Free weekly tides &amp; marine weather</h2>
+      <p>Get a short email for your port: tides, marine weather links, and harbor notes. Unsubscribe any time. We do not sell your email. See our <a href="privacy.html">privacy policy</a>.</p>
+      <form class="signup-form" action="https://api.gopigeon.dev/f/f_53bjw6t5dcxahfdy" method="POST">
+        <input type="hidden" name="_subject" value="Pacific Tides email signup">
+        <div class="hp-field" aria-hidden="true"><label>Leave blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <label for="email">Email
+          <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+        </label>
+    <label for="port">Preferred port (optional)
+      <input id="port" name="port" type="text" placeholder="e.g. Petersburg, AK">
+    </label>
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required> I agree to receive the free weekly tides &amp; marine weather email and accept the <a href="privacy.html">privacy policy</a>.</label>
+        <button type="submit">Subscribe free</button>
+      </form>
+      <p style="margin:0.75rem 0 0;font-size:0.85rem;color:var(--muted);">Form deliveries go to the site operator via a free form relay (gopigeon). Weekly newsletter sending will use a free ESP once set up — see privacy page.</p>
+    </section>
+
+
     <h2>Who this is for</h2>
     <ul class="audience">
       <li><strong>Recreational boaters &amp; anglers</strong> — town and harbor tide pages, launch and weather links</li>
       <li><strong>Independent vessel owners &amp; operators</strong> — harbor, fuel dock, and haul-out directories</li>
       <li><strong>Commercial fishermen</strong> — port tides, emergency-order and regulation deep links</li>
       <li><strong>Company vessels &amp; fleet operators</strong> — multi-port tide/current planning, port info hubs</li>
-      <li><strong>Coastal &amp; maritime businesses</strong> — sponsor-ready local pages with official source links</li>
+      <li><strong>Coastal &amp; maritime businesses</strong> — free listings and Port Sponsor slots on local pages</li>
     </ul>
 
     <h2>Regions</h2>
     <div class="regions">
-      <div class="region">
-        <h3>Southeast Alaska</h3>
-        <p>Petersburg, Juneau, Sitka, Ketchikan, Wrangell, and Inside Passage ports.</p>
-      </div>
-      <div class="region">
-        <h3>Southcentral Alaska</h3>
-        <p>Anchorage, Seward, Homer, Whittier, Valdez, Cordova, Cook Inlet.</p>
-      </div>
-      <div class="region">
-        <h3>Southwest / Aleutians / Bristol Bay</h3>
-        <p>Kodiak, Unalaska, Sand Point, King Cove, Naknek, Adak, St. Paul.</p>
-      </div>
-      <div class="region">
-        <h3>Arctic &amp; Western Alaska</h3>
-        <p>Nome, Kotzebue, Prudhoe Bay, Barrow / Utqiaġvik, Bethel.</p>
-      </div>
-      <div class="region">
-        <h3>Washington</h3>
-        <p>Seattle, Tacoma, Port Townsend, Neah Bay, Westport, San Juans.</p>
-      </div>
-      <div class="region">
-        <h3>Oregon</h3>
-        <p>Astoria, Newport, Coos Bay / Charleston, Garibaldi, Brookings.</p>
-      </div>
-      <div class="region">
-        <h3>California</h3>
-        <p>Crescent City, Humboldt, San Francisco, Monterey, LA / Long Beach, San Diego.</p>
-      </div>
-      <div class="region">
-        <h3>British Columbia</h3>
-        <p>Victoria, Vancouver, Nanaimo, Prince Rupert, Tofino — CHS / tides.gc.ca stations.</p>
-      </div>
+      <div class="region"><h3>Southeast Alaska</h3><p>Petersburg, Juneau, Sitka, Ketchikan, Wrangell, and Inside Passage ports.</p></div>
+      <div class="region"><h3>Southcentral Alaska</h3><p>Anchorage, Seward, Homer, Whittier, Valdez, Cordova, Cook Inlet.</p></div>
+      <div class="region"><h3>Southwest / Aleutians / Bristol Bay</h3><p>Kodiak, Unalaska, Sand Point, King Cove, Naknek, Adak, St. Paul.</p></div>
+      <div class="region"><h3>Arctic &amp; Western Alaska</h3><p>Nome, Kotzebue, Prudhoe Bay, Barrow / Utqiaġvik, Bethel.</p></div>
+      <div class="region"><h3>Washington</h3><p>Seattle, Tacoma, Port Townsend, Neah Bay, Westport, San Juans.</p></div>
+      <div class="region"><h3>Oregon</h3><p>Astoria, Newport, Coos Bay / Charleston, Garibaldi, Brookings.</p></div>
+      <div class="region"><h3>California</h3><p>Crescent City, Humboldt, San Francisco, Monterey, LA / Long Beach, San Diego.</p></div>
+      <div class="region"><h3>British Columbia</h3><p>Victoria, Vancouver, Nanaimo, Prince Rupert, Tofino — CHS / tides.gc.ca stations.</p></div>
     </div>
 
     <h2>Directory</h2>
@@ -85,7 +81,19 @@
       <li>
         <a href="pages/petersburg-tides.html">
           Petersburg, AK — tide predictions
-          <span class="meta">NOAA station 9451439 · this week’s high/low · added 2026-11-05</span>
+          <span class="meta">NOAA station 9451439 · local marine &amp; shore directory · added 2026-11-05</span>
+        </a>
+      </li>
+      <li>
+        <a href="print/petersburg-tide-calendar.html">
+          Petersburg printable tide calendar
+          <span class="meta">Print-friendly · Port Sponsor logo box</span>
+        </a>
+      </li>
+      <li>
+        <a href="advertise.html">
+          Advertise / list your business free
+          <span class="meta">$0 basic · $10/mo featured · Port Sponsor · brand sponsors</span>
         </a>
       </li>
       <li>
@@ -95,6 +103,11 @@
         </a>
       </li>
     </ul>
+
+    <aside class="ad-placeholder" id="display-ads">
+      Display ads placeholder — Google AdSense (or similar) may be added later once traffic grows and Jason completes publisher signup. No ad code on this page yet.
+    </aside>
+
 
     <section class="upcoming">
       <h2>Coming next (one page per night)</h2>
@@ -108,9 +121,9 @@
       <p style="margin:0.75rem 0 0;font-size:0.9rem;">Phased backlog in <code>BACKLOG.md</code> (~100 items: Alaska → WA/OR/CA → BC; recreational through fleet).</p>
     </section>
   </main>
-
   <footer class="site-footer">
-    <p>Pacific Tides — Alaska &amp; West Coast marine directory. Official tide data © NOAA CO-OPS / CHS. Not for navigation.</p>
+    <p>Pacific Tides — Alaska &amp; West Coast marine directory. Official tide data © NOAA CO-OPS / CHS. Not for navigation.
+    <a href="privacy.html">Privacy</a> · <a href="advertise.html">Advertise</a></p>
   </footer>
 </body>
 </html>
