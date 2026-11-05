@@ -302,3 +302,6 @@ table.tides tr:last-child td { border-bottom: none; }
   border: 2px dashed var(--line); min-height: 80px; display: flex; align-items: center; justify-content: center;
   color: var(--muted); margin: 1rem 0; border-radius: var(--radius); background: var(--sand);
 }
+
+.amazon-disclosure { font-size: 0.85rem; color: var(--muted); margin: 0.35rem 0 0.75rem; }
+.site-footer .amazon-disclosure { margin: 0.5rem 0 0; }
