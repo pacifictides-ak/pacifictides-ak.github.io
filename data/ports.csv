@@ -1,6 +1,6 @@
 name,state_province,region,lat,lon,port_type,tide_agency,tide_station_id,tide_station_name,tide_station_distance_km,current_station_id,current_station_name,current_station_distance_km,priority_score,sources,notes,status
-Dutch Harbor / Amaknak,AK,Aleutian Chain & Alaska Peninsula,53.889,-166.542,harbor,NOAA,9462611,"Dutch Harbor, Amaknak Island",0.4,UNI1015,"Iliuliuk Bay, east channel",1.6,100,Alaska DOT&PF Harbors Map May 2018; AAHPA,major commercial hub,backlog
-Unalaska,AK,Aleutian Chain & Alaska Peninsula,53.8736,-166.5367,harbor,NOAA,9462620,Unalaska,0.7,UNI1015,"Iliuliuk Bay, east channel",0.7,98,Alaska DOT&PF Harbors Map May 2018; AAHPA,city side,backlog
+Dutch Harbor / Amaknak,AK,Aleutian Chain & Alaska Peninsula,53.889,-166.542,harbor,NOAA,9462611,"Dutch Harbor, Amaknak Island",0.4,UNI1015,"Iliuliuk Bay, east channel",1.6,100,Alaska DOT&PF Harbors Map May 2018; AAHPA,major commercial hub,shipped
+Unalaska,AK,Aleutian Chain & Alaska Peninsula,53.8736,-166.5367,harbor,NOAA,9462620,Unalaska,0.7,UNI1015,"Iliuliuk Bay, east channel",0.7,98,Alaska DOT&PF Harbors Map May 2018; AAHPA,city side,shipped
 Kodiak,AK,Kodiak Island,57.79,-152.4072,harbor,NOAA,9457261,"Kodiak, Port of Kodiak",1.4,KOD0903,Kodiak Harbor Narrows,0.8,97,Alaska DOT&PF Harbors Map May 2018; AAHPA,city / St. Paul & St. Herman harbors,backlog
 Anchorage (Port of Alaska),AK,Southcentral Alaska,61.2308,-149.8908,harbor,NOAA,9455920,"ANCHORAGE, Knik Arm",0.7,PCT5146,"Anchorage, 0.2 mile offshore",1.1,96,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Seattle (Elliott Bay),WA,Washington,47.6062,-122.3425,harbor,NOAA,9447130,"SEATTLE (Madison St.), Elliott Bay",0.5,PUG1506,Harbor Island East,2.0,95,Washington Public Ports Association member directory,Port of Seattle,backlog

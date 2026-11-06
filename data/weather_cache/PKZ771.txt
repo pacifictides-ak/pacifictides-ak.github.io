@@ -1,0 +1,31 @@
+Expires:202611061230;;329945
+FZAK52 PAFC 052348
+CWFALU
+
+Coastal Waters Forecast
+National Weather Service Anchorage Alaska
+248 PM AKST Thu Nov 5 2026
+
+Coastal Waters Forecast for Southwest Alaska+Bristol Bay+The
+Alaska Peninsula Waters and the Aleutian Islands up to 100 nm out.
+
+Wind forecasts reflect the predominant speed and direction
+expected. Sea forecasts represent an average of the highest
+one-third of the combined wind wave and swell height.
+
+
+PKZ771-061230-
+Unalaska Bay-
+248 PM AKST Thu Nov 5 2026
+
+.TONIGHT...W wind 15 kt becoming SW after midnight. Seas 2 ft.
+.FRI...Variable wind less than 10 kt becoming SW 10 kt in the
+afternoon. Seas 2 ft.
+.FRI NIGHT...W wind 10 kt. Seas 2 ft.
+.SAT...Variable wind less than 10 kt. Seas 2 ft.
+.SAT NIGHT...Variable wind less than 10 kt. Seas 3 ft.
+.SUN...NE wind 10 kt. Seas 3 ft.
+.MON...NW wind 20 kt. Seas 6 ft.
+.TUE...W wind 25 kt. Seas 6 ft.
+
+$$

@@ -1,0 +1,9 @@
+{
+  "station": "DPXA2",
+  "obs_utc": "2026-11-06T05:42:00+00:00",
+  "obs_local": "2026-11-05 20:42 AKST",
+  "summary": "wind 120\u00b0, 3 kt, gust 5 kt, air 32\u00b0F, 997.4 hPa",
+  "page": "https://www.ndbc.noaa.gov/station_page.php?station=DPXA2",
+  "fetched_at": "2026-11-05 21:09 AKST",
+  "name": "Dutch Harbor Pilot Station (DPXA2)"
+}

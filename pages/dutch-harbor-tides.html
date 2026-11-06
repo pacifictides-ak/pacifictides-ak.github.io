@@ -49,16 +49,6 @@
     </section>
 
     <section class="tide-tables">
-<h2>Thursday, November 5, 2026</h2>
-<table class="tides">
-<thead><tr><th>Tide</th><th>Time (local)</th><th>Height (MLLW)</th></tr></thead>
-<tbody>
-<tr><td>High</td><td>2:42 AM</td><td>2.7 ft</td></tr>
-<tr><td>Low</td><td>8:00 AM</td><td>1.2 ft</td></tr>
-<tr><td>High</td><td>2:33 PM</td><td>3.7 ft</td></tr>
-<tr><td>Low</td><td>9:32 PM</td><td>0.4 ft</td></tr>
-</tbody>
-</table>
 <h2>Friday, November 6, 2026</h2>
 <table class="tides">
 <thead><tr><th>Tide</th><th>Time (local)</th><th>Height (MLLW)</th></tr></thead>
@@ -120,16 +110,49 @@
 <tr><td>High</td><td>11:14 AM</td><td>4.2 ft</td></tr>
 </tbody>
 </table>
+<h2>Friday, November 13, 2026</h2>
+<table class="tides">
+<thead><tr><th>Tide</th><th>Time (local)</th><th>Height (MLLW)</th></tr></thead>
+<tbody>
+<tr><td>Low</td><td>2:43 AM</td><td>0.0 ft</td></tr>
+<tr><td>High</td><td>11:42 AM</td><td>4.2 ft</td></tr>
+</tbody>
+</table>
     </section>
 
-    <section>
+    <section id="marine-weather">
       <h2>Marine weather &amp; cameras</h2>
+      <aside class="notice">
+        <strong>Not for navigation.</strong> NWS/NDBC data is informational only — always check official marine forecasts and notices before you go.
+        Pacific Tides is not affiliated with or endorsed by NOAA or the National Weather Service.
+      </aside>
+      <h3>NWS marine forecast — Unalaska Bay (PKZ771)</h3>
+      <p style="color:var(--muted);font-size:0.92rem;">Issued 248 PM AKST Thu Nov 5 2026. Cached snapshot fetched 2026-11-05 21:10 AKST from NWS text product. <a href="https://marine.weather.gov/MapClick.php?zoneid=PKZ771&amp;TextType=1" rel="noopener">Official zone forecast</a> · <a href="https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz771.txt" rel="noopener">Raw text</a></p>
+      <ul class="forecast-periods">
+        <li>.TONIGHT...W wind 15 kt becoming SW after midnight. Seas 2 ft.</li>
+        <li>.FRI...Variable wind less than 10 kt becoming SW 10 kt in the afternoon. Seas 2 ft.</li>
+        <li>.FRI NIGHT...W wind 10 kt. Seas 2 ft.</li>
+        <li>.SAT...Variable wind less than 10 kt. Seas 2 ft.</li>
+        <li>.SAT NIGHT...Variable wind less than 10 kt. Seas 3 ft.</li>
+        <li>.SUN...NE wind 10 kt. Seas 3 ft.</li>
+        <li>.MON...NW wind 20 kt. Seas 6 ft.</li>
+        <li>.TUE...W wind 25 kt. Seas 6 ft.</li>
+      </ul>
+      <h3>Nearby NDBC observation — Dutch Harbor Pilot Station (DPXA2)</h3>
+      <p><strong>wind 120°, 3 kt, gust 5 kt, air 32°F, 997.4 hPa</strong></p>
+      <p style="color:var(--muted);font-size:0.92rem;">Observation time 2026-11-05 20:42 AKST (converted to AKST). Attribution: NOAA NDBC station <a href="https://www.ndbc.noaa.gov/station_page.php?station=DPXA2" rel="noopener">DPXA2</a>. Snapshot fetched 2026-11-05 21:10 AKST.</p>
+      <h3>Harbor webcams</h3>
+      <ul class="news-list">
+        <li><a href="https://weathercams.faa.gov/map/-166.543,53.896,9/station/PADU/details/station" rel="noopener">FAA WeatherCams — Dutch Harbor / Unalaska Airport (PADU)</a> (free public link; not embedded)</li>
+        <li><a href="https://weathercams.faa.gov/cameras/state/AK/cameraSite/256/summary" rel="noopener">FAA WeatherCams — Unalaska camera site summary</a></li>
+      </ul>
+      <p style="color:var(--muted);font-size:0.92rem;">No free city/harbor webcam verified beyond FAA WeatherCams. We link only; we do not rehost images.</p>
       <p class="actions">
+        <a class="btn btn-ghost" href="https://www.windy.com/53.8917/-166.537" rel="noopener">View on Windy</a>
+        <a class="btn btn-ghost" href="https://www.weather.gov/afc/" rel="noopener">NWS Anchorage</a>
+        <a class="btn btn-ghost" href="https://www.ndbc.noaa.gov/" rel="noopener">NOAA NDBC</a>
         <a class="btn btn-ghost" href="https://marine.weather.gov/" rel="noopener">NWS Marine Weather</a>
-        <a class="btn btn-ghost" href="https://www.ndbc.noaa.gov/" rel="noopener">NOAA buoys</a>
-      <a class="btn btn-ghost" href="https://www.windy.com/53.8917/-166.537" rel="noopener">View on Windy</a>
       </p>
-      <p style="color:var(--muted);font-size:0.92rem;">Harbor webcam links added when a free public camera is verified.</p>
     </section>
 
     <section class="directory" id="local-directory">
@@ -237,7 +260,7 @@
       <ul>
         <li>NOAA CO-OPS station <a href="https://tidesandcurrents.noaa.gov/stationhome.html?id=9462611" rel="noopener">9462611 — Dutch Harbor</a></li>
         <li>Predictions API: <code>api.tidesandcurrents.noaa.gov/api/prod/datagetter</code></li>
-        <li>Fetched 2026-11-05 18:35 AKST from NOAA CO-OPS datagetter (product=predictions, interval=hilo, datum=MLLW, time_zone=lst_ldt, units=english) for station 9462611, 2026-11-05 through 2026-11-12.</li>
+        <li>Fetched 2026-11-05 21:11 AKST from NOAA CO-OPS datagetter (product=predictions, interval=hilo, datum=MLLW, time_zone=lst_ldt, units=english) for station 9462611, 2026-11-06 through 2026-11-13.</li>
       </ul>
     </section>
   </main>

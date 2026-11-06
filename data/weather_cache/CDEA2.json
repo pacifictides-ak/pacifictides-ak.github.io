@@ -1,0 +1,9 @@
+{
+  "station": "CDEA2",
+  "obs_utc": "2026-11-06T05:22:00+00:00",
+  "obs_local": "2026-11-05 20:22 AKST",
+  "summary": "wind 170\u00b0, 20 kt, gust 32 kt, air 51\u00b0F, 978.6 hPa",
+  "page": "https://www.ndbc.noaa.gov/station_page.php?station=CDEA2",
+  "fetched_at": "2026-11-05 21:09 AKST",
+  "name": "Cape Decision, AK (CDEA2) \u2014 nearest active coastal station for SE approaches"
+}

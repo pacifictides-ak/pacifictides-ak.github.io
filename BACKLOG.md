@@ -28,6 +28,7 @@ traffic exists.
 
 - [x] Petersburg, AK tides — NOAA `9451439` · aff/sponsor
 - [x] Dutch Harbor / Amaknak, AK tides — NOAA `9462611` · fleet + sponsor + aff
+- [x] Unalaska, AK tides — NOAA `9462620` · fleet + sponsor + aff
 
 ---
 
@@ -36,7 +37,7 @@ traffic exists.
 Ship these early; they unlock fleet/sponsor deals and organic search.
 
 1. ~~**Dutch Harbor / Amaknak, AK tides** — NOAA `9462611`~~ *(shipped 2026-11-05)*
-2. **Unalaska, AK tides** — NOAA `9462620` (Unalaska, 0.7km) · current `UNI1015` (0.7km) · fleet + sponsor + aff
+2. ~~**Unalaska, AK tides** — NOAA `9462620` (Unalaska, 0.7km) · current `UNI1015` (0.7km) · fleet + sponsor + aff~~ *(shipped 2026-11-05)*
 3. **Kodiak, AK tides** — NOAA `9457261` (Kodiak, Port of Kodiak, 1.4km) · current `KOD0903` (0.8km) · fleet + sponsor + aff
 4. **Anchorage (Port of Alaska), AK tides** — NOAA `9455920` (ANCHORAGE, Knik Arm, 0.7km) · current `PCT5146` (1.1km) · fleet + sponsor + aff
 5. **Seattle (Elliott Bay), WA tides** — NOAA `9447130` (SEATTLE (Madison St.), Elliott Bay, 0.5km) · current `PUG1506` (2.0km) · fleet + sponsor + aff
@@ -178,7 +179,7 @@ Own region per product plan. Includes city harbors and village ports (Port Lions
 Own region per product plan. Full chain coverage: Unalaska/Dutch Harbor, Akutan, King Cove, Cold Bay, Sand Point, Adak, Atka, Nikolski, False Pass, Chignik, Perryville, Port Heiden, Nelson Lagoon. Dutch Harbor & Unalaska are also Phase 1 hubs.
 
 104. **Dutch Harbor / Amaknak, AK tides** — NOAA `9462611` (Dutch Harbor, Amaknak Island, 0.4km) · current `UNI1015` (1.6km) · fleet + sponsor + aff *(also Phase 1 hub)*
-105. **Unalaska, AK tides** — NOAA `9462620` (Unalaska, 0.7km) · current `UNI1015` (0.7km) · fleet + sponsor + aff *(also Phase 1 hub)*
+105. ~~**Unalaska, AK tides** — NOAA `9462620` (Unalaska, 0.7km) · current `UNI1015` (0.7km) · fleet + sponsor + aff~~ *(shipped 2026-11-05; also Phase 1 hub)*
 106. **Sand Point, AK tides** — NOAA `9459450` (SAND POINT, POPOF ISLAND, 1.0km) · current `PCT5406` (1.4km) · sponsor + aff
 107. **King Cove, AK tides** — NOAA `9459881` (King Cove, 1.0km) · sponsor + aff
 108. **Adak, AK tides** — NOAA `9461380` (Sweeper Cove, Kuluk Bay, Adak Island, 2.9km) · current `PCT5646` (19.0km) · sponsor + aff
