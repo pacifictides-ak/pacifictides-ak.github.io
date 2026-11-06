@@ -316,6 +316,46 @@ table.tides tr:last-child td { border-bottom: none; }
    Assets: assets/ports/<slug>/*-web.jpg
    Works alongside Option A SVG mast (.port-mast) when present; strip sits below mast.
 */
+
+/* Pack 3 — cross-port internal links */
+.other-alaska-ports {
+  margin: 1.75rem 0 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line, #d2dde6);
+  border-radius: 8px;
+  background: var(--panel, #f5f8fb);
+}
+.other-alaska-ports h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.65rem;
+  color: var(--ink, #0f2740);
+}
+.other-alaska-ports p {
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+}
+.other-alaska-ports ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0.35rem 0 0;
+}
+.other-alaska-ports a {
+  color: var(--link, #0b5cad);
+}
+.other-alaska-ports a:focus-visible {
+  outline: 2px solid var(--link, #0b5cad);
+  outline-offset: 2px;
+}
+@media (max-width: 640px) {
+  .other-alaska-ports ul {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
 .port-photo-pair {
   margin: 0.75rem 0 1.25rem;
   padding: 0;
