@@ -7,7 +7,7 @@
   <meta name="description" content="High and low tide predictions for Unalaska, AK from NOAA CO-OPS station 9462620, plus local marine and shore directory.">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="port port-unalaska">
   <header class="site-header">
     <a class="brand" href="../index.html">Pacific Tides</a>
     <nav>
@@ -26,6 +26,35 @@
       (53.879196, -166.5403).
       Times are local (LST/LDT). Heights are feet above Mean Lower Low Water (MLLW).
     </p>
+
+
+    <section class="port-photo-pair" aria-labelledby="un-photos-heading">
+      <p class="port-photo-pair__label" id="un-photos-heading">Harbor then &amp; now</p>
+      <div class="port-photo-grid">
+        <figure class="port-photo port-photo--historic">
+          <p class="port-photo__era">Historic</p>
+          <img
+            src="../assets/ports/unalaska/unalaska-dutch-harbor-1904-nowell-web.jpg"
+            alt="Dutch Harbor and Unalaska waterfront, 1904"
+            loading="lazy" decoding="async" width="1600" height="1067">
+          <figcaption class="port-photo__credit">
+            Dutch Harbor and Unalaska, Alaska, 1904. Frank H. Nowell.
+            <span class="port-photo__license port-photo__license--pd">Public domain</span>
+          </figcaption>
+        </figure>
+        <figure class="port-photo port-photo--current port-photo--current-primary">
+          <p class="port-photo__era">Current</p>
+          <img
+            src="../assets/ports/unalaska/unalaska-margaret-bay-dutch-harbor-sunset-2023-usace-web.jpg"
+            alt="Margaret Bay and Dutch Harbor sunset from Unalaska area, 2023"
+            loading="lazy" decoding="async" width="1600" height="682">
+          <figcaption class="port-photo__credit">
+            Margaret Bay / Dutch Harbor, Unalaska. Rena Flint / U.S. Army Corps of Engineers, 2023.
+            <span class="port-photo__license port-photo__license--pd">Public domain</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
     <p class="actions">
       <a class="btn" href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9462620" rel="noopener">Official NOAA predictions</a>

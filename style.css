@@ -310,3 +310,161 @@ table.tides tr:last-child td { border-bottom: none; }
 .local-news h2 { margin: 0 0 0.5rem; font-size: 1.15rem; }
 .news-list { margin: 0.5rem 0 0; padding-left: 1.2rem; }
 .news-list li { margin: 0.35rem 0; }
+
+
+/* ---- Port Historic+Current photo strip (Jason Round 3 pairs) ----
+   Assets: assets/ports/<slug>/*-web.jpg
+   Works alongside Option A SVG mast (.port-mast) when present; strip sits below mast.
+*/
+.port-photo-pair {
+  margin: 0.75rem 0 1.25rem;
+  padding: 0;
+  border: 1px solid var(--line, #d2dde6);
+  border-radius: var(--radius, 10px);
+  background: var(--surface, #fff);
+  overflow: hidden;
+}
+
+.port-photo-pair > .port-photo-pair__label {
+  margin: 0;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted, #3a5163);
+  background: var(--sand, #eef3f6);
+  border-bottom: 1px solid var(--line, #d2dde6);
+}
+
+.port-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.port-photo {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #0b2a3f;
+}
+
+.port-photo + .port-photo {
+  border-left: 1px solid var(--line, #d2dde6);
+}
+
+.port-photo__era {
+  margin: 0;
+  padding: 0.4rem 0.75rem 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #dce8ef;
+}
+
+.port-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(9rem, 28vw, 14rem);
+  object-fit: cover;
+  object-position: center;
+  background: #0b2a3f;
+}
+
+.port-photo figcaption,
+.port-photo__credit {
+  margin: 0;
+  padding: 0.55rem 0.75rem 0.7rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #e8f0f5;
+  background: #0b2a3f;
+}
+
+.port-photo__credit a {
+  color: #9ec9e0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.port-photo__credit a:hover,
+.port-photo__credit a:focus-visible {
+  color: #fff;
+}
+
+.port-photo__license {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: #1c4f6e;
+  color: #fff;
+}
+
+.port-photo__license--ccby {
+  background: #b4532a;
+  color: #fff;
+}
+
+.port-photo__license--pd {
+  background: #0d6b5c;
+  color: #fff;
+}
+
+body.port.port-dutch-harbor .port-photo-pair__label,
+body.port-dutch-harbor .port-photo-pair__label {
+  border-left: 3px solid #0b5f73;
+}
+body.port.port-unalaska .port-photo-pair__label,
+body.port-unalaska .port-photo-pair__label {
+  border-left: 3px solid #0d6b5c;
+}
+body.port.port-petersburg .port-photo-pair__label,
+body.port-petersburg .port-photo-pair__label {
+  border-left: 3px solid #1a5f4a;
+}
+body.port.port-kodiak .port-photo-pair__label,
+body.port-kodiak .port-photo-pair__label {
+  border-left: 3px solid #1c4f6e;
+}
+
+@media (max-width: 640px) {
+  .port-photo-grid {
+    grid-template-columns: 1fr;
+  }
+  .port-photo + .port-photo {
+    border-left: 0;
+    border-top: 1px solid var(--line, #d2dde6);
+  }
+  .port-photo img {
+    height: clamp(10rem, 55vw, 16rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .port-photo-pair * {
+    transition: none !important;
+  }
+}
+
+@media print {
+  .port-photo-pair img {
+    display: none !important;
+  }
+  .port-photo {
+    background: transparent;
+  }
+  .port-photo__era,
+  .port-photo figcaption,
+  .port-photo__credit {
+    color: #000;
+    background: transparent;
+  }
+}

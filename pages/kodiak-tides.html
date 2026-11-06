@@ -7,7 +7,7 @@
   <meta name="description" content="High and low tide predictions for Kodiak, AK from NOAA CO-OPS station 9457261, plus local marine and shore directory.">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="port port-kodiak">
   <header class="site-header">
     <a class="brand" href="../index.html">Pacific Tides</a>
     <nav>
@@ -27,6 +27,35 @@
       Times are local (LST/LDT). Heights are feet above Mean Lower Low Water (MLLW).
       St. Paul Harbor (downtown) and St. Herman Harbor (Near Island) serve this fishing hub on the Gulf of Alaska / Shelikof Strait.
     </p>
+
+
+    <section class="port-photo-pair" aria-labelledby="kd-photos-heading">
+      <p class="port-photo-pair__label" id="kd-photos-heading">Harbor then &amp; now</p>
+      <div class="port-photo-grid">
+        <figure class="port-photo port-photo--historic">
+          <p class="port-photo__era">Historic</p>
+          <img
+            src="../assets/ports/kodiak/kodiak-downtown-harbor-1964-after-usgs-web.jpg"
+            alt="Downtown Kodiak and harbor after the 1964 Alaska earthquake"
+            loading="lazy" decoding="async" width="1600" height="1100">
+          <figcaption class="port-photo__credit">
+            Downtown / harbor, Kodiak, after the 1964 Alaska earthquake. U.S. Geological Survey, 1964.
+            <span class="port-photo__license port-photo__license--pd">Public domain</span>
+          </figcaption>
+        </figure>
+        <figure class="port-photo port-photo--current port-photo--current-primary">
+          <p class="port-photo__era">Current</p>
+          <img
+            src="../assets/ports/kodiak/kodiak-st-paul-harbor-2008-pd-web.jpg"
+            alt="St. Paul Harbor working waterfront, Kodiak, 2008"
+            loading="lazy" decoding="async" width="1600" height="1067">
+          <figcaption class="port-photo__credit">
+            St. Paul Harbor, Kodiak, 2008. NancyHeise.
+            <span class="port-photo__license port-photo__license--pd">Public domain / CC0</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
     <p class="actions">
       <a class="btn" href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9457261" rel="noopener">Official NOAA predictions</a>
