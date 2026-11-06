@@ -25,6 +25,16 @@
         "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451439",
         "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
       ]
+    },
+    {
+      "title": "Dutch Harbor, AK tide predictions",
+      "path": "pages/dutch-harbor-tides.html",
+      "date_added": "2026-11-05",
+      "station": "9462611",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462611",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
+      ]
     }
   ]
 }
