@@ -29,6 +29,7 @@ traffic exists.
 - [x] Petersburg, AK tides — NOAA `9451439` · aff/sponsor
 - [x] Dutch Harbor / Amaknak, AK tides — NOAA `9462611` · fleet + sponsor + aff
 - [x] Unalaska, AK tides — NOAA `9462620` · fleet + sponsor + aff
+- [x] Kodiak, AK tides — NOAA `9457261` · fleet + sponsor + aff
 
 ---
 
@@ -38,7 +39,7 @@ Ship these early; they unlock fleet/sponsor deals and organic search.
 
 1. ~~**Dutch Harbor / Amaknak, AK tides** — NOAA `9462611`~~ *(shipped 2026-11-05)*
 2. ~~**Unalaska, AK tides** — NOAA `9462620` (Unalaska, 0.7km) · current `UNI1015` (0.7km) · fleet + sponsor + aff~~ *(shipped 2026-11-05)*
-3. **Kodiak, AK tides** — NOAA `9457261` (Kodiak, Port of Kodiak, 1.4km) · current `KOD0903` (0.8km) · fleet + sponsor + aff
+3. ~~**Kodiak, AK tides** — NOAA `9457261` (Kodiak, Port of Kodiak, 1.4km) · current `KOD0903` (0.8km) · fleet + sponsor + aff~~ *(shipped 2026-11-06)*
 4. **Anchorage (Port of Alaska), AK tides** — NOAA `9455920` (ANCHORAGE, Knik Arm, 0.7km) · current `PCT5146` (1.1km) · fleet + sponsor + aff
 5. **Seattle (Elliott Bay), WA tides** — NOAA `9447130` (SEATTLE (Madison St.), Elliott Bay, 0.5km) · current `PUG1506` (2.0km) · fleet + sponsor + aff
 6. **San Diego, CA tides** — NOAA `9410170` (SAN DIEGO (Broadway), 0.2km) · current `PCT0076` (0.3km) · fleet + sponsor + aff

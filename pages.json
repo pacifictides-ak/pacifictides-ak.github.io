@@ -12,6 +12,16 @@
       ]
     },
     {
+      "title": "Kodiak, AK tide predictions",
+      "path": "pages/kodiak-tides.html",
+      "date_added": "2026-11-06",
+      "station": "9457261",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9457261",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
+      ]
+    },
+    {
       "title": "Home / directory",
       "path": "index.html",
       "date_added": "2026-11-05",
