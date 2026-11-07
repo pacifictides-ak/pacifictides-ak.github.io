@@ -513,3 +513,5 @@ Do **not** use NOAA for these pages. Cite tides.gc.ca / DFO; build a BC generato
   Harbours & major BC port authorities. Matched to NOAA CO-OPS / CHS IWLS by
   haversine nearest station (tide ≤80 km, current ≤40 km).
 
+
+- 2026-11-06 nightly: no new port shipped — Seward draft (/workspace/se-alaska-tides-drafts/seward/) still awaiting Jason OK via Mogul. Refreshed live pages instead: 8-day NOAA tide tables from Nov 7, latest NWS zone forecasts (PKZ034/738/771), NDBC obs (CDEA2, DPXA2; KDAA2 realtime file 404). Script: tools/refresh_live_pages.py.
