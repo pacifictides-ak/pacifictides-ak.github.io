@@ -30,6 +30,7 @@ traffic exists.
 - [x] Dutch Harbor / Amaknak, AK tides — NOAA `9462611` · fleet + sponsor + aff
 - [x] Unalaska, AK tides — NOAA `9462620` · fleet + sponsor + aff
 - [x] Kodiak, AK tides — NOAA `9457261` · fleet + sponsor + aff
+- [x] Live-ports harbor, fuel dock, and haul-out directory — Petersburg, Dutch Harbor/Unalaska, Kodiak · [pages/alaska-harbor-fuel-haulout.html](pages/alaska-harbor-fuel-haulout.html) · shipped 2026-11-07
 
 ---
 
@@ -515,3 +516,4 @@ Do **not** use NOAA for these pages. Cite tides.gc.ca / DFO; build a BC generato
 
 
 - 2026-11-06 nightly: no new port shipped — Seward draft (/workspace/se-alaska-tides-drafts/seward/) still awaiting Jason OK via Mogul. Refreshed live pages instead: 8-day NOAA tide tables from Nov 7, latest NWS zone forecasts (PKZ034/738/771), NDBC obs (CDEA2, DPXA2; KDAA2 realtime file 404). Script: tools/refresh_live_pages.py.
+- 2026-11-07 nightly: no new tide-port shipped — Seward draft still awaiting Jason OK via Mogul (Anchorage and seafood-processor pack remain draft/hold). Added live-ports harbor/fuel/haul-out directory; deepened Kodiak/Petersburg/Dutch Harbor/Unalaska ashore listings (hospital, grocery, pharmacy, USPS, airports) from official sources; added Petersburg FAA PAPG webcam; added published harbormaster emails; refreshed NOAA tide tables and NWS/NDBC weather on all four live port pages.

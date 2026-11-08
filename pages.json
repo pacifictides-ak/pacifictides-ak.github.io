@@ -2,6 +2,16 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Alaska harbor, fuel dock, and haul-out directory",
+      "path": "pages/alaska-harbor-fuel-haulout.html",
+      "date_added": "2026-11-07",
+      "sources": [
+        "https://www.petersburgak.gov/harbor",
+        "https://www.unalaska.gov/portsandharbors",
+        "https://www.city.kodiak.ak.us/ph/page/marina-information"
+      ]
+    },
+    {
       "title": "Unalaska, AK tide predictions",
       "path": "pages/unalaska-tides.html",
       "date_added": "2026-11-06",
