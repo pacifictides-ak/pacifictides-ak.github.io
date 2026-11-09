@@ -33,11 +33,12 @@ Yellow-pages style marine + ashore directory for each port.
 - `featured` — `yes` for paid featured listings ($10/mo or $100/yr); `no` for free basic
 - `description`, `logo_url` — used only when `featured=yes`
 - `source_url`, `verified_date` — public source used to verify; never invent businesses
+- `email` — public business email shown on the listing (optional; added 2026-11-08)
 - `notes` — internal
 
 ### Categories (marine)
 
-shipyards_haulouts, boat_repair_mechanics, fuel_docks, marine_suppliers_chandleries, electronics_sales_installation, welding_fabrication, canvas_upholstery, surveyors, towing_salvage, moorage_marinas, ice_bait, fishing_charters
+seafood_processors, shipyards_haulouts, boat_repair_mechanics, fuel_docks, marine_suppliers_chandleries, electronics_sales_installation, welding_fabrication, canvas_upholstery, surveyors, towing_salvage, moorage_marinas, ice_bait, fishing_charters
 
 ### Categories (ashore)
 

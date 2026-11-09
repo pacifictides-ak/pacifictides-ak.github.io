@@ -2,13 +2,26 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Homer, AK tide predictions (Homer Spit / Kachemak Bay)",
+      "path": "pages/homer-tides.html",
+      "date_added": "2026-11-08",
+      "station": "9455558",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455558",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz741.txt",
+        "https://www.cityofhomer-ak.gov/port"
+      ]
+    },
+    {
       "title": "Alaska harbor, fuel dock, and haul-out directory",
       "path": "pages/alaska-harbor-fuel-haulout.html",
       "date_added": "2026-11-07",
       "sources": [
         "https://www.petersburgak.gov/harbor",
         "https://www.unalaska.gov/portsandharbors",
-        "https://www.city.kodiak.ak.us/ph/page/marina-information"
+        "https://www.city.kodiak.ak.us/ph/page/marina-information",
+        "https://www.cityofhomer-ak.gov/port"
       ]
     },
     {

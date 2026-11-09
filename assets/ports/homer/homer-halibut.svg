@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" aria-hidden="true">
+  <g fill="#0b6e7a" opacity="0.10">
+    <!-- flatfish body (diamond-oval) -->
+    <path d="M18 60 C40 22 110 12 160 34 C176 42 184 52 188 60 C184 68 176 78 160 86 C110 108 40 98 18 60 Z"/>
+    <!-- crescent tail -->
+    <path d="M186 60 L226 28 C220 44 220 76 226 92 Z"/>
+    <!-- both eyes on one side, like a halibut -->
+    <circle cx="48" cy="48" r="4" fill="#ffffff"/><circle cx="58" cy="42" r="4" fill="#ffffff"/>
+  </g>
+  <path d="M30 60 C70 56 120 56 176 60" stroke="#0b6e7a" stroke-opacity="0.12" stroke-width="2" fill="none"/>
+</svg>

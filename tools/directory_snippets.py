@@ -9,6 +9,7 @@ BUTTONDOWN_SUBSCRIBE = "https://buttondown.com/api/emails/embed-subscribe/pacifi
 MAIL = "pacifictides.ak@gmail.com"
 
 CATEGORY_LABELS = {
+    "seafood_processors": "Seafood processors & buyers",
     "shipyards_haulouts": "Shipyards & haul-outs",
     "boat_repair_mechanics": "Boat repair & mechanics",
     "fuel_docks": "Fuel docks",
@@ -38,7 +39,7 @@ CATEGORY_LABELS = {
 MARINE_ORDER = list(CATEGORY_LABELS)[:12]
 # explicit orders
 MARINE_ORDER = [
-    "moorage_marinas","fuel_docks","shipyards_haulouts","boat_repair_mechanics",
+    "moorage_marinas","seafood_processors","fuel_docks","shipyards_haulouts","boat_repair_mechanics",
     "marine_suppliers_chandleries","electronics_sales_installation","welding_fabrication",
     "canvas_upholstery","surveyors","towing_salvage","ice_bait","fishing_charters",
 ]
@@ -182,6 +183,8 @@ def directory_html(port_slug: str, prefix: str = "../") -> str:
                 meta = []
                 if it.get("phone"):
                     meta.append(f'<a href="tel:{escape(it["phone"].replace("-",""))}">{escape(it["phone"])}</a>')
+                if it.get("email"):
+                    meta.append(f'<a href="mailto:{escape(it["email"])}">{escape(it["email"])}</a>')
                 if it.get("website"):
                     meta.append(f'<a href="{escape(it["website"])}" rel="noopener">Website</a>')
                 if it.get("address"):

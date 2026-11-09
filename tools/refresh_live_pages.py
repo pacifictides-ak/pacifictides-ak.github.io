@@ -5,12 +5,21 @@ import re, json, time, urllib.request, datetime, html, sys
 from zoneinfo import ZoneInfo
 UA = {"User-Agent": "PacificTides (pacifictides.ak@gmail.com)"}
 AK = ZoneInfo("America/Anchorage")
+# (slug, tide station, [NWS coastal zones], [NDBC stations])
 PORTS = [
- ("petersburg","9451439","pkz034","CDEA2"),
- ("dutch-harbor","9462611","pkz771","DPXA2"),
- ("unalaska","9462620","pkz771","DPXA2"),
- ("kodiak","9457261","pkz738","KDAA2"),
+ ("petersburg","9451439",["pkz034"],["CDEA2"]),
+ ("dutch-harbor","9462611",["pkz771"],["DPXA2"]),
+ ("unalaska","9462620",["pkz771"],["DPXA2"]),
+ ("kodiak","9457261",["pkz738"],["KGXA2","KDAA2"]),
+ ("homer","9455558",["pkz741","pkz742"],["HMSA2","46108","FILA2"]),
 ]
+# Heading labels for NDBC stations (used when the page has no existing heading for that station)
+BUOY_NAMES = {
+ "HMSA2": "Homer Spit (HMSA2, Marine Exchange of Alaska)",
+ "46108": "Lower Cook Inlet buoy (46108, Alaska Ocean Observing System)",
+ "FILA2": "Flat Island Light (FILA2)",
+ "KGXA2": "Kodiak Gull Island (KGXA2, Marine Exchange of Alaska)",
+}
 def get(url):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=30) as r: return r.read().decode("utf-8","replace")
@@ -64,32 +73,45 @@ def obs(st):
     if r[8]!="MM": parts.append(f"seas {float(r[8])*3.28084:.1f} ft")
     if r[13]!="MM": parts.append(f"air {float(r[13])*9/5+32:.0f}°F")
     if r[12]!="MM": parts.append(f"{r[12]} hPa")
+    if len(r)>14 and r[14]!="MM": parts.append(f"water {float(r[14])*9/5+32:.0f}°F")
+    if not parts: return None
     return ", ".join(parts), t
 fetched = now.strftime("%Y-%m-%d %H:%M AKST")
 report=[]
-for slug, station, zone, buoy in PORTS:
+only = set(sys.argv[1:])
+for slug, station, zones, buoys in PORTS:
+    if only and slug not in only: continue
     path=f"pages/{slug}-tides.html"; s=open(path).read()
     tt, n = tides(station)
     s, k = re.subn(r'[ \t]*<section class="tide-tables">.*?</section>', tt, s, count=1, flags=re.S)
     assert k==1, slug
-    name, issued, heads, per = forecast(zone)
-    Z=zone.upper()
-    fc = [f'      <h3>NWS marine forecast — {html.escape(name)} ({Z})</h3>',
-          f'      <p style="color:var(--muted);font-size:0.92rem;">Issued {html.escape(issued)}. Snapshot fetched {fetched} from NWS text product. <a href="https://marine.weather.gov/MapClick.php?zoneid={Z}&amp;TextType=1" rel="noopener">Official zone forecast</a> · <a href="https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/{zone}.txt" rel="noopener">Raw text</a></p>']
-    for h in heads: fc.append(f"<p><strong>...{html.escape(h)}...</strong></p>")
-    fc.append('      <ul class="forecast-periods">')
-    for p in per: fc.append(f"        <li>{html.escape(p)}</li>")
-    fc.append("      </ul>")
-    m = re.search(r'<h3>Nearby NDBC observation — (.*?)</h3>', s)
-    fc.append(f"      <h3>Nearby NDBC observation — {m.group(1)}</h3>")
-    o = obs(buoy)
-    if o:
-        fc.append(f"      <p><strong>{o[0]}</strong></p>")
-        fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Observation time {o[1].strftime("%Y-%m-%d %H:%M")} AKST (converted to AKST). Attribution: NOAA NDBC station <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Snapshot fetched {fetched}.</p>')
-    else:
-        fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Live values not cached on this page (realtime file unavailable at fetch {fetched}). Check the station page for current wind/seas: NOAA NDBC <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Also <a href="https://www.ndbc.noaa.gov/" rel="noopener">NDBC home</a>.</p>')
+    fc = []
+    issued_all = []
+    for zone in zones:
+        name, issued, heads, per = forecast(zone)
+        issued_all.append(issued)
+        Z=zone.upper()
+        fc += [f'      <h3>NWS marine forecast — {html.escape(name)} ({Z})</h3>',
+              f'      <p style="color:var(--muted);font-size:0.92rem;">Issued {html.escape(issued)}. Snapshot fetched {fetched} from NWS text product. <a href="https://marine.weather.gov/MapClick.php?zoneid={Z}&amp;TextType=1" rel="noopener">Official zone forecast</a> · <a href="https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/{zone}.txt" rel="noopener">Raw text</a></p>']
+        for h in heads: fc.append(f"<p><strong>...{html.escape(h)}...</strong></p>")
+        fc.append('      <ul class="forecast-periods">')
+        for p in per: fc.append(f"        <li>{html.escape(p)}</li>")
+        fc.append("      </ul>")
+    oks = []
+    for buoy in buoys:
+        m = re.search(rf'<h3>Nearby NDBC observation — (.*?{buoy}.*?)</h3>', s)
+        label = m.group(1) if m else BUOY_NAMES.get(buoy, buoy)
+        fc.append(f"      <h3>Nearby NDBC observation — {label}</h3>")
+        o = obs(buoy)
+        oks.append(bool(o))
+        if o:
+            fc.append(f"      <p><strong>{o[0]}</strong></p>")
+            fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Observation time {o[1].strftime("%Y-%m-%d %H:%M")} AKST (converted to AKST). Attribution: NOAA NDBC station <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Snapshot fetched {fetched}.</p>')
+        else:
+            fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Live values not cached on this page (realtime file unavailable at fetch {fetched}). Check the station page for current wind/seas: NOAA NDBC <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Also <a href="https://www.ndbc.noaa.gov/" rel="noopener">NDBC home</a>.</p>')
+        time.sleep(1)
     s, k = re.subn(r'[ \t]*<h3>NWS marine forecast.*?(?=[ \t]*<h3>Harbor webcams</h3>)', "\n".join(fc)+"\n", s, count=1, flags=re.S)
     assert k==1, slug
     open(path,"w").write(s)
-    report.append((slug, n, issued, heads, bool(o)))
+    report.append((slug, n, issued_all, oks))
 for r in report: print(r)

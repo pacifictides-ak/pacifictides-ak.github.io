@@ -30,7 +30,8 @@ traffic exists.
 - [x] Dutch Harbor / Amaknak, AK tides — NOAA `9462611` · fleet + sponsor + aff
 - [x] Unalaska, AK tides — NOAA `9462620` · fleet + sponsor + aff
 - [x] Kodiak, AK tides — NOAA `9457261` · fleet + sponsor + aff
-- [x] Live-ports harbor, fuel dock, and haul-out directory — Petersburg, Dutch Harbor/Unalaska, Kodiak · [pages/alaska-harbor-fuel-haulout.html](pages/alaska-harbor-fuel-haulout.html) · shipped 2026-11-07
+- [x] Live-ports harbor, fuel dock, and haul-out directory — Petersburg, Dutch Harbor/Unalaska, Kodiak · [pages/alaska-harbor-fuel-haulout.html](pages/alaska-harbor-fuel-haulout.html) · shipped 2026-11-07 (Homer section added 2026-11-08)
+- [x] Homer, AK tides — NOAA `9455558` (Coal Point, Kachemak Bay) · NWS PKZ741/PKZ742 · NDBC HMSA2/46108/FILA2 · harbor, seafood & shore directory · [pages/homer-tides.html](pages/homer-tides.html) · shipped 2026-11-08 · sponsor + aff
 
 ---
 
@@ -48,7 +49,7 @@ Ship these early; they unlock fleet/sponsor deals and organic search.
 8. **Long Beach, CA tides** — NOAA `9410678` (Long Beach Fire Boat Pier, 0.7km) · current `lb0101` (4.8km) · fleet + sponsor + aff
 9. **San Francisco, CA tides** — NOAA `9414305` (San Francisco, North Point, Pier 41, 0.8km) · current `SFB1206` (0.7km) · fleet + sponsor + aff
 10. **Vancouver, BC tides** — CHS `07735` (Vancouver, 0.9km) · fleet + sponsor + aff
-11. **Homer, AK tides** — NOAA `9455558` (Homer, Coal Point, Kachemak Bay, 9.0km) · current `COI0421` (9.5km) · sponsor + aff
+11. ~~**Homer, AK tides** — NOAA `9455558` (Homer, Coal Point, Kachemak Bay, 9.0km) · current `COI0421` (9.5km) · sponsor + aff~~ *(shipped 2026-11-08)*
 12. **Oakland, CA tides** — NOAA `9414764` (Oakland Inner Harbor, 0.2km) · current `SFB1214` (0.5km) · fleet + sponsor + aff
 13. **Seward, AK tides** — NOAA `9455090` (Seward, Resurrection Bay, 1.9km) · sponsor + aff
 14. **Astoria, OR tides** — NOAA `9439026` (Astoria (Youngs Bay), Oreg., 2.0km) · current `PCT1146` (3.2km) · sponsor + aff
@@ -517,3 +518,5 @@ Do **not** use NOAA for these pages. Cite tides.gc.ca / DFO; build a BC generato
 
 - 2026-11-06 nightly: no new port shipped — Seward draft (/workspace/se-alaska-tides-drafts/seward/) still awaiting Jason OK via Mogul. Refreshed live pages instead: 8-day NOAA tide tables from Nov 7, latest NWS zone forecasts (PKZ034/738/771), NDBC obs (CDEA2, DPXA2; KDAA2 realtime file 404). Script: tools/refresh_live_pages.py.
 - 2026-11-07 nightly: no new tide-port shipped — Seward draft still awaiting Jason OK via Mogul (Anchorage and seafood-processor pack remain draft/hold). Added live-ports harbor/fuel/haul-out directory; deepened Kodiak/Petersburg/Dutch Harbor/Unalaska ashore listings (hospital, grocery, pharmacy, USPS, airports) from official sources; added Petersburg FAA PAPG webcam; added published harbormaster emails; refreshed NOAA tide tables and NWS/NDBC weather on all four live port pages.
+- 2026-11-08 nightly: shipped Homer, AK tides (NOAA 9455558, Coal Point / Kachemak Bay) at pages/homer-tides.html — NWS PKZ741 Kachemak Bay + PKZ742 Cook Inlet Kalgin Island to Point Bede, NDBC HMSA2/46108/FILA2, three free webcam links, five news links, 45 verified directory rows (incl. 4 seafood processors/buyers), Historic+Current photo strip (USFWS 1964 PD + CC BY 2.0 2011) and three original Homer SVGs. Homer added to harbor/fuel/haul-out directory and cross-port links. refresh_live_pages.py now supports multi-zone/multi-buoy ports and includes Homer; Kodiak gained KGXA2 (Gull Island) obs since KDAA2 has no met data. Seward, Anchorage, and seafood-processor pack remain draft/hold (not pushed).
+- Next up (near-term order): Seward (draft awaiting Jason OK) → Whittier/Valdez → Anchorage (draft awaiting Jason OK). Without approvals, next fresh build candidate is Valdez (NOAA 9454240) or Whittier.

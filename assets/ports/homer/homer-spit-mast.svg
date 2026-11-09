@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Homer Spit reaching into Kachemak Bay below the Kenai Mountains">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9dcea"/><stop offset="1" stop-color="#eef4f8"/></linearGradient>
+    <linearGradient id="bay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f7f97"/><stop offset="1" stop-color="#1d4d63"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#sky)"/>
+  <!-- Kenai Mountains across Kachemak Bay, with glacier caps -->
+  <path d="M0 120 L70 78 L120 96 L190 52 L250 90 L310 64 L380 100 L450 58 L520 92 L600 46 L680 88 L740 70 L820 98 L900 60 L980 94 L1050 72 L1120 96 L1200 80 L1200 132 L0 132 Z" fill="#6c8a9c"/>
+  <path d="M190 52 L214 66 L200 70 L184 62 Z M450 58 L474 72 L458 76 L440 68 Z M600 46 L628 62 L610 66 L590 58 Z M900 60 L926 74 L910 78 L892 70 Z" fill="#f7fbfd"/>
+  <path d="M560 132 L600 104 L640 132 Z" fill="#dfeef5" opacity="0.8"/>
+  <rect y="128" width="1200" height="92" fill="url(#bay)"/>
+  <!-- The Spit: a long gravel finger from the left shore -->
+  <path d="M0 176 C140 170 300 166 470 160 C620 155 760 150 880 146 C905 145 920 148 918 153 C900 158 760 162 620 167 C460 173 260 182 0 192 Z" fill="#c8b48a"/>
+  <!-- small boat harbor basin near the end of the Spit -->
+  <rect x="790" y="149" width="54" height="9" rx="2" fill="#2f6a80" stroke="#e9dfc6" stroke-width="2"/>
+  <g stroke="#f4f1e8" stroke-width="1.5"><line x1="800" y1="150" x2="800" y2="157"/><line x1="812" y1="150" x2="812" y2="157"/><line x1="824" y1="150" x2="824" y2="157"/><line x1="836" y1="150" x2="836" y2="157"/></g>
+  <!-- tide lines -->
+  <g fill="none" stroke="#9cc6d6" stroke-width="1.5" opacity="0.6">
+    <path d="M40 206 q20 -6 40 0 t40 0 t40 0"/><path d="M620 200 q20 -6 40 0 t40 0 t40 0"/><path d="M980 190 q20 -6 40 0 t40 0 t40 0"/>
+  </g>
+</svg>
