@@ -540,3 +540,31 @@ body.port-homer #local-directory {
   body.port-homer .homer-mast { display: none; }
   body.port-homer .homer-bigtide, body.port-homer #local-directory { background-image: none; }
 }
+
+/* Valdez (Port Valdez / Prince William Sound) — unique per-port graphics (original SVG artwork) */
+body.port-valdez .port-photo-pair__label { border-left: 3px solid #b5647a; }
+body.port-valdez .valdez-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #d6e4ee url("assets/ports/valdez/valdez-fjord-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-valdez .valdez-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #b5647a;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 4.5rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f8f4f6 url("assets/ports/valdez/valdez-tide-staff.svg") right 0.8rem top 0.6rem / 36px 180px no-repeat;
+}
+body.port-valdez #local-directory {
+  background-image: url("assets/ports/valdez/valdez-pink-salmon.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 180px auto;
+}
+@media print {
+  body.port-valdez .valdez-mast { display: none; }
+  body.port-valdez .valdez-callout, body.port-valdez #local-directory { background-image: none; }
+}

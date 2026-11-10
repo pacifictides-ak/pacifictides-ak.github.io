@@ -12,6 +12,7 @@ PORTS = [
  ("unalaska","9462620",["pkz771"],["DPXA2"]),
  ("kodiak","9457261",["pkz738"],["KGXA2","KDAA2"]),
  ("homer","9455558",["pkz741","pkz742"],["HMSA2","46108","FILA2"]),
+ ("valdez","9454240",["pkz720","pkz721","pkz722"],["VDZA2","46060","46061"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -19,6 +20,9 @@ BUOY_NAMES = {
  "46108": "Lower Cook Inlet buoy (46108, Alaska Ocean Observing System)",
  "FILA2": "Flat Island Light (FILA2)",
  "KGXA2": "Kodiak Gull Island (KGXA2, Marine Exchange of Alaska)",
+ "VDZA2": "Valdez (VDZA2, NOAA 9454240)",
+ "46060": "West Orca Bay buoy (46060)",
+ "46061": "Seal Rocks buoy (46061, Hinchinbrook Entrance)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)

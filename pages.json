@@ -2,6 +2,18 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Valdez, AK tide predictions (Port Valdez / Prince William Sound)",
+      "path": "pages/valdez-tides.html",
+      "date_added": "2026-11-09",
+      "station": "9454240",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454240",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz720.txt",
+        "https://www.valdezak.gov/146/Harbor"
+      ]
+    },
+    {
       "title": "Homer, AK tide predictions (Homer Spit / Kachemak Bay)",
       "path": "pages/homer-tides.html",
       "date_added": "2026-11-08",
@@ -21,7 +33,8 @@
         "https://www.petersburgak.gov/harbor",
         "https://www.unalaska.gov/portsandharbors",
         "https://www.city.kodiak.ak.us/ph/page/marina-information",
-        "https://www.cityofhomer-ak.gov/port"
+        "https://www.cityofhomer-ak.gov/port",
+        "https://www.valdezak.gov/146/Harbor"
       ]
     },
     {

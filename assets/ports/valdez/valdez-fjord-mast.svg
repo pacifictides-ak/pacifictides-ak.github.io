@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice">
+  <title>Port Valdez fjord below the Chugach peaks (original Pacific Tides artwork)</title>
+  <rect width="1200" height="180" fill="#d6e4ee"/>
+  <path d="M0 120 L90 50 L150 85 L230 20 L310 80 L380 40 L470 95 L560 30 L640 88 L720 45 L800 100 L880 35 L960 90 L1040 55 L1120 95 L1200 60 L1200 180 L0 180Z" fill="#8aa6b8"/>
+  <path d="M230 20 L255 40 L240 38 L225 48 L210 36Z M560 30 L585 52 L566 48 L548 58 L540 46Z M880 35 L902 55 L885 51 L868 60 L862 50Z" fill="#ffffff"/>
+  <path d="M0 132 L140 100 L260 125 L420 92 L600 128 L760 98 L920 126 L1080 100 L1200 120 L1200 180 L0 180Z" fill="#5d7f93"/>
+  <rect y="138" width="1200" height="42" fill="#2f5f78"/>
+  <path d="M0 150 Q150 144 300 150 T600 150 T900 150 T1200 150" stroke="#9fc3d6" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M760 142 L1000 142 L990 150 L770 150Z" fill="#1d3a4a"/>
+  <rect x="930" y="130" width="40" height="12" fill="#1d3a4a"/>
+  <rect x="945" y="120" width="8" height="10" fill="#1d3a4a"/>
+  <path d="M120 158 L520 152 L520 158 L120 164Z" fill="#6b6b6b"/>
+</svg>

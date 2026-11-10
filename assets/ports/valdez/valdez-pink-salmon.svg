@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 110">
+  <title>Pink salmon (humpy) outline (original Pacific Tides artwork)</title>
+  <g fill="none" stroke="#b5647a" stroke-width="3" opacity="0.35" stroke-linejoin="round">
+    <path d="M20 58 Q60 18 120 20 Q150 6 168 26 Q200 34 210 55 Q200 76 168 84 Q120 96 60 84 Q36 76 20 58Z"/>
+    <path d="M210 55 L236 32 L230 55 L236 80Z"/>
+    <circle cx="44" cy="52" r="4"/>
+    <path d="M70 60 Q120 64 190 56"/>
+    <path d="M90 84 L100 98 L112 86"/>
+  </g>
+</svg>
