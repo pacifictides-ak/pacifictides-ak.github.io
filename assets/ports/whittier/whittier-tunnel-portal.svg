@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <title>Tunnel portal with a single rail line (original Pacific Tides artwork)</title>
+  <rect x="2" y="6" width="56" height="50" rx="4" fill="#e7ecef" stroke="#2c5468" stroke-width="2"/>
+  <path d="M14 56 L14 30 Q30 10 46 30 L46 56Z" fill="#2c5468"/>
+  <path d="M24 56 L28 34 M36 56 L32 34" stroke="#f2c94c" stroke-width="2"/>
+  <path d="M25 50 L35 50 M26 44 L34 44 M27 39 L33 39" stroke="#f2c94c" stroke-width="1.5"/>
+</svg>

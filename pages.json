@@ -2,6 +2,19 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Whittier, AK tide predictions (Passage Canal / Prince William Sound)",
+      "path": "pages/whittier-tides.html",
+      "date_added": "2026-11-10",
+      "station": "9454949",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454949",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz723.txt",
+        "https://www.whittieralaska.gov/whittier-harbor/",
+        "https://dot.alaska.gov/creg/whittiertunnel/"
+      ]
+    },
+    {
       "title": "Valdez, AK tide predictions (Port Valdez / Prince William Sound)",
       "path": "pages/valdez-tides.html",
       "date_added": "2026-11-09",
@@ -34,7 +47,8 @@
         "https://www.unalaska.gov/portsandharbors",
         "https://www.city.kodiak.ak.us/ph/page/marina-information",
         "https://www.cityofhomer-ak.gov/port",
-        "https://www.valdezak.gov/146/Harbor"
+        "https://www.valdezak.gov/146/Harbor",
+        "https://www.whittieralaska.gov/whittier-harbor/"
       ]
     },
     {

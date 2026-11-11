@@ -568,3 +568,31 @@ body.port-valdez #local-directory {
   body.port-valdez .valdez-mast { display: none; }
   body.port-valdez .valdez-callout, body.port-valdez #local-directory { background-image: none; }
 }
+
+/* Whittier (Passage Canal / Prince William Sound) — unique per-port graphics (original SVG artwork) */
+body.port-whittier .port-photo-pair__label { border-left: 3px solid #c0573e; }
+body.port-whittier .whittier-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #dbe6ec url("assets/ports/whittier/whittier-passage-canal-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-whittier .whittier-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #c0573e;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 4.8rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f8f5f3 url("assets/ports/whittier/whittier-tunnel-portal.svg") right 0.8rem top 0.7rem / 56px 56px no-repeat;
+}
+body.port-whittier #local-directory {
+  background-image: url("assets/ports/whittier/whittier-spot-prawn.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 180px auto;
+}
+@media print {
+  body.port-whittier .whittier-mast { display: none; }
+  body.port-whittier .whittier-callout, body.port-whittier #local-directory { background-image: none; }
+}
