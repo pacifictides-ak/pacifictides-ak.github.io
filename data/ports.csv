@@ -1,7 +1,7 @@
 name,state_province,region,lat,lon,port_type,tide_agency,tide_station_id,tide_station_name,tide_station_distance_km,current_station_id,current_station_name,current_station_distance_km,priority_score,sources,notes,status
 Dutch Harbor / Amaknak,AK,Aleutian Chain & Alaska Peninsula,53.889,-166.542,harbor,NOAA,9462611,"Dutch Harbor, Amaknak Island",0.4,UNI1015,"Iliuliuk Bay, east channel",1.6,100,Alaska DOT&PF Harbors Map May 2018; AAHPA,major commercial hub,shipped
 Unalaska,AK,Aleutian Chain & Alaska Peninsula,53.8736,-166.5367,harbor,NOAA,9462620,Unalaska,0.7,UNI1015,"Iliuliuk Bay, east channel",0.7,98,Alaska DOT&PF Harbors Map May 2018; AAHPA,city side,shipped
-Kodiak,AK,Kodiak Island,57.79,-152.4072,harbor,NOAA,9457261,"Kodiak, Port of Kodiak",1.4,KOD0903,Kodiak Harbor Narrows,0.8,97,Alaska DOT&PF Harbors Map May 2018; AAHPA,city / St. Paul & St. Herman harbors,backlog
+Kodiak,AK,Kodiak Island,57.79,-152.4072,harbor,NOAA,9457261,"Kodiak, Port of Kodiak",1.4,KOD0903,Kodiak Harbor Narrows,0.8,97,Alaska DOT&PF Harbors Map May 2018; AAHPA,city / St. Paul & St. Herman harbors,shipped
 Anchorage (Port of Alaska),AK,Southcentral Alaska,61.2308,-149.8908,harbor,NOAA,9455920,"ANCHORAGE, Knik Arm",0.7,PCT5146,"Anchorage, 0.2 mile offshore",1.1,96,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Seattle (Elliott Bay),WA,Washington,47.6062,-122.3425,harbor,NOAA,9447130,"SEATTLE (Madison St.), Elliott Bay",0.5,PUG1506,Harbor Island East,2.0,95,Washington Public Ports Association member directory,Port of Seattle,backlog
 San Diego,CA,California South Coast,32.715,-117.175,harbor,NOAA,9410170,SAN DIEGO (Broadway),0.2,PCT0076,B St. Pier (San Diego),0.3,94,CA coastal public harbors (Coast Pilot / CAHBMPC / harbor districts),Port of San Diego,backlog
@@ -9,7 +9,7 @@ Los Angeles / San Pedro,CA,California South Coast,33.74,-118.27,harbor,NOAA,9410
 Long Beach,CA,California South Coast,33.754,-118.215,harbor,NOAA,9410678,Long Beach Fire Boat Pier,0.7,lb0101,Queens Gate,4.8,92,CA coastal public harbors (Coast Pilot / CAHBMPC / harbor districts),Port of Long Beach,backlog
 San Francisco,CA,California Central Coast / Bay Area,37.806,-122.405,harbor,NOAA,9414305,"San Francisco, North Point, Pier 41",0.8,SFB1206,Pier 23,0.7,91,CA coastal public harbors (Coast Pilot / CAHBMPC / harbor districts),Port of San Francisco,backlog
 Vancouver,BC,British Columbia South Coast & Vancouver Island,49.29,-123.11,harbor,CHS,07735,Vancouver,0.9,,,,90,DFO Small Craft Harbours / major BC port authorities; CHS IWLS,Port of Vancouver / VFPA,backlog
-Homer,AK,Southcentral Alaska,59.6425,-151.5483,harbor,NOAA,9455558,"Homer, Coal Point, Kachemak Bay",9.0,COI0421,Barabara Point,9.5,89,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
+Homer,AK,Southcentral Alaska,59.6425,-151.5483,harbor,NOAA,9455558,"Homer, Coal Point, Kachemak Bay",9.0,COI0421,Barabara Point,9.5,89,Alaska DOT&PF Harbors Map May 2018; AAHPA,,shipped
 Oakland,CA,California Central Coast / Bay Area,37.795,-122.28,harbor,NOAA,9414764,Oakland Inner Harbor,0.2,SFB1214,Oakland Inner Harbor Reach,0.5,89,CA coastal public harbors (Coast Pilot / CAHBMPC / harbor districts),Port of Oakland,backlog
 Seward,AK,Southcentral Alaska,60.1042,-149.4422,harbor,NOAA,9455090,"Seward, Resurrection Bay",1.9,,,,88,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Astoria,OR,Oregon Coast,46.188,-123.83,harbor,NOAA,9439026,"Astoria (Youngs Bay), Oreg.",2.0,PCT1146,Youngs Bay Bridge,3.2,88,Oregon Public Ports Association / Oregon Blue Book port districts,Port of Astoria,backlog
@@ -19,13 +19,13 @@ Eureka / Humboldt Bay,CA,California North Coast,40.802,-124.165,harbor,NOAA,9418
 Juneau,AK,Southeast Alaska,58.3019,-134.4197,harbor,NOAA,9452210,Juneau,0.6,SEA0801,"Juneau Harbor, N of",0.7,85,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Ketchikan,AK,Southeast Alaska,55.3422,-131.6461,harbor,NOAA,9450460,Ketchikan,1.7,PCT2786,Ketchikan,0.7,84,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Sitka,AK,Southeast Alaska,57.0531,-135.33,harbor,NOAA,9451600,Sitka,0.9,PCT4166,"Sitka Harbor, channel off Harbor Island",0.4,83,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
-Valdez,AK,Southcentral Alaska,61.1308,-146.3483,harbor,NOAA,9454240,"VALDEZ, Port Valdez",1.0,PWS0746,Valdez Boat Harbor Approach,1.4,82,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
+Valdez,AK,Southcentral Alaska,61.1308,-146.3483,harbor,NOAA,9454240,"VALDEZ, Port Valdez",1.0,PWS0746,Valdez Boat Harbor Approach,1.4,82,Alaska DOT&PF Harbors Map May 2018; AAHPA,,shipped
 Prince Rupert,BC,British Columbia North Coast & Haida Gwaii,54.315,-130.321,harbor,CHS,09354,Prince Rupert,0.3,,,,81,DFO Small Craft Harbours / major BC port authorities; CHS IWLS,Port of Prince Rupert,backlog
 Victoria,BC,British Columbia South Coast & Vancouver Island,48.422,-123.37,harbor,CHS,07120,Victoria Harbour,0.3,,,,80,DFO Small Craft Harbours / major BC port authorities; CHS IWLS,Greater Victoria Harbour Authority,backlog
 Coos Bay,OR,Oregon Coast,43.366,-124.217,harbor,NOAA,9432845,Coos Bay,1.6,PCT1061,Coos Bay entrance,10.1,80,Oregon Public Ports Association / Oregon Blue Book port districts,Oregon International Port of Coos Bay,backlog
 Cordova,AK,Southcentral Alaska,60.5431,-145.7575,harbor,NOAA,9454050,CORDOVA,1.7,PWS0734,Old Log Boom,3.3,78,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Everett,WA,Washington,47.979,-122.2021,harbor,NOAA,9447659,Everett,1.6,PUG1613,Everett,2.7,78,Washington Public Ports Association member directory,Port of Everett,backlog
-Whittier,AK,Southcentral Alaska,60.7731,-148.6836,harbor,NOAA,9454949,"Whittier, Passage Canal",1.2,PWS0703,Blackstone Point,18.0,77,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
+Whittier,AK,Southcentral Alaska,60.7731,-148.6836,harbor,NOAA,9454949,"Whittier, Passage Canal",1.2,PWS0703,Blackstone Point,18.0,77,Alaska DOT&PF Harbors Map May 2018; AAHPA,,shipped
 Nome,AK,Arctic & Western Alaska,64.5011,-165.4064,harbor,NOAA,9468756,NOME,1.7,,,,76,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Westport,WA,Washington,46.89,-124.105,harbor,NOAA,9441102,"Westport, Point Chehalis",1.6,PCT1316,"Westport, channel 0.4 mile NE of",2.7,76,Washington Public Ports Association member directory,commercial fishing / Point Chehalis,backlog
 Naknek / Port of Bristol Bay,AK,Bristol Bay,58.7283,-157.0139,harbor,NOAA,9465203,"Naknek, Naknek River",1.8,PCT5781,"Morakas Point, Naknek River",4.7,75,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
@@ -82,7 +82,7 @@ Togiak,AK,Bristol Bay,59.0619,-160.3764,harbor,NOAA,9465182,"Black Rock, Walrus 
 Anchor Point,AK,Southcentral Alaska,59.7767,-151.8314,harbor,NOAA,9455606,Anchor Point,2.1,COI1203,"Anchor Point, west of",11.9,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Chenega Bay,AK,Southcentral Alaska,60.065,-148.01,harbor,NOAA,9454764,"Sawmill Bay, Evans Island",3.4,PWS0715,"Sawmill Bay Entr., Evans Island",2.1,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Halibut Cove,AK,Southcentral Alaska,59.595,-151.225,harbor,NOAA,9455556,"Halibut Cove, Kachemak Bay",0.3,COI0422,Glacier Spit,8.2,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
-Kenai / City Dock,AK,Southcentral Alaska,60.5544,-151.2583,harbor,NOAA,9455742,Kenai City Pier,2.4,PCT5016,Kenai City Wharf,1.5,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
+Kenai / City Dock,AK,Southcentral Alaska,60.5544,-151.2583,harbor,NOAA,9455742,Kenai City Pier,2.4,PCT5016,Kenai City Wharf,1.5,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,shipped
 Nikiski,AK,Southcentral Alaska,60.6833,-151.4,harbor,NOAA,9455760,NIKISKI,0.1,COI0801,Tesoro Pier,0.4,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Ninilchik,AK,Southcentral Alaska,60.05,-151.6667,harbor,NOAA,9455653,Ninilchik,1.0,PCT4976,"Ninilchik Harbor, northwest of",17.5,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog
 Port MacKenzie,AK,Southcentral Alaska,61.268,-149.915,harbor,NOAA,9455934,Port MacKenzie,0.1,COI0211,Port Mackenzie,0.1,55,Alaska DOT&PF Harbors Map May 2018; AAHPA,,backlog

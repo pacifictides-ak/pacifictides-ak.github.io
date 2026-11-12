@@ -14,6 +14,7 @@ PORTS = [
  ("homer","9455558",["pkz741","pkz742"],["HMSA2","46108","FILA2"]),
  ("valdez","9454240",["pkz720","pkz721","pkz722"],["VDZA2","46060","46061"]),
  ("whittier","9454949",["pkz723","pkz724","pkz726"],["WIXA2","PPXA2","46081"]),
+ ("kenai","9455742",["pkz740","pkz742"],["KNXA2","NKTA2","46108"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -27,6 +28,8 @@ BUOY_NAMES = {
  "WIXA2": "Whittier AMHS terminal (WIXA2)",
  "PPXA2": "Point Pigot (PPXA2)",
  "46081": "Western Prince William Sound buoy (46081)",
+ "KNXA2": "Kenai (KNXA2, Marine Exchange of Alaska)",
+ "NKTA2": "Nikiski (NKTA2, NOAA 9455760)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)
@@ -52,7 +55,7 @@ def tides(station):
         out.append(f"<h2>{dte.strftime('%A, %B')} {dte.day}, {dte.year}</h2>")
         out.append('<table class="tides">\n<thead><tr><th>Tide</th><th>Time (local)</th><th>Height (MLLW)</th></tr></thead>\n<tbody>')
         for k,t,v in days[dte]:
-            out.append(f"<tr><td>{k}</td><td>{t.strftime('%I:%M %p').lstrip('0')}</td><td>{v:.1f} ft</td></tr>")
+            out.append(f"<tr><td>{k}</td><td>{t.strftime('%I:%M %p').lstrip('0')}</td><td>{(0.0 if abs(v)<0.05 else v):.1f} ft</td></tr>")
         out.append("</tbody>\n</table>")
     out.append("    </section>")
     return "\n".join(out), len(preds)

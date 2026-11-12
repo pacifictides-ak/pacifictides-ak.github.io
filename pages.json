@@ -2,6 +2,18 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Kenai, AK tide predictions (Kenai City Pier / Kenai River mouth)",
+      "path": "pages/kenai-tides.html",
+      "date_added": "2026-11-11",
+      "station": "9455742",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9455742",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz740.txt",
+        "https://www.kenai.city/dipnet/page/city-dock"
+      ]
+    },
+    {
       "title": "Whittier, AK tide predictions (Passage Canal / Prince William Sound)",
       "path": "pages/whittier-tides.html",
       "date_added": "2026-11-10",

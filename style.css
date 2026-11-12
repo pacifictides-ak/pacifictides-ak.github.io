@@ -596,3 +596,31 @@ body.port-whittier #local-directory {
   body.port-whittier .whittier-mast { display: none; }
   body.port-whittier .whittier-callout, body.port-whittier #local-directory { background-image: none; }
 }
+
+/* Kenai (Kenai River mouth / upper Cook Inlet) — unique per-port graphics (original SVG artwork) */
+body.port-kenai .port-photo-pair__label { border-left: 3px solid #a8453a; }
+body.port-kenai .kenai-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #e6e1d6 url("assets/ports/kenai/kenai-bluff-redoubt-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-kenai .kenai-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #a8453a;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f8f5f0 url("assets/ports/kenai/kenai-tide-ramp.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-kenai #local-directory {
+  background-image: url("assets/ports/kenai/kenai-sockeye-dipnet.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 180px auto;
+}
+@media print {
+  body.port-kenai .kenai-mast { display: none; }
+  body.port-kenai .kenai-callout, body.port-kenai #local-directory { background-image: none; }
+}
