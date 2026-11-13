@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice">
+  <title>Orca Inlet at Cordova: Mount Eyak and the Heney Range above the small boat harbor, with a gillnet bowpicker heading out toward the Copper River flats (original Pacific Tides artwork)</title>
+  <rect width="1200" height="180" fill="#dde6e3"/>
+  <rect width="1200" height="100" fill="#e3eaee"/>
+  <path d="M0 100 L90 52 L170 70 L260 30 L340 62 L430 44 L540 100Z" fill="#7f938c"/>
+  <path d="M260 30 L284 44 L270 46 L254 54 L240 44Z" fill="#ffffff"/>
+  <path d="M430 44 L450 56 L436 58 L422 54Z" fill="#ffffff"/>
+  <path d="M500 100 L620 66 L700 80 L800 58 L900 84 L1000 70 L1200 100Z" fill="#9aaca6"/>
+  <path d="M0 96 L540 96 L540 108 L0 108Z" fill="#2f5d50"/>
+  <g fill="#244a40"><path d="M20 98 l8 -22 l8 22Z M60 98 l7 -18 l7 18Z M110 98 l8 -24 l8 24Z M170 98 l6 -16 l6 16Z M230 98 l8 -20 l8 20Z M300 98 l7 -18 l7 18Z M380 98 l8 -22 l8 22Z M450 98 l6 -16 l6 16Z"/></g>
+  <rect y="104" width="1200" height="76" fill="#5f8790"/>
+  <path d="M0 116 Q300 110 600 116 T1200 114" stroke="#a9c3c7" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M0 140 Q300 134 600 140 T1200 138" stroke="#a9c3c7" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <g stroke="#3b4a48" stroke-width="2"><path d="M60 104 V84 M90 104 V80 M120 104 V86 M150 104 V82 M180 104 V84"/></g>
+  <rect x="40" y="102" width="170" height="5" fill="#8a7a5c"/>
+  <g transform="translate(820 132)">
+    <path d="M-60 0 L44 0 L58 -10 L-56 -10Z" fill="#f2efe6" stroke="#3b4a48" stroke-width="1.5"/>
+    <rect x="-30" y="-26" width="30" height="16" fill="#f2efe6" stroke="#3b4a48" stroke-width="1.5"/>
+    <rect x="-24" y="-22" width="8" height="6" fill="#5f8790"/>
+    <circle cx="44" cy="-18" r="9" fill="none" stroke="#3b4a48" stroke-width="3"/>
+    <path d="M44 -18 L44 -10" stroke="#3b4a48" stroke-width="2"/>
+    <path d="M-60 -4 L-80 6" stroke="#c0573e" stroke-width="2"/>
+  </g>
+  <path d="M700 132 Q740 128 760 132" stroke="#e8f0f0" stroke-width="2" fill="none"/>
+</svg>

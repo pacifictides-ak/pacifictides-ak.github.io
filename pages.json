@@ -2,6 +2,19 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Cordova, AK tide predictions (Orca Inlet / eastern Prince William Sound)",
+      "path": "pages/cordova-tides.html",
+      "date_added": "2026-11-12",
+      "station": "9454050",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9454050",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz725.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz710.txt",
+        "https://www.cityofcordova.net/port-and-harbor/"
+      ]
+    },
+    {
       "title": "Kenai, AK tide predictions (Kenai City Pier / Kenai River mouth)",
       "path": "pages/kenai-tides.html",
       "date_added": "2026-11-11",

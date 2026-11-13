@@ -624,3 +624,31 @@ body.port-kenai #local-directory {
   body.port-kenai .kenai-mast { display: none; }
   body.port-kenai .kenai-callout, body.port-kenai #local-directory { background-image: none; }
 }
+
+/* Cordova (Orca Inlet / Copper River flats / eastern Prince William Sound) — unique per-port graphics (original SVG artwork) */
+body.port-cordova .port-photo-pair__label { border-left: 3px solid #2f5d50; }
+body.port-cordova .cordova-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #dde6e3 url("assets/ports/cordova/cordova-orca-inlet-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-cordova .cordova-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #2f5d50;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f2f6f4 url("assets/ports/cordova/cordova-bowpicker.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-cordova #local-directory {
+  background-image: url("assets/ports/cordova/cordova-copper-river-salmon.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 180px auto;
+}
+@media print {
+  body.port-cordova .cordova-mast { display: none; }
+  body.port-cordova .cordova-callout, body.port-cordova #local-directory { background-image: none; }
+}
