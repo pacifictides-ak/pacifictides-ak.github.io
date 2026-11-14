@@ -16,6 +16,7 @@ PORTS = [
  ("whittier","9454949",["pkz723","pkz724","pkz726"],["WIXA2","PPXA2","46081"]),
  ("kenai","9455742",["pkz740","pkz742"],["KNXA2","NKTA2","46108"]),
  ("cordova","9454050",["pkz725","pkz710"],["CRVA2","46060","46061"]),
+ ("juneau","9452210",["pkz031","pkz013"],["JNEA2","PTLA2","SCXA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -32,6 +33,9 @@ BUOY_NAMES = {
  "KNXA2": "Kenai (KNXA2, Marine Exchange of Alaska)",
  "NKTA2": "Nikiski (NKTA2, NOAA 9455760)",
  "CRVA2": "Cordova (CRVA2, NOAA 9454050)",
+ "JNEA2": "Juneau (JNEA2, NOAA 9452210)",
+ "PTLA2": "Portland Island (PTLA2, off Auke Bay)",
+ "SCXA2": "Scull Island (SCXA2, Stephens Passage)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)

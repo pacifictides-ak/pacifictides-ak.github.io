@@ -130,6 +130,19 @@
         "https://tidesandcurrents.noaa.gov/stationhome.html?id=9462611",
         "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
       ]
+    },
+    {
+      "title": "Juneau, AK tide predictions (Gastineau Channel / Aurora, Harris & Statter harbors)",
+      "path": "pages/juneau-tides.html",
+      "date_added": "2026-11-13",
+      "station": "9452210",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452210",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz031.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz013.txt",
+        "https://juneau.org/harbors/facilities"
+      ]
     }
   ]
 }

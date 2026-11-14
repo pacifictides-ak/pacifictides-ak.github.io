@@ -652,3 +652,31 @@ body.port-cordova #local-directory {
   body.port-cordova .cordova-mast { display: none; }
   body.port-cordova .cordova-callout, body.port-cordova #local-directory { background-image: none; }
 }
+
+/* Juneau (Gastineau Channel / Juneau-Douglas bridge / Auke Bay) — unique per-port graphics (original SVG artwork) */
+body.port-juneau .port-photo-pair__label { border-left: 3px solid #557583; }
+body.port-juneau .juneau-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #e4e9ee url("assets/ports/juneau/juneau-gastineau-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-juneau .juneau-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #557583;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f1f4f6 url("assets/ports/juneau/juneau-bridge-gauge.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-juneau #local-directory {
+  background-image: url("assets/ports/juneau/juneau-troller.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 180px auto;
+}
+@media print {
+  body.port-juneau .juneau-mast { display: none; }
+  body.port-juneau .juneau-callout, body.port-juneau #local-directory { background-image: none; }
+}

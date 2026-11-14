@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice">
+  <title>Gastineau Channel at Juneau: Mount Juneau and Mount Roberts above downtown, the Juneau-Douglas bridge with its clearance gauge, and a salmon troller heading for Aurora Harbor (original Pacific Tides artwork)</title>
+  <rect width="1200" height="180" fill="#e4e9ee"/>
+  <path d="M0 104 L80 70 L150 82 L230 46 L300 74 L360 60 L420 104Z" fill="#8c9aa4"/>
+  <path d="M230 46 L252 60 L238 62 L224 70 L212 60Z" fill="#ffffff"/>
+  <path d="M380 104 L470 40 L540 18 L600 34 L680 22 L760 58 L840 104Z" fill="#5d7480"/>
+  <path d="M540 18 L566 34 L552 36 L540 44 L526 34Z M680 22 L702 38 L688 40 L674 34Z" fill="#ffffff"/>
+  <path d="M520 30 L530 104 M600 36 L606 104" stroke="#e9eef1" stroke-width="2" opacity="0.6"/>
+  <path d="M780 104 L860 64 L940 76 L1020 50 L1100 70 L1200 60 L1200 104Z" fill="#7d8f98"/>
+  <g fill="#3f5560"><path d="M420 100 l10 -14 l10 14Z M450 100 h18 v-10 h-18Z M478 100 h12 v-16 h-12Z M500 100 h22 v-8 h-22Z M530 100 h10 v-20 h-10Z M548 100 h18 v-12 h-18Z M574 100 h14 v-9 h-14Z M596 100 h20 v-14 h-20Z M626 100 h12 v-7 h-12Z"/></g>
+  <rect y="100" width="1200" height="80" fill="#557583"/>
+  <path d="M0 118 Q300 112 600 118 T1200 116" stroke="#a7c0c9" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M0 146 Q300 140 600 146 T1200 144" stroke="#a7c0c9" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <g stroke="#2e3e46" stroke-width="5" fill="none"><path d="M40 92 Q220 70 400 92"/></g>
+  <g stroke="#2e3e46" stroke-width="4"><path d="M100 84 V112 M170 77 V112 M240 76 V112 M310 80 V112"/></g>
+  <g stroke="#c0573e" stroke-width="2"><path d="M178 86 V110"/></g>
+  <g fill="#f2efe6"><rect x="181" y="88" width="6" height="2"/><rect x="181" y="94" width="6" height="2"/><rect x="181" y="100" width="6" height="2"/><rect x="181" y="106" width="6" height="2"/></g>
+  <circle cx="205" cy="80" r="3" fill="#4fae6a"/><circle cx="150" cy="82" r="3" fill="#d4483a"/><circle cx="260" cy="81" r="3" fill="#d4483a"/>
+  <g transform="translate(860 136)">
+    <path d="M-62 0 L48 0 L62 -12 L-58 -12Z" fill="#f2efe6" stroke="#2e3e46" stroke-width="1.5"/>
+    <rect x="-34" y="-30" width="34" height="18" fill="#f2efe6" stroke="#2e3e46" stroke-width="1.5"/>
+    <rect x="-28" y="-25" width="9" height="6" fill="#557583"/><rect x="-14" y="-25" width="9" height="6" fill="#557583"/>
+    <path d="M-10 -30 L-48 -92 M-6 -30 L34 -90" stroke="#2e3e46" stroke-width="2"/>
+    <path d="M-10 -30 V-70" stroke="#2e3e46" stroke-width="2.5"/>
+    <path d="M-48 -92 L-60 0 M34 -90 L52 -2" stroke="#2e3e46" stroke-width="0.8" opacity="0.7"/>
+  </g>
+  <path d="M720 136 Q760 132 790 136" stroke="#e8f0f0" stroke-width="2" fill="none"/>
+</svg>

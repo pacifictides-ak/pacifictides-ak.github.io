@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120">
+  <title>Southeast Alaska salmon troller with poles out, and a king salmon below (original Pacific Tides artwork)</title>
+  <g opacity="0.22" stroke="#2e3e46" fill="none" stroke-width="2">
+    <path d="M30 70 L140 70 L156 58 L26 58Z" fill="#557583"/>
+    <rect x="58" y="40" width="34" height="18"/>
+    <path d="M74 40 V14"/>
+    <path d="M70 40 L18 6 M80 40 L166 8"/>
+    <path d="M18 6 L22 70 M166 8 L160 70" stroke-width="0.8"/>
+    <path d="M40 100 Q70 84 104 96 L118 88 L116 106 L104 100 Q70 112 40 100Z" fill="#8c9aa4"/>
+    <circle cx="50" cy="97" r="1.6" fill="#2e3e46"/>
+  </g>
+</svg>
