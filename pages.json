@@ -2,6 +2,20 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Ketchikan, AK tide predictions (Tongass Narrows / Southern Southeast Alaska)",
+      "path": "pages/ketchikan-tides.html",
+      "date_added": "2026-11-14",
+      "station": "9450460",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450460",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz036.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz641.txt",
+        "https://www.ketchikan.gov/port-harbors",
+        "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-162/section-162.240"
+      ]
+    },
+    {
       "title": "Cordova, AK tide predictions (Orca Inlet / eastern Prince William Sound)",
       "path": "pages/cordova-tides.html",
       "date_added": "2026-11-12",

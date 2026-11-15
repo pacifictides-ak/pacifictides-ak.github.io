@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice">
+  <title>Tongass Narrows at Ketchikan: Deer Mountain above town, Creek Street houses on pilings, a floatplane landing in the Narrows, a purse seiner heading for Thomas Basin, and Southeast rain (original Pacific Tides artwork)</title>
+  <rect width="1200" height="180" fill="#dfe7e4"/>
+  <path d="M0 108 L90 80 L170 88 L240 70 L320 92 L380 108Z" fill="#7f938c"/>
+  <path d="M300 108 L420 54 L470 30 L512 22 L556 34 L620 58 L720 108Z" fill="#4f6a62"/>
+  <path d="M470 30 L512 22 L556 34 L536 44 L512 36 L490 46Z" fill="#f4f7f6"/>
+  <path d="M700 108 L780 76 L860 86 L950 62 L1040 80 L1120 70 L1200 84 L1200 108Z" fill="#6f8780"/>
+  <g fill="#2f4741" opacity="0.85"><path d="M330 108 l6 -18 l6 18Z M352 108 l7 -22 l7 22Z M376 108 l5 -15 l5 15Z M700 108 l6 -18 l6 18Z M724 108 l5 -14 l5 14Z M1080 108 l6 -20 l6 20Z M1104 108 l5 -15 l5 15Z"/></g>
+  <g fill="#9b4a3a"><rect x="410" y="86" width="26" height="16"/><rect x="442" y="82" width="22" height="20" fill="#c9a24a"/><rect x="470" y="88" width="24" height="14" fill="#3e6f8e"/><rect x="500" y="84" width="20" height="18"/><rect x="526" y="87" width="26" height="15" fill="#6c8a4a"/></g>
+  <g fill="#3a2e28"><path d="M408 80 l15 -8 l15 8Z M440 76 l13 -7 l13 7Z M468 82 l14 -7 l14 7Z M498 78 l12 -7 l12 7Z M524 81 l15 -8 l15 8Z"/></g>
+  <g stroke="#3a2e28" stroke-width="2"><path d="M414 102 v10 M430 102 v10 M446 102 v10 M460 102 v10 M476 102 v10 M490 102 v10 M504 102 v10 M516 102 v10 M532 102 v10 M548 102 v10"/></g>
+  <rect y="108" width="1200" height="72" fill="#3f6a6e"/>
+  <path d="M0 124 Q300 118 600 124 T1200 122" stroke="#9cc0bf" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M0 152 Q300 146 600 152 T1200 150" stroke="#9cc0bf" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <g transform="translate(820 34)">
+    <path d="M0 14 L70 10 L78 4 L82 4 L80 14 L60 18 L8 20Z" fill="#c8402f"/>
+    <path d="M24 12 L44 -6 L52 -6 L40 12Z M28 16 L50 30 L56 30 L42 16Z" fill="#a8301f"/>
+    <path d="M14 20 L10 30 M54 18 L56 30" stroke="#2b2b2b" stroke-width="2"/>
+    <path d="M2 31 L64 31 L70 28 L6 28Z" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="1"/>
+    <circle cx="0" cy="14" r="2" fill="#2b2b2b"/>
+  </g>
+  <path d="M760 128 q30 -4 60 0" stroke="#e6f0ef" stroke-width="2" fill="none" opacity="0.8"/>
+  <g transform="translate(160 112)">
+    <path d="M0 10 L96 10 L88 26 L8 26Z" fill="#2c3a3f"/>
+    <rect x="52" y="-6" width="26" height="16" fill="#eef2f0"/>
+    <path d="M30 10 L30 -30 M30 -26 L70 -6" stroke="#2c3a3f" stroke-width="2.5"/>
+    <path d="M14 4 q8 -10 16 0 q8 -10 16 0" stroke="#c9a24a" stroke-width="3" fill="none"/>
+    <path d="M-30 16 L-8 16 L-12 24 L-26 24Z" fill="#c8402f"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="1.2" opacity="0.35"><path d="M60 0 l-14 40 M140 10 l-14 40 M260 0 l-14 40 M620 6 l-14 40 M700 0 l-14 40 M980 4 l-14 40 M1100 0 l-14 40 M1160 20 l-14 40"/></g>
+</svg>

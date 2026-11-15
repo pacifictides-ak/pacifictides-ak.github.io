@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 90">
+  <title>Southeast purse seiner with its power skiff and a pink salmon (original Pacific Tides artwork)</title>
+  <g opacity="0.22">
+    <path d="M20 58 L130 58 L120 76 L30 76Z" fill="#2c3a3f"/>
+    <rect x="80" y="38" width="30" height="20" fill="#2c3a3f"/>
+    <path d="M50 58 L50 14 M50 18 L100 38" stroke="#2c3a3f" stroke-width="3"/>
+    <ellipse cx="70" cy="34" rx="16" ry="8" fill="none" stroke="#2c3a3f" stroke-width="3"/>
+    <path d="M136 64 L164 64 L160 74 L140 74Z" fill="#c8402f"/>
+    <path d="M10 84 Q60 78 110 84 T180 82" stroke="#3f6a6e" stroke-width="2" fill="none"/>
+    <path d="M120 22 q14 -10 30 0 q-14 10 -30 0Z M150 22 l10 -6 l0 12Z" fill="#b5707a"/>
+  </g>
+</svg>

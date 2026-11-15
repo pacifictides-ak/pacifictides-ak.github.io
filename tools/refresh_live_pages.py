@@ -17,6 +17,7 @@ PORTS = [
  ("kenai","9455742",["pkz740","pkz742"],["KNXA2","NKTA2","46108"]),
  ("cordova","9454050",["pkz725","pkz710"],["CRVA2","46060","46061"]),
  ("juneau","9452210",["pkz031","pkz013"],["JNEA2","PTLA2","SCXA2"]),
+ ("ketchikan","9450460",["pkz036","pkz641"],["KECA2","GIXA2","MRYA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -36,6 +37,9 @@ BUOY_NAMES = {
  "JNEA2": "Juneau (JNEA2, NOAA 9452210)",
  "PTLA2": "Portland Island (PTLA2, off Auke Bay)",
  "SCXA2": "Scull Island (SCXA2, Stephens Passage)",
+ "KECA2": "Ketchikan (KECA2, NOAA 9450460)",
+ "GIXA2": "Guard Island (GIXA2, Marine Exchange of Alaska, north end of Tongass Narrows)",
+ "MRYA2": "Mary Island (MRYA2, Marine Exchange of Alaska, Revillagigedo Channel)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)
@@ -67,6 +71,11 @@ def tides(station):
     return "\n".join(out), len(preds)
 def forecast(zone):
     txt = cached(f"https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/{zone}.txt")
+    ex = re.search(r"^Expires:(\d{12})", txt, re.M)
+    if ex:
+        exp = datetime.datetime.strptime(ex.group(1), "%Y%m%d%H%M").replace(tzinfo=datetime.timezone.utc)
+        if exp < datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=2):
+            raise RuntimeError(f"stale NWS product {zone} (expired {exp:%Y-%m-%d}); zone may have been renumbered")
     m = re.search(rf"^{zone.upper()}-\d+-\n(.*?)\n\$\$", txt, re.S|re.M)
     blk = m.group(1).strip().split("\n")
     name = blk[0].rstrip("-"); issued = blk[1].strip()
