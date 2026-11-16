@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110" role="img" aria-label="Sitka hand troller with trolling poles out and a gull overhead" opacity="0.28">
+  <path d="M90 26 L90 70" stroke="#2b3c45" stroke-width="3"/>
+  <path d="M90 30 L12 64 M90 30 L168 64" stroke="#2b3c45" stroke-width="2"/>
+  <path d="M12 64 L14 96 M168 64 L166 96" stroke="#2b3c45" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="78" y="58" width="34" height="18" fill="#c8402f"/>
+  <path d="M40 76 L150 76 L138 94 L50 94 Z" fill="#f4f2ec" stroke="#2b3c45" stroke-width="2"/>
+  <path d="M30 100 Q50 96 70 100 T110 100 T150 100" stroke="#5f8796" stroke-width="2" fill="none"/>
+  <path d="M120 14 q6 -6 12 0 q6 -6 12 0" stroke="#2b3c45" stroke-width="1.5" fill="none"/>
+</svg>

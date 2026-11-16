@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Sitka Sound: Mount Edgecumbe across the water, forested islands, the O'Connell Bridge, St. Michael's onion dome, and a troller heading out">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9e4ea"/><stop offset="1" stop-color="#f1ece2"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f8796"/><stop offset="1" stop-color="#2f5566"/></linearGradient>
+  </defs>
+  <rect width="1200" height="180" fill="url(#sky)"/>
+  <!-- Mount Edgecumbe: broad truncated volcanic cone with snow cap -->
+  <path d="M120 122 L330 60 Q352 52 374 52 L392 52 Q414 52 436 60 L650 122 Z" fill="#7d8f98"/>
+  <path d="M318 64 Q352 50 374 50 L392 50 Q416 50 448 64 L428 70 L410 64 L392 72 L376 63 L356 71 L338 65 Z" fill="#fbfbf8"/>
+  <!-- Baranof mountains behind town -->
+  <path d="M760 122 L840 70 L880 88 L930 46 L990 84 L1040 62 L1110 100 L1200 80 L1200 122 Z" fill="#6b7d70"/>
+  <path d="M918 56 L930 46 L944 58 L936 62 Z M1032 68 L1040 62 L1050 70 Z" fill="#fbfbf8"/>
+  <!-- sea -->
+  <rect y="120" width="1200" height="60" fill="url(#sea)"/>
+  <!-- forested islands in the Sound -->
+  <path d="M40 124 Q70 104 110 112 Q140 104 170 124 Z" fill="#2f4a3a"/>
+  <path d="M470 125 Q500 110 530 116 Q560 108 590 125 Z" fill="#2f4a3a"/>
+  <path d="M640 126 Q660 116 690 120 Q705 116 720 126 Z" fill="#35523f"/>
+  <!-- O'Connell Bridge (cable-stayed) -->
+  <g stroke="#e9ecea" stroke-width="2" fill="none">
+    <path d="M700 132 L900 132"/>
+    <path d="M800 132 L800 98"/>
+    <path d="M800 100 L720 132 M800 100 L740 132 M800 100 L760 132 M800 100 L840 132 M800 100 L860 132 M800 100 L880 132"/>
+  </g>
+  <!-- St. Michael's Cathedral onion dome + town -->
+  <g fill="#f3efe6">
+    <rect x="930" y="106" width="34" height="18"/>
+    <rect x="975" y="110" width="26" height="14"/>
+    <rect x="1010" y="104" width="40" height="20"/>
+    <rect x="1060" y="112" width="30" height="12"/>
+  </g>
+  <rect x="1012" y="96" width="10" height="10" fill="#f3efe6"/>
+  <path d="M1017 80 Q1008 88 1010 95 L1024 95 Q1026 88 1017 80 Z" fill="#3b6f5e"/>
+  <path d="M1017 72 L1017 80" stroke="#c9a443" stroke-width="2"/>
+  <path d="M1013 75 L1021 75" stroke="#c9a443" stroke-width="1.5"/>
+  <!-- troller with poles -->
+  <g transform="translate(250 136)">
+    <path d="M0 10 L70 10 L62 22 L8 22 Z" fill="#f4f2ec" stroke="#2b3c45" stroke-width="1.5"/>
+    <rect x="34" y="0" width="20" height="10" fill="#c8402f"/>
+    <path d="M44 0 L44 -26" stroke="#2b3c45" stroke-width="2"/>
+    <path d="M44 -24 L-20 -2 M44 -24 L110 -2" stroke="#2b3c45" stroke-width="1.5"/>
+  </g>
+  <path d="M0 150 Q30 146 60 150 T120 150 T180 150 M420 160 Q450 156 480 160 T540 160 M900 156 Q930 152 960 156 T1020 156" stroke="#9fbcc6" stroke-width="1.5" fill="none" opacity="0.7"/>
+</svg>

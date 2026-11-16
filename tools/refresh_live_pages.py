@@ -18,6 +18,7 @@ PORTS = [
  ("cordova","9454050",["pkz725","pkz710"],["CRVA2","46060","46061"]),
  ("juneau","9452210",["pkz031","pkz013"],["JNEA2","PTLA2","SCXA2"]),
  ("ketchikan","9450460",["pkz036","pkz641"],["KECA2","GIXA2","MRYA2"]),
+ ("sitka","9451600",["pkz642","pkz643"],["ITKA2","SHXA2","46084"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -40,6 +41,9 @@ BUOY_NAMES = {
  "KECA2": "Ketchikan (KECA2, NOAA 9450460)",
  "GIXA2": "Guard Island (GIXA2, Marine Exchange of Alaska, north end of Tongass Narrows)",
  "MRYA2": "Mary Island (MRYA2, Marine Exchange of Alaska, Revillagigedo Channel)",
+ "ITKA2": "Sitka (ITKA2, NOAA 9451600)",
+ "SHXA2": "Sitka Harbor (SHXA2, Marine Exchange of Alaska)",
+ "46084": "Cape Edgecumbe buoy (46084, 25 NM SSW of Cape Edgecumbe)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)
