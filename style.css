@@ -736,3 +736,31 @@ body.port-sitka #local-directory {
   body.port-sitka .sitka-mast { display: none; }
   body.port-sitka .sitka-callout, body.port-sitka #local-directory { background-image: none; }
 }
+
+/* Wrangell (Stikine / Shakes Island / Marine Service Center) — unique per-port graphics (original SVG artwork) */
+body.port-wrangell .port-photo-pair__label { border-left: 3px solid #36595a; }
+body.port-wrangell .wrangell-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #e2e9ec url("assets/ports/wrangell/wrangell-harbor-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-wrangell .wrangell-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #36595a;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f0f4f3 url("assets/ports/wrangell/wrangell-tidal-grid.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-wrangell #local-directory {
+  background-image: url("assets/ports/wrangell/wrangell-travelift.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 150px auto;
+}
+@media print {
+  body.port-wrangell .wrangell-mast { display: none; }
+  body.port-wrangell .wrangell-callout, body.port-wrangell #local-directory { background-image: none; }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110" role="img" aria-label="A marine travel lift carrying a fishing boat in slings">
+  <g fill="#36595a"><rect x="20" y="14" width="10" height="84"/><rect x="150" y="14" width="10" height="84"/><rect x="20" y="10" width="140" height="10"/></g>
+  <g stroke="#2b3c45" stroke-width="1.5"><path d="M50 20 V58"/><path d="M130 20 V58"/></g>
+  <path d="M38 58 Q90 80 142 58" stroke="#c45a3a" stroke-width="3" fill="none"/>
+  <path d="M40 50 L140 50 L128 68 L52 68 Z" fill="#f4f1ea" stroke="#2b3c45" stroke-width="1.5"/>
+  <rect x="70" y="36" width="28" height="14" fill="#f4f1ea" stroke="#2b3c45" stroke-width="1.5"/>
+  <g fill="#2b3c45"><circle cx="25" cy="102" r="6"/><circle cx="155" cy="102" r="6"/></g>
+</svg>

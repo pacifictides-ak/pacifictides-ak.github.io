@@ -2,6 +2,21 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Wrangell, AK tide predictions (Wrangell Harbor / Zimovia & Stikine Straits, Southeast Alaska)",
+      "path": "pages/wrangell-tides.html",
+      "date_added": "2026-11-16",
+      "station": "9451204",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451204",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz036.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz035.txt",
+        "https://wrangellportsandharbors.com/harbors",
+        "https://wrangellportsandharbors.com/msc",
+        "https://wrangellportsandharbors.com/vendors"
+      ]
+    },
+    {
       "title": "Sitka, AK tide predictions (Sitka Sound / Baranof Island outer coast)",
       "path": "pages/sitka-tides.html",
       "date_added": "2026-11-15",

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" role="img" aria-label="A boat resting on a tidal grid at low water, with a tide-height mark">
+  <rect x="0" y="40" width="72" height="8" fill="#b8ad98"/>
+  <g fill="#6b5a48"><rect x="10" y="30" width="4" height="12"/><rect x="30" y="30" width="4" height="12"/><rect x="50" y="30" width="4" height="12"/></g>
+  <rect x="8" y="29" width="50" height="3" fill="#8a6a48"/>
+  <path d="M6 28 L60 28 L54 18 L12 18 Z" fill="#f4f1ea" stroke="#2b3c45" stroke-width="1.2"/>
+  <rect x="26" y="9" width="14" height="9" fill="#f4f1ea" stroke="#2b3c45" stroke-width="1.2"/>
+  <rect x="64" y="6" width="3" height="36" fill="#36595a"/>
+  <g stroke="#36595a" stroke-width="1"><path d="M62 12 h7"/><path d="M62 22 h7"/><path d="M62 32 h7"/></g>
+</svg>

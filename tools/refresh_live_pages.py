@@ -19,6 +19,7 @@ PORTS = [
  ("juneau","9452210",["pkz031","pkz013"],["JNEA2","PTLA2","SCXA2"]),
  ("ketchikan","9450460",["pkz036","pkz641"],["KECA2","GIXA2","MRYA2"]),
  ("sitka","9451600",["pkz642","pkz643"],["ITKA2","SHXA2","46084"]),
+ ("wrangell","9451204",["pkz036","pkz035"],["WGXA2","SPXA2","CDEA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -44,6 +45,9 @@ BUOY_NAMES = {
  "ITKA2": "Sitka (ITKA2, NOAA 9451600)",
  "SHXA2": "Sitka Harbor (SHXA2, Marine Exchange of Alaska)",
  "46084": "Cape Edgecumbe buoy (46084, 25 NM SSW of Cape Edgecumbe)",
+ "WGXA2": "Wrangell Harbor (WGXA2, Marine Exchange of Alaska)",
+ "SPXA2": "Ship Island (SPXA2, Marine Exchange of Alaska, Clarence Strait)",
+ "CDEA2": "Cape Decision (CDEA2, NWS, mouth of Sumner Strait)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)

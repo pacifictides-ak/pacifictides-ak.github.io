@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Wrangell harbor basin: Coast Mountains over the Stikine flats, Mount Dewey above town, the Chief Shakes Tribal House on Shakes Island, and a gillnetter at the float">
+  <defs>
+    <linearGradient id="wsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe6ea"/><stop offset="1" stop-color="#f3eee4"/></linearGradient>
+    <linearGradient id="wsea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a8c86"/><stop offset="1" stop-color="#36595a"/></linearGradient>
+  </defs>
+  <rect width="1200" height="180" fill="url(#wsky)"/>
+  <!-- Coast Mountains (Stikine side) with snow -->
+  <path d="M560 118 L640 58 L690 84 L760 36 L830 80 L890 54 L960 92 L1040 50 L1120 88 L1200 70 L1200 118 Z" fill="#8a98a0"/>
+  <path d="M748 46 L760 36 L774 48 L764 52 Z M1028 60 L1040 50 L1054 62 L1042 64 Z M880 62 L890 54 L900 63 Z" fill="#fbfbf8"/>
+  <!-- Mount Dewey / forested hill above town -->
+  <path d="M0 122 L0 70 Q90 40 180 64 Q240 78 300 104 L380 122 Z" fill="#3e5a46"/>
+  <!-- town buildings on the shore -->
+  <g fill="#c9b9a0" stroke="#6b5a48" stroke-width="1">
+    <rect x="60" y="104" width="26" height="16"/><rect x="92" y="100" width="20" height="20"/><rect x="118" y="106" width="30" height="14"/><rect x="154" y="102" width="18" height="18"/>
+  </g>
+  <!-- water -->
+  <rect y="120" width="1200" height="60" fill="url(#wsea)"/>
+  <!-- Shakes Island with tribal house and totem -->
+  <path d="M420 128 Q470 112 540 116 Q590 118 620 130 Z" fill="#4f6b45"/>
+  <path d="M470 118 L500 104 L530 118 Z" fill="#7b5a3c"/>
+  <rect x="474" y="118" width="52" height="10" fill="#8a6a48"/>
+  <rect x="494" y="120" width="12" height="8" fill="#2d2420"/>
+  <rect x="548" y="92" width="6" height="28" fill="#9b3d2c"/>
+  <circle cx="551" cy="96" r="4" fill="#2d2420"/>
+  <!-- footbridge -->
+  <path d="M380 126 L430 124" stroke="#8a6a48" stroke-width="3"/>
+  <!-- float and gillnetter -->
+  <rect x="740" y="136" width="230" height="5" fill="#b8ad98"/>
+  <path d="M790 136 L900 136 L890 150 L800 150 Z" fill="#f4f1ea" stroke="#2b3c45" stroke-width="1.5"/>
+  <rect x="820" y="122" width="30" height="14" fill="#f4f1ea" stroke="#2b3c45" stroke-width="1.5"/>
+  <path d="M862 136 L880 118 L888 136 Z" fill="#c45a3a"/>
+  <path d="M852 108 L852 122" stroke="#2b3c45" stroke-width="2"/>
+  <!-- tide marks on piling -->
+  <rect x="1020" y="104" width="10" height="56" fill="#6b5a48"/>
+  <g stroke="#fbfbf8" stroke-width="1.5"><path d="M1018 112 h14"/><path d="M1018 124 h14"/><path d="M1018 136 h14"/></g>
+  <g stroke="#cfdde2" stroke-width="1.2" fill="none" opacity="0.7"><path d="M0 160 Q40 156 80 160 T160 160 T240 160"/><path d="M620 168 Q660 164 700 168 T780 168"/></g>
+</svg>
