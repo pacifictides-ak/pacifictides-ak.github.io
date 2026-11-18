@@ -2,6 +2,28 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Prince William Sound tides & ports overview (Whittier, Valdez, Cordova, Tatitlek, Chenega Bay)",
+      "path": "pages/prince-william-sound-tides.html",
+      "date_added": "2026-11-17",
+      "station": "9454949,9454240,9454050,9454374,9454764",
+      "sources": [
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz720.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz721.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz722.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz723.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz724.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz725.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz726.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz711.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz710.txt",
+        "https://api.weather.gov/zones",
+        "https://www.ndbc.noaa.gov/",
+        "https://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareapws.main"
+      ]
+    },
+    {
       "title": "Wrangell, AK tide predictions (Wrangell Harbor / Zimovia & Stikine Straits, Southeast Alaska)",
       "path": "pages/wrangell-tides.html",
       "date_added": "2026-11-16",

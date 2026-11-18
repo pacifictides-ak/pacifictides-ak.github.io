@@ -149,3 +149,7 @@ for slug, station, zones, buoys in PORTS:
     open(path,"w").write(s)
     report.append((slug, n, issued_all, oks))
 for r in report: print(r)
+# Prince William Sound overview (multi-station page) has its own builder; rebuild it on full runs.
+if not only or "prince-william-sound" in only:
+    import subprocess, os
+    subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_pws_overview.py")], check=True)

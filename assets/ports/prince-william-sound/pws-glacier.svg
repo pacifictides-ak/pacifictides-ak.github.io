@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="Tidewater glacier face with floating ice">
+  <path d="M0 52 L22 14 L44 30 L66 8 L92 32 L120 20 L120 56 L0 56 Z" fill="#9fb2bd"/>
+  <path d="M40 56 L66 8 L80 22 L86 56 Z" fill="#e3f3f8" stroke="#8fc0cf"/>
+  <rect y="56" width="120" height="24" fill="#4f7d8f"/>
+  <path d="M50 64 l6 -4 l7 4 Z M72 70 l5 -3 l6 3 Z M34 70 l4 -3 l5 3 Z" fill="#eef8fb"/>
+</svg>

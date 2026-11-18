@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Prince William Sound: Chugach Mountains and a tidewater glacier above island-dotted water, with a purse seiner and a ferry crossing between Whittier, Valdez and Cordova">
+  <defs>
+    <linearGradient id="psky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9e4ec"/><stop offset="1" stop-color="#f1efe8"/></linearGradient>
+    <linearGradient id="psea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f7d8f"/><stop offset="1" stop-color="#244f63"/></linearGradient>
+    <linearGradient id="pice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#bfe0ea"/></linearGradient>
+  </defs>
+  <rect width="1200" height="180" fill="url(#psky)"/>
+  <!-- Chugach Mountains -->
+  <path d="M0 112 L70 62 L130 88 L210 34 L290 80 L360 50 L430 92 L520 40 L600 84 L680 30 L760 76 L840 46 L920 90 L1010 38 L1090 82 L1200 52 L1200 120 L0 120 Z" fill="#7d8f9a"/>
+  <path d="M198 44 L210 34 L224 46 L212 50 Z M508 50 L520 40 L534 52 L522 55 Z M668 40 L680 30 L694 42 L682 46 Z M998 48 L1010 38 L1024 50 L1012 53 Z M348 58 L360 50 L372 60 Z" fill="#fbfbf8"/>
+  <!-- tidewater glacier tongue (Columbia-style) -->
+  <path d="M600 84 L680 30 L700 44 L720 120 L640 120 Z" fill="url(#pice)" stroke="#9cc6d4" stroke-width="1"/>
+  <path d="M640 120 L720 120 L716 110 L646 110 Z" fill="#e8f5f9" stroke="#9cc6d4" stroke-width="1"/>
+  <!-- forested islands -->
+  <path d="M0 124 Q60 104 140 120 L160 126 L0 126 Z" fill="#35523f"/>
+  <path d="M860 126 Q930 102 1010 118 Q1050 122 1080 126 Z" fill="#3a5a45"/>
+  <path d="M300 128 Q340 114 390 126 Z" fill="#3f5f4a"/>
+  <!-- water -->
+  <rect y="124" width="1200" height="56" fill="url(#psea)"/>
+  <!-- icebergs -->
+  <path d="M700 134 l10 -6 l12 6 Z M740 142 l7 -4 l8 4 Z M668 146 l6 -4 l7 4 Z" fill="#eef8fb"/>
+  <!-- purse seiner with skiff and corkline -->
+  <g transform="translate(430 136)">
+    <path d="M0 10 L70 10 L62 22 L6 22 Z" fill="#1d3550"/>
+    <rect x="40" y="0" width="20" height="10" fill="#f2efe6" stroke="#1d3550" stroke-width="1"/>
+    <path d="M18 10 L18 -18 M18 -14 L44 0" stroke="#1d3550" stroke-width="2" fill="none"/>
+    <path d="M70 18 Q130 30 190 18 Q230 10 250 22" stroke="#f3e9b5" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+    <path d="M246 16 L266 16 L262 24 L248 24 Z" fill="#c4502f"/>
+  </g>
+  <!-- ferry -->
+  <g transform="translate(150 138)">
+    <path d="M0 10 L110 10 L100 22 L8 22 Z" fill="#f4f1ea" stroke="#244f63" stroke-width="1"/>
+    <rect x="20" y="0" width="64" height="10" fill="#f4f1ea" stroke="#244f63" stroke-width="1"/>
+    <rect x="54" y="-8" width="10" height="8" fill="#2b4c7e"/>
+    <path d="M8 18 L100 18" stroke="#2b4c7e" stroke-width="2"/>
+  </g>
+  <!-- three port markers -->
+  <g font-family="Georgia, serif" font-size="13" fill="#f4f1ea">
+    <circle cx="70" cy="168" r="4" fill="#f3e9b5"/><text x="80" y="172">Whittier</text>
+    <circle cx="560" cy="168" r="4" fill="#f3e9b5"/><text x="570" y="172">Valdez</text>
+    <circle cx="1040" cy="168" r="4" fill="#f3e9b5"/><text x="1050" y="172">Cordova</text>
+  </g>
+</svg>

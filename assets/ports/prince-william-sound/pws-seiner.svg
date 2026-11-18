@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 90" role="img" aria-label="Purse seiner setting a corkline with its skiff">
+  <path d="M0 70 Q45 62 90 70 T180 70 L180 90 L0 90 Z" fill="#dbe8ee"/>
+  <path d="M20 58 L88 58 L80 72 L26 72 Z" fill="#244f63"/>
+  <rect x="56" y="46" width="22" height="12" fill="#f4f1ea" stroke="#244f63"/>
+  <path d="M36 58 L36 26 M36 30 L64 46" stroke="#244f63" stroke-width="2.5" fill="none"/>
+  <circle cx="44" cy="40" r="5" fill="none" stroke="#244f63" stroke-width="2"/>
+  <path d="M88 66 Q120 78 150 64 Q164 58 170 66" stroke="#c9a227" stroke-width="2.5" stroke-dasharray="4 3" fill="none"/>
+  <path d="M160 60 L178 60 L174 68 L162 68 Z" fill="#c4502f"/>
+</svg>
