@@ -793,3 +793,31 @@ body.port-pws #pws-compare td { font-size: 0.88rem; vertical-align: top; }
   body.port-pws .pws-mast { display: none; }
   body.port-pws .pws-callout, body.port-pws #local-directory { background-image: none; }
 }
+
+/* Yakutat (St. Elias / Hubbard Glacier / outside coast) — unique per-port graphics (original SVG artwork) */
+body.port-yakutat .port-photo-pair__label { border-left: 3px solid #2b4f60; }
+body.port-yakutat .yakutat-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #dfe8ee url("assets/ports/yakutat/yakutat-bay-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-yakutat .yakutat-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #2b4f60;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #eef4f6 url("assets/ports/yakutat/yakutat-swell-bar.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-yakutat #local-directory {
+  background-image: url("assets/ports/yakutat/yakutat-troller.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 150px auto;
+}
+@media print {
+  body.port-yakutat .yakutat-mast { display: none; }
+  body.port-yakutat .yakutat-callout, body.port-yakutat #local-directory { background-image: none; }
+}

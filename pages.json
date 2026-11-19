@@ -2,6 +2,24 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Yakutat, AK tide predictions (Monti Bay / Yakutat Bay, Gulf of Alaska outside coast)",
+      "path": "pages/yakutat-tides.html",
+      "date_added": "2026-11-18",
+      "station": "9453220",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9453220",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz053.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz651.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz652.txt",
+        "https://api.weather.gov/zones",
+        "https://www.ndbc.noaa.gov/station_page.php?station=YATA2",
+        "https://www.ndbc.noaa.gov/station_page.php?station=46083",
+        "https://www.yakutatak.us/yakutat-harbor",
+        "https://www.deltawestern.com/our-sites"
+      ]
+    },
+    {
       "title": "Prince William Sound tides & ports overview (Whittier, Valdez, Cordova, Tatitlek, Chenega Bay)",
       "path": "pages/prince-william-sound-tides.html",
       "date_added": "2026-11-17",

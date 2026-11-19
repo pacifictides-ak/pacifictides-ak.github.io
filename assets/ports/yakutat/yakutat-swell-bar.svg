@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" role="img" aria-label="Gulf of Alaska swell lines rolling past Ocean Cape into Monti Bay">
+  <rect width="72" height="48" rx="6" fill="#eef4f6"/>
+  <path d="M4 34 Q14 24 24 34 T44 34 T64 34" stroke="#2b4f60" stroke-width="2.4" fill="none"/>
+  <path d="M4 42 Q14 32 24 42 T44 42 T64 42" stroke="#5f8798" stroke-width="2" fill="none"/>
+  <path d="M46 22 L58 8 L68 22 Z" fill="#2f4a3c"/>
+  <circle cx="62" cy="6" r="2.2" fill="#e0b13c"/>
+  <path d="M6 14 L22 14 M10 18 L20 18" stroke="#8b9aa6" stroke-width="1.6"/>
+</svg>

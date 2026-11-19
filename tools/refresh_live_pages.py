@@ -20,6 +20,7 @@ PORTS = [
  ("ketchikan","9450460",["pkz036","pkz641"],["KECA2","GIXA2","MRYA2"]),
  ("sitka","9451600",["pkz642","pkz643"],["ITKA2","SHXA2","46084"]),
  ("wrangell","9451204",["pkz036","pkz035"],["WGXA2","SPXA2","CDEA2"]),
+ ("yakutat","9453220",["pkz053","pkz651","pkz652"],["YATA2","46083","46082"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -48,6 +49,9 @@ BUOY_NAMES = {
  "WGXA2": "Wrangell Harbor (WGXA2, Marine Exchange of Alaska)",
  "SPXA2": "Ship Island (SPXA2, Marine Exchange of Alaska, Clarence Strait)",
  "CDEA2": "Cape Decision (CDEA2, NWS, mouth of Sumner Strait)",
+ "YATA2": "Yakutat (YATA2, NOAA 9453220, Monti Bay)",
+ "46083": "Fairweather Ground buoy (46083, offshore SE of Yakutat)",
+ "46082": "Cape Suckling buoy (46082, Gulf of Alaska west of Icy Bay)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)
@@ -100,6 +104,8 @@ def obs(st):
     if not rows: return None
     r = rows[0]
     t = datetime.datetime(int(r[0]),int(r[1]),int(r[2]),int(r[3]),int(r[4]),tzinfo=datetime.timezone.utc).astimezone(AK)
+    if datetime.datetime.now(AK) - t > datetime.timedelta(hours=24):
+        return None  # stale report (buoy adrift/offline); show "unavailable" rather than old values
     parts=[]
     if r[5]!="MM": parts.append(f"wind {r[5]}°")
     if r[6]!="MM": parts.append(f"{float(r[6])*1.94384:.0f} kt")
@@ -142,7 +148,7 @@ for slug, station, zones, buoys in PORTS:
             fc.append(f"      <p><strong>{o[0]}</strong></p>")
             fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Observation time {o[1].strftime("%Y-%m-%d %H:%M")} AKST (converted to AKST). Attribution: NOAA NDBC station <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Snapshot fetched {fetched}.</p>')
         else:
-            fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Live values not cached on this page (realtime file unavailable at fetch {fetched}). Check the station page for current wind/seas: NOAA NDBC <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Also <a href="https://www.ndbc.noaa.gov/" rel="noopener">NDBC home</a>.</p>')
+            fc.append(f'      <p style="color:var(--muted);font-size:0.92rem;">Live values not cached on this page (no report in the 24 hours before fetch {fetched}, or realtime file unavailable). Check the station page for current wind/seas: NOAA NDBC <a href="https://www.ndbc.noaa.gov/station_page.php?station={buoy}" rel="noopener">{buoy}</a>. Also <a href="https://www.ndbc.noaa.gov/" rel="noopener">NDBC home</a>.</p>')
         time.sleep(1)
     s, k = re.subn(r'[ \t]*<h3>NWS marine forecast.*?(?=[ \t]*<h3>Harbor webcams</h3>)', "\n".join(fc)+"\n", s, count=1, flags=re.S)
     assert k==1, slug
