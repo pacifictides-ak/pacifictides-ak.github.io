@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Taiya Inlet at Skagway: steep fjord walls, AB Mountain with snow, a cruise ship at the ore dock, small boats in the harbor, and a White Pass train climbing the valley">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfdde6"/><stop offset="1" stop-color="#eef3f5"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f93a3"/><stop offset="1" stop-color="#3f6576"/></linearGradient>
+  </defs>
+  <rect width="1200" height="180" fill="url(#sky)"/>
+  <!-- AB Mountain and the Skagway valley peaks -->
+  <path d="M430 120 L560 34 L600 52 L640 22 L720 92 L800 64 L900 120 Z" fill="#8aa0ad"/>
+  <path d="M560 34 L582 46 L600 52 L612 44 L640 22 L660 40 L640 44 L622 56 L600 62 L580 54 Z" fill="#f7f9fa"/>
+  <!-- fjord walls, west (left) and east (right) -->
+  <path d="M0 40 L120 30 L260 70 L380 104 L470 140 L0 140 Z" fill="#3d5a4f"/>
+  <path d="M1200 30 L1080 26 L960 66 L860 106 L780 140 L1200 140 Z" fill="#35503f"/>
+  <path d="M0 70 L150 60 L300 100 L420 140 L0 140 Z" fill="#2c4437" opacity="0.8"/>
+  <!-- White Pass & Yukon Route train on the east wall -->
+  <path d="M900 104 Q980 82 1060 70 Q1120 62 1180 50" stroke="#2b2b2b" stroke-width="2" fill="none" stroke-dasharray="4 3" opacity="0.7"/>
+  <g transform="translate(985 74) rotate(-9)">
+    <rect x="0" y="0" width="16" height="7" fill="#2b2b2b"/><rect x="18" y="0" width="13" height="7" fill="#b8963a"/><rect x="33" y="0" width="13" height="7" fill="#b8963a"/><rect x="48" y="0" width="13" height="7" fill="#b8963a"/>
+  </g>
+  <!-- Taiya Inlet water -->
+  <rect y="138" width="1200" height="42" fill="url(#sea)"/>
+  <path d="M0 150 Q150 146 300 151 T600 150 T900 151 T1200 149" stroke="#a9c3cf" stroke-width="1.4" fill="none" opacity="0.7"/>
+  <!-- ore dock and a cruise ship -->
+  <rect x="300" y="133" width="210" height="6" fill="#6b6257"/>
+  <path d="M318 133 L500 133 L488 146 L330 146 Z" fill="#f4f1ea" stroke="#2b4f60" stroke-width="1.2"/>
+  <rect x="345" y="120" width="130" height="13" fill="#f4f1ea" stroke="#2b4f60" stroke-width="1"/>
+  <rect x="365" y="110" width="90" height="10" fill="#f4f1ea" stroke="#2b4f60" stroke-width="1"/>
+  <rect x="430" y="100" width="14" height="10" fill="#2b4f60"/>
+  <path d="M350 126 h120 M370 115 h80" stroke="#6f93a3" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- small boat harbor breakwater and boats -->
+  <path d="M640 138 L760 136 L770 140 L640 141 Z" fill="#6b6257"/>
+  <g fill="#f4f1ea" stroke="#2b4f60" stroke-width="1">
+    <path d="M660 136 l20 0 l-3 4 l-14 0 z"/><path d="M690 135 l24 0 l-3 5 l-18 0 z"/><path d="M724 136 l18 0 l-3 4 l-12 0 z"/>
+  </g>
+  <path d="M700 135 L700 124 M697 129 L686 136 M703 129 L714 136" stroke="#2b4f60" stroke-width="1"/>
+</svg>

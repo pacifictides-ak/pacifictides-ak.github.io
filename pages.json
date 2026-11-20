@@ -2,6 +2,22 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Skagway, AK tide predictions (Small Boat Harbor / Taiya Inlet & Northern Lynn Canal)",
+      "path": "pages/skagway-tides.html",
+      "date_added": "2026-11-19",
+      "station": "9452400",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452400",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz012.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz013.txt",
+        "https://www.skagway.org/harbor",
+        "https://www.skagway.org/harbor/page/rates",
+        "https://www.skagway.org/portofskagway",
+        "https://skagwaychamber.org/members-by-business-type"
+      ]
+    },
+    {
       "title": "Yakutat, AK tide predictions (Monti Bay / Yakutat Bay, Gulf of Alaska outside coast)",
       "path": "pages/yakutat-tides.html",
       "date_added": "2026-11-18",
