@@ -22,6 +22,7 @@ PORTS = [
  ("wrangell","9451204",["pkz036","pkz035"],["WGXA2","SPXA2","CDEA2"]),
  ("yakutat","9453220",["pkz053","pkz651","pkz652"],["YATA2","46083","46082"]),
  ("skagway","9452400",["pkz012","pkz013"],["SKTA2","SKXA2","SKDA2","HAXA2"]),
+ ("haines","9452435",["pkz012","pkz013"],["HAXA2","ERXA2","SKXA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -57,6 +58,7 @@ BUOY_NAMES = {
  "SKXA2": "Skagway Harbor (SKXA2, Marine Exchange of Alaska)",
  "SKDA2": "Skagway Ore Dock (SKDA2)",
  "HAXA2": "Haines Harbor (HAXA2, about 13 NM down Lynn Canal)",
+ "ERXA2": "Eldred Rock (ERXA2, Marine Exchange of Alaska, mid-Lynn Canal)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)

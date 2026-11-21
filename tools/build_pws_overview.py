@@ -400,6 +400,7 @@ page = f"""<!DOCTYPE html>
         <li><a href="wrangell-tides.html">Wrangell tides</a></li>
         <li><a href="yakutat-tides.html">Yakutat tides</a></li>
         <li><a href="skagway-tides.html">Skagway tides</a></li>
+        <li><a href="haines-tides.html">Haines tides</a></li>
         <li><a href="ketchikan-tides.html">Ketchikan tides</a></li>
         <li><a href="petersburg-tides.html">Petersburg tides</a></li>
         <li><a href="dutch-harbor-tides.html">Dutch Harbor tides</a></li>

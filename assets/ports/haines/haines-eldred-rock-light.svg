@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 110" role="img" aria-label="Eldred Rock Lighthouse, the octagonal 1906 light station in mid-Lynn Canal between Haines and Juneau">
+  <path d="M0 96 Q37 90 75 96 T150 96 L150 110 L0 110 Z" fill="#5f8797" opacity="0.55"/>
+  <path d="M20 96 Q40 80 75 82 Q110 80 130 96 Z" fill="#6b6b62"/>
+  <!-- octagonal two-story base -->
+  <path d="M46 84 L46 62 L56 56 L94 56 L104 62 L104 84 Z" fill="#f6f4ee" stroke="#6d6d6d" stroke-width="0.8"/>
+  <path d="M42 62 L56 52 L94 52 L108 62 Z" fill="#9b3b2e"/>
+  <g fill="#38535f"><rect x="54" y="66" width="6" height="8"/><rect x="72" y="66" width="6" height="8"/><rect x="90" y="66" width="6" height="8"/></g>
+  <!-- tower rising from roof -->
+  <rect x="68" y="30" width="14" height="24" fill="#f6f4ee" stroke="#6d6d6d" stroke-width="0.8"/>
+  <rect x="65" y="27" width="20" height="4" fill="#2f2f2f"/>
+  <rect x="69" y="16" width="12" height="11" fill="#ffe9a6" stroke="#2f2f2f" stroke-width="0.8"/>
+  <path d="M66 16 L75 8 L84 16 Z" fill="#9b3b2e"/>
+  <g stroke="#e2c15a" stroke-width="1" opacity="0.7"><line x1="81" y1="21" x2="132" y2="12"/><line x1="69" y1="21" x2="18" y2="12"/></g>
+</svg>

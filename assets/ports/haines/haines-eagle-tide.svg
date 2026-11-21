@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" role="img" aria-label="Bald eagle perched on a harbor piling with tide marks">
+  <rect x="44" y="18" width="10" height="30" fill="#7b6a55"/>
+  <g stroke="#2f5d6e" stroke-width="1.2"><line x1="40" y1="30" x2="58" y2="30"/><line x1="40" y1="36" x2="58" y2="36"/><line x1="40" y1="42" x2="58" y2="42"/></g>
+  <path d="M0 40 Q9 36 18 40 T36 40 T54 40 T72 40 L72 48 L0 48 Z" fill="#5f8797" opacity="0.8"/>
+  <path d="M40 18 Q42 8 49 6 Q56 8 58 18 Z" fill="#2a2620"/>
+  <circle cx="49" cy="6" r="4.2" fill="#ffffff" stroke="#bbb" stroke-width="0.4"/>
+  <path d="M52.5 5.6 L57 6.8 L52.6 7.6 Z" fill="#e2a72e"/>
+  <circle cx="50.6" cy="5.2" r="0.6" fill="#222"/>
+  <path d="M44 18 L42 22 L46 20 Z M54 18 L56 22 L52 20 Z" fill="#e2a72e"/>
+  <path d="M46 18 L49 24 L52 18 Z" fill="#f5f5f2"/>
+  <text x="2" y="12" font-family="Georgia, serif" font-size="8" fill="#2f5d6e">+20</text>
+  <text x="2" y="34" font-family="Georgia, serif" font-size="8" fill="#9b3b2e">−4</text>
+</svg>

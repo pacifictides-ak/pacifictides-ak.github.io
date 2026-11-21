@@ -2,6 +2,22 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Haines, AK tide predictions (Portage Cove Small Boat Harbor / Chilkoot Inlet & Northern Lynn Canal)",
+      "path": "pages/haines-tides.html",
+      "date_added": "2026-11-20",
+      "station": "9452435",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452435",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz012.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz013.txt",
+        "https://www.hainesalaska.gov/ports",
+        "https://www.hainesalaska.gov/ports/page/harbor-office-and-fuel-dock-hours",
+        "https://www.hainesalaska.gov/media/97576",
+        "https://www.haineschamber.org/members/"
+      ]
+    },
+    {
       "title": "Skagway, AK tide predictions (Small Boat Harbor / Taiya Inlet & Northern Lynn Canal)",
       "path": "pages/skagway-tides.html",
       "date_added": "2026-11-19",

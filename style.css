@@ -849,3 +849,31 @@ body.port-skagway #local-directory {
   body.port-skagway .skagway-mast { display: none; }
   body.port-skagway .skagway-callout, body.port-skagway #local-directory { background-image: none; }
 }
+
+/* Haines (Portage Cove / Fort Seward / Chilkat eagles / Eldred Rock) — unique per-port graphics (original SVG artwork) */
+body.port-haines .port-photo-pair__label { border-left: 3px solid #9b3b2e; }
+body.port-haines .haines-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #dbe5ec url("assets/ports/haines/haines-portage-cove-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-haines .haines-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #9b3b2e;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f5f2ec url("assets/ports/haines/haines-eagle-tide.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-haines #local-directory {
+  background-image: url("assets/ports/haines/haines-eldred-rock-light.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 120px auto;
+}
+@media print {
+  body.port-haines .haines-mast { display: none; }
+  body.port-haines .haines-callout, body.port-haines #local-directory { background-image: none; }
+}
