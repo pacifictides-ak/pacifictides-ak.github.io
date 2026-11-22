@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Outer-coast swell breaking on a rocky Prince of Wales headland with a spruce and a navigation light">
+  <path d="M0 92 Q20 84 40 92 T80 92 T120 92 L120 120 L0 120 Z" fill="#3f6f8a" opacity="0.55"/>
+  <path d="M0 104 Q20 96 40 104 T80 104 T120 104 L120 120 L0 120 Z" fill="#2f4a58" opacity="0.55"/>
+  <path d="M30 92 L48 60 L70 56 L92 92 Z" fill="#5d5a52"/>
+  <path d="M58 58 L64 30 L70 58 Z" fill="#3f5a4a"/>
+  <path d="M60 46 L64 22 L68 46 Z" fill="#3f5a4a"/>
+  <rect x="78" y="44" width="6" height="18" fill="#f2efe6" stroke="#2d3b44" stroke-width="1.5"/>
+  <rect x="76.5" y="40" width="9" height="5" fill="#9b3b2e"/>
+  <path d="M86 42 L110 34 M86 42 L110 50" stroke="#e8c46a" stroke-width="2" opacity="0.8"/>
+  <path d="M22 90 q6 -8 12 0" fill="none" stroke="#f2efe6" stroke-width="2"/>
+  <path d="M94 90 q6 -8 12 0" fill="none" stroke="#f2efe6" stroke-width="2"/>
+</svg>

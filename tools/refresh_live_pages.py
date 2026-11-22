@@ -23,6 +23,7 @@ PORTS = [
  ("yakutat","9453220",["pkz053","pkz651","pkz652"],["YATA2","46083","46082"]),
  ("skagway","9452400",["pkz012","pkz013"],["SKTA2","SKXA2","SKDA2","HAXA2"]),
  ("haines","9452435",["pkz012","pkz013"],["HAXA2","ERXA2","SKXA2"]),
+ ("craig","9450551",["pkz641","pkz036"],["CRGA2","46145","CDEA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -59,6 +60,8 @@ BUOY_NAMES = {
  "SKDA2": "Skagway Ore Dock (SKDA2)",
  "HAXA2": "Haines Harbor (HAXA2, about 13 NM down Lynn Canal)",
  "ERXA2": "Eldred Rock (ERXA2, Marine Exchange of Alaska, mid-Lynn Canal)",
+ "CRGA2": "Craig (CRGA2, NWS Juneau, Craig waterfront)",
+ "46145": "Central Dixon Entrance buoy (46145, Environment and Climate Change Canada, about 70 NM SE)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)

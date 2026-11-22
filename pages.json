@@ -2,6 +2,22 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Craig, AK tide predictions (North Cove & South Cove harbors / Bucareli Bay, Prince of Wales Island outer coast)",
+      "path": "pages/craig-tides.html",
+      "date_added": "2026-11-21",
+      "station": "9450551",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9450551",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz641.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz036.txt",
+        "https://www.craigak.com/harbor/page/harbors-moorage",
+        "https://www.craigak.com/harbor/page/boat-haul-outs",
+        "https://www.craigak.com/harbor/page/harbor-services-fee-schedule",
+        "https://discoverpowisland.com/local-business/"
+      ]
+    },
+    {
       "title": "Haines, AK tide predictions (Portage Cove Small Boat Harbor / Chilkoot Inlet & Northern Lynn Canal)",
       "path": "pages/haines-tides.html",
       "date_added": "2026-11-20",

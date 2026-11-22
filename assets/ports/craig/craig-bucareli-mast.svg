@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Craig waterfront: forested Prince of Wales hills, the old cannery on pilings, a salmon troller with poles out, and the swell of Bucareli Bay">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d6de"/><stop offset="1" stop-color="#e9eef0"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f7f8f"/><stop offset="1" stop-color="#2f4a58"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#sky)"/>
+  <path d="M0 120 L90 92 L170 104 L260 70 L360 98 L450 82 L560 108 L660 76 L770 100 L880 84 L990 106 L1100 88 L1200 100 L1200 150 L0 150 Z" fill="#7e93a0"/>
+  <path d="M0 138 L120 112 L230 126 L330 104 L430 122 L540 110 L650 128 L760 108 L880 126 L1000 112 L1120 124 L1200 116 L1200 160 L0 160 Z" fill="#3f5a4a"/>
+  <g fill="#2e463a">
+    <path d="M60 140 l8 -22 l8 22z M84 140 l7 -18 l7 18z M300 132 l9 -24 l9 24z M322 134 l7 -18 l7 18z M940 132 l9 -24 l9 24z M965 134 l7 -18 l7 18z M1130 132 l8 -22 l8 22z"/>
+  </g>
+  <!-- cannery on pilings -->
+  <g transform="translate(560 112)">
+    <rect x="0" y="10" width="150" height="34" fill="#8a7a66"/>
+    <path d="M-6 12 L75 -14 L156 12 Z" fill="#6b5d4e"/>
+    <rect x="160" y="18" width="80" height="26" fill="#9a8a74"/>
+    <path d="M156 20 L200 2 L244 20 Z" fill="#6b5d4e"/>
+    <rect x="-10" y="44" width="260" height="5" fill="#4c4036"/>
+    <g fill="#4c4036"><rect x="-6" y="49" width="3" height="16"/><rect x="20" y="49" width="3" height="16"/><rect x="46" y="49" width="3" height="16"/><rect x="72" y="49" width="3" height="16"/><rect x="98" y="49" width="3" height="16"/><rect x="124" y="49" width="3" height="16"/><rect x="150" y="49" width="3" height="16"/><rect x="176" y="49" width="3" height="16"/><rect x="202" y="49" width="3" height="16"/><rect x="228" y="49" width="3" height="16"/></g>
+  </g>
+  <rect y="160" width="1200" height="60" fill="url(#sea)"/>
+  <path d="M0 172 Q50 166 100 172 T200 172 T300 172 T400 172 T500 172 T600 172 T700 172 T800 172 T900 172 T1000 172 T1100 172 T1200 172" fill="none" stroke="#a9c0cb" stroke-width="2" opacity="0.6"/>
+  <path d="M0 196 Q60 189 120 196 T240 196 T360 196 T480 196 T600 196 T720 196 T840 196 T960 196 T1080 196 T1200 196" fill="none" stroke="#a9c0cb" stroke-width="2" opacity="0.4"/>
+  <!-- troller with poles out -->
+  <g transform="translate(250 150)">
+    <path d="M0 14 L110 14 L98 30 L10 30 Z" fill="#f2efe6" stroke="#2d3b44" stroke-width="2"/>
+    <rect x="62" y="0" width="30" height="14" fill="#f2efe6" stroke="#2d3b44" stroke-width="2"/>
+    <rect x="20" y="10" width="44" height="4" fill="#9b3b2e"/>
+    <line x1="40" y1="14" x2="-70" y2="-48" stroke="#2d3b44" stroke-width="2"/>
+    <line x1="44" y1="14" x2="150" y2="-50" stroke="#2d3b44" stroke-width="2"/>
+    <line x1="-70" y1="-48" x2="-80" y2="22" stroke="#2d3b44" stroke-width="1" opacity="0.6"/>
+    <line x1="150" y1="-50" x2="162" y2="22" stroke="#2d3b44" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

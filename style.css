@@ -877,3 +877,31 @@ body.port-haines #local-directory {
   body.port-haines .haines-mast { display: none; }
   body.port-haines .haines-callout, body.port-haines #local-directory { background-image: none; }
 }
+
+/* Craig (Bucareli Bay / outer-coast troll fleet / cannery heritage) — unique per-port graphics (original SVG artwork) */
+body.port-craig .port-photo-pair__label { border-left: 3px solid #3f6f8a; }
+body.port-craig .craig-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #c9d6de url("assets/ports/craig/craig-bucareli-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-craig .craig-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #3f6f8a;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #eef3f4 url("assets/ports/craig/craig-troll-gurdy-tide.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-craig #local-directory {
+  background-image: url("assets/ports/craig/craig-outer-coast-headland.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 110px auto;
+}
+@media print {
+  body.port-craig .craig-mast { display: none; }
+  body.port-craig .craig-callout, body.port-craig #local-directory { background-image: none; }
+}

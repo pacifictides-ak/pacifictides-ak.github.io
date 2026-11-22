@@ -365,6 +365,7 @@ page = f"""<!DOCTYPE html>
       <h3 class="dir-cat">Marine services</h3>
 {chr(10).join(dir_out)}
     </section>
+    <p style="color:var(--muted);font-size:0.92rem;">Listings are a courtesy, not an endorsement. Basic listings are free; a <a href="../advertise.html#local">Featured listing is $10/month or $100/year</a>. For corrections or a free listing, contact J.L. Miller at <a href="mailto:pacifictides.ak@gmail.com">pacifictides.ak@gmail.com</a> (email only).</p>
 
     <section class="local-news" id="local-news">
       <h2>Local news — Prince William Sound</h2>
@@ -402,6 +403,7 @@ page = f"""<!DOCTYPE html>
         <li><a href="skagway-tides.html">Skagway tides</a></li>
         <li><a href="haines-tides.html">Haines tides</a></li>
         <li><a href="ketchikan-tides.html">Ketchikan tides</a></li>
+        <li><a href="craig-tides.html">Craig tides</a></li>
         <li><a href="petersburg-tides.html">Petersburg tides</a></li>
         <li><a href="dutch-harbor-tides.html">Dutch Harbor tides</a></li>
         <li><a href="unalaska-tides.html">Unalaska tides</a></li>
