@@ -2,6 +2,23 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Elfin Cove, AK tide predictions (outer float & inner harbor / Port Althorp & Cross Sound, north Chichagof Island)",
+      "path": "pages/elfin-cove-tides.html",
+      "date_added": "2026-11-22",
+      "station": "9452634",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452634",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz022.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz643.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz021.txt",
+        "https://www.adfg.alaska.gov/static-sf/Region1/FishingStoryMap/Print/Harbors/Elfin%20Cove%20Inner%20Harbor.pdf",
+        "https://dot.alaska.gov/stwdmno/ports/assets/pdf/directory/directory.pdf",
+        "https://www.nationalfisherman.com/pilothouse-guide/elfin-cove",
+        "https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/maps/southeast_shorebased_processors.pdf"
+      ]
+    },
+    {
       "title": "Craig, AK tide predictions (North Cove & South Cove harbors / Bucareli Bay, Prince of Wales Island outer coast)",
       "path": "pages/craig-tides.html",
       "date_added": "2026-11-21",

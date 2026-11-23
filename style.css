@@ -905,3 +905,31 @@ body.port-craig #local-directory {
   body.port-craig .craig-mast { display: none; }
   body.port-craig .craig-callout, body.port-craig #local-directory { background-image: none; }
 }
+
+/* Elfin Cove (boardwalk village / Gunk Hole inner harbor / Cross Sound & Cape Spencer) — unique per-port graphics (original SVG artwork) */
+body.port-elfin-cove .port-photo-pair__label { border-left: 3px solid #b5523b; }
+body.port-elfin-cove .elfin-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #cdd8e0 url("assets/ports/elfin-cove/elfin-cove-boardwalk-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-elfin-cove .elfin-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #b5523b;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f3f1ec url("assets/ports/elfin-cove/elfin-cove-gunkhole-tide.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-elfin-cove #local-directory {
+  background-image: url("assets/ports/elfin-cove/elfin-cove-cape-spencer-light.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 110px auto;
+}
+@media print {
+  body.port-elfin-cove .elfin-mast { display: none; }
+  body.port-elfin-cove .elfin-callout, body.port-elfin-cove #local-directory { background-image: none; }
+}

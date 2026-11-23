@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 90" role="img" aria-label="Cape Spencer light station on its rock at the mouth of Cross Sound">
+  <path d="M0 90 L0 74 Q20 68 40 70 L52 58 L70 60 L84 70 Q100 70 110 74 L110 90 Z" fill="#6f7f86" opacity="0.55"/>
+  <rect x="48" y="38" width="26" height="22" fill="#eef0ea" stroke="#4a5a60" stroke-width="1.5" opacity="0.8"/>
+  <rect x="55" y="24" width="12" height="14" fill="#eef0ea" stroke="#4a5a60" stroke-width="1.5" opacity="0.8"/>
+  <rect x="57" y="18" width="8" height="6" fill="#f3d67a" stroke="#4a5a60" stroke-width="1.2" opacity="0.85"/>
+  <path d="M65 21 L104 12 M65 21 L104 30" stroke="#f3d67a" stroke-width="1.5" opacity="0.6"/>
+  <path d="M0 82 Q14 78 28 82 T56 82 T84 82 T110 82" fill="none" stroke="#3f6f8a" stroke-width="1.2" opacity="0.5"/>
+</svg>

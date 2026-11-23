@@ -24,6 +24,7 @@ PORTS = [
  ("skagway","9452400",["pkz012","pkz013"],["SKTA2","SKXA2","SKDA2","HAXA2"]),
  ("haines","9452435",["pkz012","pkz013"],["HAXA2","ERXA2","SKXA2"]),
  ("craig","9450551",["pkz641","pkz036"],["CRGA2","46145","CDEA2"]),
+ ("elfin-cove","9452634",["pkz022","pkz643","pkz021"],["ELFA2","GEXA2","CSXA2","46083"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -62,6 +63,9 @@ BUOY_NAMES = {
  "ERXA2": "Eldred Rock (ERXA2, Marine Exchange of Alaska, mid-Lynn Canal)",
  "CRGA2": "Craig (CRGA2, NWS Juneau, Craig waterfront)",
  "46145": "Central Dixon Entrance buoy (46145, Environment and Climate Change Canada, about 70 NM SE)",
+ "ELFA2": "Elfin Cove (ELFA2, NOAA 9452634 water-level station)",
+ "GEXA2": "George Island (GEXA2, Marine Exchange of Alaska, Port Althorp entrance)",
+ "CSXA2": "Cape Spencer (CSXA2, Marine Exchange of Alaska, mouth of Cross Sound)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)

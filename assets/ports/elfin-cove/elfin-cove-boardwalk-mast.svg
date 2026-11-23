@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Elfin Cove: snowy Fairweather peaks across Cross Sound, a forested ridge, the boardwalk on pilings around the flask-shaped cove, a seaplane at the float and a troller with poles up">
+  <defs>
+    <linearGradient id="ecsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdd8e0"/><stop offset="1" stop-color="#eef2f3"/></linearGradient>
+    <linearGradient id="ecsea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c7d8a"/><stop offset="1" stop-color="#2c4652"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#ecsky)"/>
+  <!-- Fairweather Range across Cross Sound -->
+  <path d="M0 104 L80 78 L150 92 L230 40 L300 84 L380 62 L450 90 L540 30 L610 80 L700 58 L780 92 L860 46 L940 86 L1020 66 L1110 90 L1200 74 L1200 120 L0 120 Z" fill="#a9b8c2"/>
+  <path d="M215 50 L230 40 L246 52 L236 50 L230 56 Z M526 40 L540 30 L556 42 L546 40 L540 47 Z M848 55 L860 46 L873 57 L864 55 L860 60 Z" fill="#f7fafb"/>
+  <!-- Chichagof ridge -->
+  <path d="M0 140 L110 116 L220 128 L320 108 L420 126 L520 118 L640 132 L760 112 L880 128 L1000 114 L1120 126 L1200 120 L1200 168 L0 168 Z" fill="#3e5a4a"/>
+  <g fill="#2c4437"><path d="M40 142 l8 -22 l8 22z M64 142 l7 -17 l7 17z M330 130 l9 -24 l9 24z M760 134 l9 -24 l9 24z M784 136 l7 -18 l7 18z M1080 132 l8 -22 l8 22z"/></g>
+  <!-- cove water -->
+  <rect y="160" width="1200" height="60" fill="url(#ecsea)"/>
+  <!-- boardwalk on pilings with houses -->
+  <g stroke="#4a3d30" stroke-width="3"><path d="M180 158 V176 M230 158 V176 M280 158 V176 M330 158 V176 M380 158 V176 M430 158 V176 M480 158 V176"/></g>
+  <rect x="170" y="154" width="320" height="6" fill="#6e5b47"/>
+  <g>
+    <rect x="200" y="132" width="40" height="22" fill="#b5523b"/><path d="M196 134 L220 120 L244 134Z" fill="#5a4a3c"/>
+    <rect x="270" y="136" width="34" height="18" fill="#d8cdb6"/><path d="M266 138 L287 126 L308 138Z" fill="#5a4a3c"/>
+    <rect x="340" y="130" width="46" height="24" fill="#3f6f8a"/><path d="M336 132 L363 118 L390 132Z" fill="#5a4a3c"/>
+    <rect x="420" y="136" width="36" height="18" fill="#c9a24a"/><path d="M416 138 L438 126 L460 138Z" fill="#5a4a3c"/>
+  </g>
+  <!-- seaplane at float -->
+  <g transform="translate(640 150)">
+    <rect x="-10" y="18" width="110" height="5" fill="#8a7a66"/>
+    <path d="M10 6 L70 6 L80 0 L84 0 L80 10 L10 10 Z" fill="#e8e8e2"/>
+    <rect x="28" y="2" width="44" height="3" fill="#c0392b"/>
+    <path d="M14 10 L20 16 M60 10 L54 16" stroke="#555" stroke-width="2"/>
+    <rect x="6" y="15" width="70" height="3" rx="1.5" fill="#555"/>
+  </g>
+  <!-- troller with poles up -->
+  <g transform="translate(900 150)">
+    <path d="M0 10 L90 10 L80 22 L8 22 Z" fill="#f2efe6" stroke="#3a3a3a" stroke-width="1.5"/>
+    <rect x="50" y="0" width="22" height="10" fill="#f2efe6" stroke="#3a3a3a" stroke-width="1.5"/>
+    <path d="M44 10 L20 -52 M48 10 L74 -54" stroke="#3a3a3a" stroke-width="2"/>
+    <path d="M58 0 V-20" stroke="#3a3a3a" stroke-width="2"/>
+  </g>
+  <path d="M0 184 Q60 178 120 184 T240 184 T360 184 T480 184 T600 184 T720 184 T840 184 T960 184 T1080 184 T1200 184" fill="none" stroke="#9fb8c2" stroke-width="1.5" opacity="0.6"/>
+</svg>
