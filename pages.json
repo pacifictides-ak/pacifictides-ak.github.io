@@ -2,6 +2,23 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Pelican, AK tide predictions (Pelican Harbor / Lisianski Inlet & Cross Sound, northwest Chichagof Island)",
+      "path": "pages/pelican-tides.html",
+      "date_added": "2026-11-23",
+      "station": "9452611",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452611",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz022.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz643.txt",
+        "https://www.cityofpelican.com/harbor",
+        "https://www.cityofpelican.com/pelicanfuels",
+        "https://ecode360.com/44322444",
+        "https://www.nationalfisherman.com/pilothouse-guide/pelican",
+        "https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/maps/southeast_shorebased_processors.pdf"
+      ]
+    },
+    {
       "title": "Elfin Cove, AK tide predictions (outer float & inner harbor / Port Althorp & Cross Sound, north Chichagof Island)",
       "path": "pages/elfin-cove-tides.html",
       "date_added": "2026-11-22",

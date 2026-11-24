@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 90" role="img" aria-label="King salmon below a troller's flasher and hook, a nod to Pelican's motto Closest to the Fish">
+  <path d="M30 4 L30 30" stroke="#4a5a60" stroke-width="1.2" opacity="0.6"/>
+  <rect x="24" y="30" width="12" height="20" rx="2" fill="#9fc3cf" stroke="#4a5a60" stroke-width="1.2" opacity="0.7"/>
+  <path d="M30 50 L30 60 Q30 66 25 64" fill="none" stroke="#4a5a60" stroke-width="1.4" opacity="0.7"/>
+  <path d="M14 70 Q40 54 74 62 Q86 64 94 70 Q86 76 74 78 Q40 86 14 70 Z" fill="#7d8f8c" stroke="#3f4f50" stroke-width="1.4" opacity="0.6"/>
+  <path d="M94 70 L108 60 L104 70 L108 80 Z" fill="#7d8f8c" stroke="#3f4f50" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="24" cy="68" r="1.8" fill="#222" opacity="0.7"/>
+  <g fill="#3f4f50" opacity="0.45"><circle cx="50" cy="64" r="1.2"/><circle cx="60" cy="63" r="1.2"/><circle cx="70" cy="64" r="1.2"/><circle cx="56" cy="68" r="1.2"/><circle cx="66" cy="68" r="1.2"/><circle cx="80" cy="66" r="1.2"/></g>
+</svg>

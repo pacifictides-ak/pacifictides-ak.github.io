@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Pelican: steep fjord walls of Lisianski Inlet with cloud on the peaks, the old cold-storage plant and boardwalk houses on pilings, two islets in the inlet, a floatplane landing and trollers with poles up in the harbor">
+  <defs>
+    <linearGradient id="pesky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3ccd2"/><stop offset="1" stop-color="#e9edee"/></linearGradient>
+    <linearGradient id="pesea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d939b"/><stop offset="1" stop-color="#3b555f"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#pesky)"/>
+  <!-- far fjord wall, peaks in cloud -->
+  <path d="M520 130 L600 70 L650 92 L700 60 L760 98 L820 84 L880 120 L880 140 L520 140 Z" fill="#9aa9b1"/>
+  <ellipse cx="640" cy="72" rx="120" ry="14" fill="#e9edee" opacity="0.85"/>
+  <!-- steep near walls of the inlet -->
+  <path d="M0 150 L0 30 L90 10 L190 46 L290 90 L380 126 L460 150 Z" fill="#3d5848"/>
+  <path d="M1200 150 L1200 40 L1110 20 L1010 54 L930 96 L860 136 L820 150 Z" fill="#46614f"/>
+  <g fill="#2e4639"><path d="M60 60 l9 -24 l9 24z M120 74 l8 -20 l8 20z M200 92 l8 -20 l8 20z M1080 70 l9 -24 l9 24z M1010 90 l8 -20 l8 20z M950 112 l8 -18 l8 18z"/></g>
+  <!-- islets mid-inlet -->
+  <path d="M640 150 Q660 128 690 136 Q712 140 716 150 Z" fill="#33503f"/>
+  <path d="M760 150 Q772 136 790 140 Q802 144 804 150 Z" fill="#33503f"/>
+  <!-- inlet water -->
+  <rect y="148" width="1200" height="72" fill="url(#pesea)"/>
+  <!-- boardwalk (Salmon Way) on pilings -->
+  <g stroke="#4a3d30" stroke-width="3"><path d="M30 146 V170 M80 146 V170 M130 146 V170 M180 146 V170 M230 146 V170 M280 146 V170 M330 146 V170 M380 146 V170 M430 146 V170"/></g>
+  <rect x="20" y="142" width="430" height="6" fill="#6e5b47"/>
+  <!-- old cold-storage plant -->
+  <rect x="190" y="104" width="150" height="38" fill="#e4e1d8" stroke="#5a5a52" stroke-width="1.5"/>
+  <path d="M184 106 L265 86 L346 106 Z" fill="#cfd2d0" stroke="#5a5a52" stroke-width="1.5"/>
+  <rect x="300" y="78" width="10" height="28" fill="#8a8a82"/>
+  <!-- houses -->
+  <g>
+    <rect x="40" y="120" width="34" height="22" fill="#d8c25a"/><path d="M36 122 L57 108 L78 122Z" fill="#7a4a3c"/>
+    <rect x="96" y="124" width="30" height="18" fill="#b5523b"/><path d="M92 126 L111 114 L130 126Z" fill="#5a4a3c"/>
+    <rect x="140" y="118" width="36" height="24" fill="#e6e2d6"/><path d="M136 120 L158 106 L180 120Z" fill="#7a4a3c"/>
+    <rect x="360" y="122" width="34" height="20" fill="#3f6f8a"/><path d="M356 124 L377 112 L398 124Z" fill="#5a4a3c"/>
+    <rect x="408" y="124" width="30" height="18" fill="#c9a24a"/><path d="M404 126 L423 114 L442 126Z" fill="#5a4a3c"/>
+  </g>
+  <!-- harbor floats with trollers -->
+  <rect x="470" y="172" width="300" height="4" fill="#8a7a66"/>
+  <g stroke="#3a3a3a" stroke-width="1.5" fill="#f2efe6">
+    <path d="M490 164 L560 164 L552 174 L496 174 Z"/><path d="M526 164 L508 118 M530 164 L550 116" fill="none"/>
+    <path d="M600 164 L668 164 L660 174 L606 174 Z"/><path d="M634 164 L616 122 M638 164 L658 120" fill="none"/>
+    <path d="M700 164 L760 164 L752 174 L706 174 Z"/><path d="M730 164 L716 126 M734 164 L750 124" fill="none"/>
+  </g>
+  <!-- floatplane landing -->
+  <g transform="translate(930 150)">
+    <path d="M10 6 L70 6 L80 0 L84 0 L80 10 L10 10 Z" fill="#f1efe6"/>
+    <rect x="22" y="2" width="50" height="3" fill="#2f5d7a"/>
+    <path d="M18 10 L24 16 M58 10 L52 16" stroke="#555" stroke-width="2"/>
+    <rect x="8" y="15" width="66" height="3" rx="1.5" fill="#555"/>
+    <path d="M-40 22 Q0 18 90 22" fill="none" stroke="#e9edee" stroke-width="2" opacity="0.8"/>
+  </g>
+  <path d="M0 196 Q60 190 120 196 T240 196 T360 196 T480 196 T600 196 T720 196 T840 196 T960 196 T1080 196 T1200 196" fill="none" stroke="#a8bcc4" stroke-width="1.5" opacity="0.6"/>
+</svg>

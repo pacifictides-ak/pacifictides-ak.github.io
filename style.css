@@ -933,3 +933,31 @@ body.port-elfin-cove #local-directory {
   body.port-elfin-cove .elfin-mast { display: none; }
   body.port-elfin-cove .elfin-callout, body.port-elfin-cove #local-directory { background-image: none; }
 }
+
+/* Pelican (Lisianski Inlet fjord / boardwalk cold-storage town / tidal grids / "Closest to the Fish") — unique per-port graphics (original SVG artwork) */
+body.port-pelican .port-photo-pair__label { border-left: 3px solid #2f6b5a; }
+body.port-pelican .pelican-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #c3ccd2 url("assets/ports/pelican/pelican-lisianski-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-pelican .pelican-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #2f6b5a;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #eef2ef url("assets/ports/pelican/pelican-grid-tide.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-pelican #local-directory {
+  background-image: url("assets/ports/pelican/pelican-king-salmon.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 110px auto;
+}
+@media print {
+  body.port-pelican .pelican-mast { display: none; }
+  body.port-pelican .pelican-callout, body.port-pelican #local-directory { background-image: none; }
+}
