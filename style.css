@@ -961,3 +961,31 @@ body.port-pelican #local-directory {
   body.port-pelican .pelican-mast { display: none; }
   body.port-pelican .pelican-callout, body.port-pelican #local-directory { background-image: none; }
 }
+
+/* Hoonah (Port Frederick / red Icy Strait Point cannery / 220-ton Travelift / Icy Strait humpbacks) — unique per-port graphics (original SVG artwork) */
+body.port-hoonah .port-photo-pair__label { border-left: 3px solid #9b3b2e; }
+body.port-hoonah .hoonah-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #b9c7cf url("assets/ports/hoonah/hoonah-port-frederick-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-hoonah .hoonah-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #9b3b2e;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f4efec url("assets/ports/hoonah/hoonah-travelift.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-hoonah #local-directory {
+  background-image: url("assets/ports/hoonah/hoonah-humpback-fluke.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 110px auto;
+}
+@media print {
+  body.port-hoonah .hoonah-mast { display: none; }
+  body.port-hoonah .hoonah-callout, body.port-hoonah #local-directory { background-image: none; }
+}

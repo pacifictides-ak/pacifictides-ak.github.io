@@ -2,6 +2,26 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Hoonah, AK tide predictions (Port Frederick & Icy Strait, northeast Chichagof Island)",
+      "path": "pages/hoonah-tides.html",
+      "date_added": "2026-11-24",
+      "station": "9452438",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452438",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz021.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz032.txt",
+        "https://www.cityofhoonah.org/harbor",
+        "https://www.cityofhoonah.org/media/4051",
+        "https://www.cityofhoonah.org/media/4061",
+        "https://www.cityofhoonah.org/business/page/local-business-directory",
+        "https://www.nationalfisherman.com/pilothouse-guide/hoonah",
+        "https://www.adfg.alaska.gov/static-sf/Region1/FishingStoryMap/Print/Harbors/Hoonah%20Harbor.pdf",
+        "https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/maps/southeast_shorebased_processors.pdf",
+        "https://weathercams.faa.gov/cameras/state/AK/cameraSite/418/summary"
+      ]
+    },
+    {
       "title": "Pelican, AK tide predictions (Pelican Harbor / Lisianski Inlet & Cross Sound, northwest Chichagof Island)",
       "path": "pages/pelican-tides.html",
       "date_added": "2026-11-23",
