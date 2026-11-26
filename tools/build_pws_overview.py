@@ -404,6 +404,7 @@ page = f"""<!DOCTYPE html>
         <li><a href="haines-tides.html">Haines tides</a></li>
         <li><a href="ketchikan-tides.html">Ketchikan tides</a></li>
         <li><a href="elfin-cove-tides.html">Elfin Cove tides</a></li>
+        <li><a href="gustavus-tides.html">Gustavus tides</a></li>
         <li><a href="hoonah-tides.html">Hoonah tides</a></li>
         <li><a href="pelican-tides.html">Pelican tides</a></li>
         <li><a href="craig-tides.html">Craig tides</a></li>

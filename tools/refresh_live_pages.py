@@ -27,6 +27,7 @@ PORTS = [
  ("elfin-cove","9452634",["pkz022","pkz643","pkz021"],["ELFA2","GEXA2","CSXA2","46083"]),
  ("pelican","9452611",["pkz022","pkz643"],["PEXA2","GEXA2","CSXA2","46083"]),
  ("hoonah","9452438",["pkz021","pkz032"],["RIXA2","GUXA2","NKXA2"]),
+ ("gustavus","9452534",["pkz011","pkz021"],["GUXA2","RIXA2","CSXA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {

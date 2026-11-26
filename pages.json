@@ -2,6 +2,28 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Gustavus, AK tide predictions (Icy Passage & Bartlett Cove, gateway to Glacier Bay)",
+      "path": "pages/gustavus-tides.html",
+      "date_added": "2026-11-25",
+      "station": "9452534",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452534",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz011.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz021.txt",
+        "https://gustavus-ak.gov/directory",
+        "https://www.gustavus-ak.gov/2407/Commerical-Vessel-Registration",
+        "https://gustavusdray.com/marine",
+        "https://www.nps.gov/glba/planyourvisit/boating.htm",
+        "https://www.nps.gov/glba/planyourvisit/goodsandservices.htm",
+        "https://www.nps.gov/places/bartlett-cove-public-use-dock.htm",
+        "https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/maps/southeast_shorebased_processors.pdf",
+        "https://www.gustavusak.com/places-to-stay/",
+        "https://weathercams.faa.gov/cameras/state/AK/cameraSite/232/summary",
+        "https://weathercams.faa.gov/cameras/state/AK/cameraSite/434/summary"
+      ]
+    },
+    {
       "title": "Hoonah, AK tide predictions (Port Frederick & Icy Strait, northeast Chichagof Island)",
       "path": "pages/hoonah-tides.html",
       "date_added": "2026-11-24",

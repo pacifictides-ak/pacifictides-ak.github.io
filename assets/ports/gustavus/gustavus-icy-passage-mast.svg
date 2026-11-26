@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Gustavus: the snowy Fairweather Range behind the flat glacial outwash plain, meadows and spruce along the Salmon River, the long Gustavus Dock pier reaching into Icy Passage, the forested hump of Pleasant Island offshore, and a troller heading out on the flood">
+  <defs>
+    <linearGradient id="gusky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3d2da"/><stop offset="1" stop-color="#eef2f1"/></linearGradient>
+    <linearGradient id="gusea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f8798"/><stop offset="1" stop-color="#2f4f5c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#gusky)"/>
+  <!-- Fairweather Range, far back -->
+  <path d="M0 104 L60 70 L110 86 L170 40 L215 72 L260 54 L320 88 L380 60 L430 82 L470 96 L470 112 L0 112 Z" fill="#9fb0ba"/>
+  <path d="M152 52 L170 40 L188 54 L176 50 L168 56 Z M246 62 L260 54 L274 64 L262 61 Z M366 68 L380 60 L394 70 L381 66 Z M46 78 L60 70 L74 80 L60 76 Z" fill="#f7f9fa"/>
+  <!-- outwash plain: meadows and spruce -->
+  <path d="M0 112 L520 112 L640 128 L640 150 L0 150 Z" fill="#7d9a5e"/>
+  <g fill="#3b5a3f"><path d="M20 112 l7 -20 l7 20z M60 112 l6 -16 l6 16z M120 113 l7 -19 l7 19z M190 113 l6 -15 l6 15z M260 114 l7 -18 l7 18z M330 115 l6 -14 l6 14z M410 116 l6 -15 l6 15z M470 118 l5 -12 l5 12z"/></g>
+  <!-- Salmon River meander -->
+  <path d="M0 134 C80 126 120 146 200 138 S330 126 400 140 S520 146 600 142" fill="none" stroke="#6f97a8" stroke-width="5"/>
+  <!-- tidal flats at low water -->
+  <path d="M540 150 C600 140 660 142 720 150 Z" fill="#cdbf9f"/>
+  <!-- Icy Passage -->
+  <rect y="150" width="1200" height="70" fill="url(#gusea)"/>
+  <path d="M0 162 H1200 M0 178 H1200 M0 196 H1200" stroke="#87a8b5" stroke-width="1" stroke-dasharray="14 22" opacity="0.6"/>
+  <!-- Pleasant Island -->
+  <path d="M820 150 C860 104 940 96 1010 102 C1070 108 1120 126 1160 150 Z" fill="#355440"/>
+  <g fill="#284433"><path d="M880 122 l7 -18 l7 18z M930 110 l7 -18 l7 18z M985 108 l7 -18 l7 18z M1040 114 l7 -16 l7 16z M1090 128 l6 -14 l6 14z"/></g>
+  <!-- Gustavus Dock: long pier, pilings and float -->
+  <rect x="600" y="140" width="190" height="5" fill="#5b5145"/>
+  <g stroke="#3e372f" stroke-width="2"><path d="M612 145 V160 M640 145 V160 M668 145 V160 M696 145 V160 M724 145 V160 M752 145 V160 M780 145 V160"/></g>
+  <rect x="760" y="132" width="28" height="9" fill="#f1ece0" stroke="#4a4036" stroke-width="1.2"/>
+  <rect x="742" y="160" width="70" height="4" fill="#9a8a72"/>
+  <!-- troller heading out -->
+  <g transform="translate(905 176)">
+    <path d="M0 0 L46 0 L40 9 L6 9 Z" fill="#f4f1ea" stroke="#2f4a56" stroke-width="1.4"/>
+    <rect x="24" y="-9" width="11" height="9" fill="#f4f1ea" stroke="#2f4a56" stroke-width="1.2"/>
+    <path d="M12 0 V-26 M12 -24 L-8 -6 M12 -24 L32 -6" stroke="#2f4a56" stroke-width="1.2" fill="none"/>
+    <path d="M-30 6 Q-15 3 0 6" stroke="#cfe0e6" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>
