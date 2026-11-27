@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Tenakee Springs: snowy Chichagof peaks across calm Tenakee Inlet, a single line of small cabins on pilings along the shore trail, the steaming bathhouse, the city dock with a floatplane at the float, and a humpback blowing offshore">
+  <defs>
+    <linearGradient id="tksky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd8dc"/><stop offset="1" stop-color="#eef1f0"/></linearGradient>
+    <linearGradient id="tksea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d8f99"/><stop offset="1" stop-color="#355661"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#tksky)"/>
+  <!-- far shore peaks across the inlet -->
+  <path d="M0 98 L70 70 L120 82 L190 38 L240 66 L300 50 L350 74 L420 58 L470 80 L540 62 L600 84 L660 72 L720 90 L800 76 L860 92 L960 80 L1040 96 L1120 84 L1200 96 L1200 118 L0 118 Z" fill="#a4b2b8"/>
+  <path d="M172 50 L190 38 L208 52 L194 48 L186 54 Z M286 58 L300 50 L314 60 L301 57 Z M406 66 L420 58 L434 68 L420 64 Z M526 70 L540 62 L554 72 L540 68 Z" fill="#f6f8f9"/>
+  <path d="M0 112 L1200 112 L1200 124 L0 124 Z" fill="#4f6b5a"/>
+  <!-- inlet -->
+  <rect y="124" width="1200" height="96" fill="url(#tksea)"/>
+  <g stroke="#9fbcc4" stroke-width="2" opacity="0.6" fill="none">
+    <path d="M60 150 h80 M260 168 h120 M520 146 h70 M760 176 h110 M980 156 h90"/>
+  </g>
+  <!-- humpback blow and back -->
+  <g transform="translate(250 140)">
+    <path d="M0 6 C14 -6 40 -6 54 6 Z" fill="#22343b"/>
+    <path d="M24 -2 C20 -14 18 -22 22 -30 M24 -2 C26 -16 30 -22 34 -28 M24 -2 C24 -14 26 -24 26 -34" stroke="#f4f7f8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- near shore: forest band -->
+  <path d="M560 128 L1200 120 L1200 164 L560 164 Z" fill="#2f4a37"/>
+  <g fill="#253d2d"><path d="M600 128 l9 -26 l9 26z M650 127 l8 -22 l8 22z M710 126 l9 -28 l9 28z M780 125 l8 -22 l8 22z M850 124 l9 -27 l9 27z M930 123 l8 -22 l8 22z M1010 122 l9 -28 l9 28z M1090 121 l8 -23 l8 23z M1160 120 l9 -27 l9 27z"/></g>
+  <!-- shore trail on pilings -->
+  <rect x="560" y="160" width="640" height="5" fill="#6b5a45"/>
+  <g stroke="#4a3c2d" stroke-width="3"><path d="M580 165 v18 M640 165 v18 M700 165 v18 M760 165 v18 M820 165 v18 M880 165 v18 M940 165 v18 M1000 165 v18 M1060 165 v18 M1120 165 v18 M1180 165 v18"/></g>
+  <!-- cabins -->
+  <g>
+    <rect x="590" y="140" width="34" height="20" fill="#e9e4da"/><path d="M586 140 L607 126 L628 140 Z" fill="#5d7b86"/>
+    <rect x="650" y="142" width="30" height="18" fill="#b9573f"/><path d="M646 142 L665 130 L684 142 Z" fill="#3d4f57"/>
+    <rect x="770" y="140" width="36" height="20" fill="#d8c99f"/><path d="M766 140 L788 126 L810 140 Z" fill="#6a8f6b"/>
+    <rect x="890" y="141" width="32" height="19" fill="#e9e4da"/><path d="M886 141 L906 128 L926 141 Z" fill="#a24a3a"/>
+    <rect x="1010" y="139" width="40" height="21" fill="#7f9aa6"/><path d="M1006 139 L1030 124 L1054 139 Z" fill="#2f3e45"/>
+    <rect x="1110" y="142" width="30" height="18" fill="#d9a441"/><path d="M1106 142 L1125 130 L1144 142 Z" fill="#3d4f57"/>
+  </g>
+  <!-- bathhouse with cupola and steam -->
+  <g transform="translate(700 136)">
+    <rect x="0" y="4" width="52" height="20" fill="#f0ece3"/>
+    <rect x="18" y="-6" width="16" height="10" fill="#d9d2c4"/>
+    <path d="M14 -6 L26 -14 L38 -6 Z" fill="#7a3b2e"/>
+    <path d="M22 -16 C16 -26 30 -30 24 -40 M30 -16 C26 -26 38 -30 32 -42" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  <!-- red museum next to bathhouse -->
+  <rect x="830" y="141" width="28" height="19" fill="#b23b2e"/><path d="M826 141 L844 130 L862 141 Z" fill="#3a2a24"/>
+  <!-- city dock, float and floatplane -->
+  <rect x="470" y="156" width="96" height="6" fill="#7b6b55"/>
+  <g stroke="#4a3c2d" stroke-width="3"><path d="M480 162 v20 M510 162 v20 M540 162 v20"/></g>
+  <rect x="430" y="178" width="60" height="5" fill="#cfc7b6"/>
+  <g transform="translate(372 160)">
+    <path d="M0 10 L46 10 L56 6 L56 12 L4 14 Z" fill="#f4f1ea"/>
+    <path d="M14 4 L40 4 L40 6 L14 6 Z" fill="#c8453a"/>
+    <path d="M24 0 L28 0 L28 10 L24 10 Z" fill="#f4f1ea"/>
+    <path d="M6 18 L50 18 M14 14 L12 18 M40 14 L42 18" stroke="#2f3e45" stroke-width="2"/>
+  </g>
+</svg>

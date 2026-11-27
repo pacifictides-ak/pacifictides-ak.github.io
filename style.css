@@ -1017,3 +1017,31 @@ body.port-gustavus #local-directory {
   body.port-gustavus .gustavus-mast { display: none; }
   body.port-gustavus .gustavus-callout, body.port-gustavus #local-directory { background-image: none; }
 }
+
+/* Tenakee Springs (Tenakee Inlet / one-trail town on pilings / hot-spring bathhouse / crab & cannery history) — unique per-port graphics (original SVG artwork) */
+body.port-tenakee-springs .port-photo-pair__label { border-left: 3px solid #b23b2e; }
+body.port-tenakee-springs .tenakee-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #cfd8dc url("assets/ports/tenakee-springs/tenakee-inlet-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-tenakee-springs .tenakee-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #b23b2e;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #f3f1ec url("assets/ports/tenakee-springs/tenakee-bathhouse-steam.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-tenakee-springs #local-directory {
+  background-image: url("assets/ports/tenakee-springs/tenakee-dungeness-crab.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 90px auto;
+}
+@media print {
+  body.port-tenakee-springs .tenakee-mast { display: none; }
+  body.port-tenakee-springs .tenakee-callout, body.port-tenakee-springs #local-directory { background-image: none; }
+}

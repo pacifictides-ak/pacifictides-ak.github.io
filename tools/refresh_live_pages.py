@@ -28,6 +28,7 @@ PORTS = [
  ("pelican","9452611",["pkz022","pkz643"],["PEXA2","GEXA2","CSXA2","46083"]),
  ("hoonah","9452438",["pkz021","pkz032"],["RIXA2","GUXA2","NKXA2"]),
  ("gustavus","9452534",["pkz011","pkz021"],["GUXA2","RIXA2","CSXA2"]),
+ ("tenakee-springs","9452386",["pkz032","pkz033"],["TKEA2","PCXA2","RIXA2"]),
 ]
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
@@ -72,6 +73,8 @@ BUOY_NAMES = {
  "PEXA2": "Pelican (PEXA2, Marine Exchange of Alaska, Pelican harbor)",
  "RIXA2": "Rocky Island (RIXA2, Marine Exchange of Alaska, Icy Strait, about 13 NM ENE)",
  "GUXA2": "Gustavus Dock (GUXA2, Marine Exchange of Alaska, about 20 NM NNW across Icy Strait)",
+ "TKEA2": "Tenakee Springs (TKEA2, Marine Exchange of Alaska, at the Tenakee waterfront)",
+ "PCXA2": "Point Craven (PCXA2, Marine Exchange of Alaska, Chatham Strait near Peril Strait, about 22 NM SSE)",
  "NKXA2": "Naked Island (NKXA2, Marine Exchange of Alaska, east end of Icy Strait, about 18 NM ENE)",
 }
 def get(url):

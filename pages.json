@@ -2,6 +2,26 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Tenakee Springs, AK tide predictions (Tenakee Inlet, east Chichagof Island)",
+      "path": "pages/tenakee-springs-tides.html",
+      "date_added": "2026-11-26",
+      "station": "9452386",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9452386",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz032.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz033.txt",
+        "https://cityoftenakeesprings.org/harbor/",
+        "https://cityoftenakeesprings.org/fuel/",
+        "https://cityoftenakeesprings.org/links/",
+        "https://dot.alaska.gov/project_info/docs/2022_AMHS_sc_report/TENAKEE.pdf",
+        "https://www.tenakeespringsak.com/living-here",
+        "https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/maps/southeast_shorebased_processors.pdf",
+        "https://weathercams.faa.gov/cameras/state/AK/cameraSite/166/summary",
+        "https://www.ndbc.noaa.gov/station_page.php?station=TKEA2"
+      ]
+    },
+    {
       "title": "Gustavus, AK tide predictions (Icy Passage & Bartlett Cove, gateway to Glacier Bay)",
       "path": "pages/gustavus-tides.html",
       "date_added": "2026-11-25",
