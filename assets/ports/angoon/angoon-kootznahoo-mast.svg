@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized Angoon: forested Admiralty Island hills, a row of painted Tlingit clan-house fronts and a carved pole on the point between Chatham Strait and Kootznahoo Inlet, tide rips swirling past Turn Point, a floatplane and a bald eagle overhead">
+  <defs>
+    <linearGradient id="agsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d3d6"/><stop offset="1" stop-color="#edf0ee"/></linearGradient>
+    <linearGradient id="agsea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f8590"/><stop offset="1" stop-color="#2f4f5a"/></linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#agsky)"/>
+  <!-- Admiralty hills (low, forested; snow on the far Chichagof peaks at left) -->
+  <path d="M0 92 L60 64 L110 74 L160 46 L210 70 L260 80 L1200 80 L1200 118 L0 118 Z" fill="#a8b5b9"/>
+  <path d="M146 54 L160 46 L174 56 L160 52 Z M48 70 L60 64 L72 72 L60 69 Z" fill="#f6f8f9"/>
+  <path d="M300 104 Q420 62 560 84 Q700 56 840 82 Q980 60 1200 86 L1200 124 L300 124 Z" fill="#3f5e4b"/>
+  <g fill="#2e4a3a">
+    <path d="M330 104 l8 -22 l8 22 Z M360 100 l9 -26 l9 26 Z M720 92 l8 -24 l8 24 Z M760 90 l9 -28 l9 28 Z M1080 92 l8 -22 l8 22 Z M1120 94 l9 -26 l9 26 Z"/>
+  </g>
+  <!-- water: Chatham Strait (left) and Kootznahoo Inlet (right) -->
+  <rect y="124" width="1200" height="96" fill="url(#agsea)"/>
+  <!-- the point with clan houses -->
+  <path d="M380 126 Q520 108 700 116 L760 126 Z" fill="#4f6b5a"/>
+  <g stroke="#2b2b2b" stroke-width="1.2">
+    <g fill="#e9e1d2"><path d="M430 118 l0 -16 l14 -9 l14 9 l0 16 Z"/><path d="M470 117 l0 -18 l16 -10 l16 10 l0 18 Z"/><path d="M516 116 l0 -16 l14 -9 l14 9 l0 16 Z"/><path d="M556 116 l0 -18 l16 -10 l16 10 l0 18 Z"/><path d="M602 117 l0 -16 l14 -9 l14 9 l0 16 Z"/></g>
+  </g>
+  <!-- formline-inspired painted fronts (simple ovoids, red and black) -->
+  <g fill="none" stroke-width="2">
+    <ellipse cx="486" cy="106" rx="8" ry="5" stroke="#b23b2e"/><ellipse cx="572" cy="105" rx="8" ry="5" stroke="#1f1f1f"/>
+    <ellipse cx="444" cy="108" rx="5" ry="3.5" stroke="#1f1f1f"/><ellipse cx="530" cy="108" rx="5" ry="3.5" stroke="#b23b2e"/><ellipse cx="616" cy="109" rx="5" ry="3.5" stroke="#1f1f1f"/>
+  </g>
+  <!-- carved pole -->
+  <rect x="654" y="78" width="7" height="40" fill="#6b4a33"/>
+  <path d="M650 82 h15 M650 94 h15 M650 106 h15" stroke="#b23b2e" stroke-width="3"/>
+  <path d="M648 78 q9.5 -8 19 0" fill="#1f1f1f"/>
+  <!-- Turn Point narrows: current arrows and rips -->
+  <g stroke="#cfe2e6" stroke-width="2.4" fill="none" opacity="0.85">
+    <path d="M780 150 q40 -10 80 0 t80 0"/><path d="M800 172 q40 -10 80 0 t80 0"/>
+    <path d="M940 150 l14 0 l-6 -5 M954 150 l-6 5"/><path d="M960 172 l14 0 l-6 -5 M974 172 l-6 5"/>
+    <circle cx="880" cy="194" r="7"/><circle cx="880" cy="194" r="3"/>
+    <circle cx="1010" cy="190" r="6"/>
+  </g>
+  <g stroke="#9fbcc4" stroke-width="2" opacity="0.6" fill="none"><path d="M40 150 h90 M180 176 h110 M300 156 h60 M520 188 h120"/></g>
+  <!-- floatplane -->
+  <g fill="#f2c14e" stroke="#3a3a3a" stroke-width="1">
+    <path d="M200 46 l46 0 l8 -4 l-8 -2 l-46 0 Z"/><path d="M214 42 l18 -2 l2 4 Z"/><path d="M208 52 l34 0 M212 46 l0 6 M236 46 l0 6" fill="none"/>
+  </g>
+  <!-- bald eagle -->
+  <g transform="translate(980 40)"><path d="M-30 6 Q-15 -6 0 4 Q15 -6 30 6 Q15 0 0 8 Q-15 0 -30 6 Z" fill="#3b2b20"/><circle cx="0" cy="3" r="3.2" fill="#fafafa"/><path d="M-3 12 h6 l-3 4 Z" fill="#f2f2f2"/></g>
+</svg>

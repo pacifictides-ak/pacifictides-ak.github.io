@@ -29,7 +29,12 @@ PORTS = [
  ("hoonah","9452438",["pkz021","pkz032"],["RIXA2","GUXA2","NKXA2"]),
  ("gustavus","9452534",["pkz011","pkz021"],["GUXA2","RIXA2","CSXA2"]),
  ("tenakee-springs","9452386",["pkz032","pkz033"],["TKEA2","PCXA2","RIXA2"]),
+ ("angoon","9451895",["pkz032","pkz033"],["PCXA2","PGXA2","TKEA2"]),
 ]
+# Optional NOAA current-prediction tables (slug -> (station id, label)); page must contain <section class="current-tables" ...>
+CURRENTS = {
+ "angoon": ("PCT4106", "Turn Point, Kootznahoo Inlet"),
+}
 # Heading labels for NDBC stations (used when the page has no existing heading for that station)
 BUOY_NAMES = {
  "HMSA2": "Homer Spit (HMSA2, Marine Exchange of Alaska)",
@@ -76,6 +81,7 @@ BUOY_NAMES = {
  "TKEA2": "Tenakee Springs (TKEA2, Marine Exchange of Alaska, at the Tenakee waterfront)",
  "PCXA2": "Point Craven (PCXA2, Marine Exchange of Alaska, Chatham Strait near Peril Strait, about 22 NM SSE)",
  "NKXA2": "Naked Island (NKXA2, Marine Exchange of Alaska, east end of Icy Strait, about 18 NM ENE)",
+ "PGXA2": "Point Gardner (PGXA2, Marine Exchange of Alaska, south tip of Admiralty Island)",
 }
 def get(url):
     req = urllib.request.Request(url, headers=UA)
@@ -105,6 +111,31 @@ def tides(station):
         out.append("</tbody>\n</table>")
     out.append("    </section>")
     return "\n".join(out), len(preds)
+def currents(station, label):
+    b = start.strftime("%Y%m%d"); e = (start+datetime.timedelta(days=7)).strftime("%Y%m%d")
+    u = (f"https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=currents_predictions&application=PacificTides"
+         f"&begin_date={b}&end_date={e}&station={station}&time_zone=lst_ldt&units=english&interval=MAX_SLACK&format=json")
+    cp = json.loads(cached(u))["current_predictions"]["cp"]
+    days = {}
+    for p in cp:
+        t = datetime.datetime.strptime(p["Time"], "%Y-%m-%d %H:%M")
+        v = float(p["Velocity_Major"])
+        kind = {"flood": "Max flood", "ebb": "Max ebb", "slack": "Slack"}.get(p["Type"], p["Type"].title())
+        if p["Type"] == "flood": d = f"{abs(v):.1f} kt toward {int(round(float(p['meanFloodDir'])))}°"
+        elif p["Type"] == "ebb": d = f"{abs(v):.1f} kt toward {int(round(float(p['meanEbbDir'])))}°"
+        else: d = "—"
+        days.setdefault(t.date(), []).append((kind, t, d))
+    out = [f'<section class="current-tables" id="currents">',
+           f'<h2>Tidal currents — {html.escape(label)} (NOAA {station})</h2>',
+           f'<p style="color:var(--muted);font-size:0.92rem;">Slack water and maximum flood/ebb from NOAA CO-OPS current predictions for station <a href="https://tidesandcurrents.noaa.gov/noaacurrents/predictions?id={station}_1" rel="noopener">{station}</a> ({html.escape(label)}). Times local (AKST/AKDT). Predictions, not observations; wind and runoff change real currents. Not for navigation. Fetched {fetched}.</p>']
+    for dte in sorted(days)[:8]:
+        out.append(f"<h3>{dte.strftime('%A, %B')} {dte.day}, {dte.year}</h3>")
+        out.append('<table class="tides currents">\n<thead><tr><th>Event</th><th>Time (local)</th><th>Speed &amp; set</th></tr></thead>\n<tbody>')
+        for k,t,d in days[dte]:
+            out.append(f"<tr><td>{k}</td><td>{t.strftime('%I:%M %p').lstrip('0')}</td><td>{d}</td></tr>")
+        out.append("</tbody>\n</table>")
+    out.append("    </section>")
+    return "\n".join(out)
 def forecast(zone):
     txt = cached(f"https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/{zone}.txt")
     ex = re.search(r"^Expires:(\d{12})", txt, re.M)
@@ -149,6 +180,10 @@ for slug, station, zones, buoys in PORTS:
     tt, n = tides(station)
     s, k = re.subn(r'[ \t]*<section class="tide-tables">.*?</section>', tt, s, count=1, flags=re.S)
     assert k==1, slug
+    if slug in CURRENTS:
+        ct = currents(*CURRENTS[slug])
+        s, k = re.subn(r'[ \t]*<section class="current-tables".*?</section>', ct, s, count=1, flags=re.S)
+        assert k==1, slug+" currents"
     fc = []
     issued_all = []
     for zone in zones:

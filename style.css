@@ -1045,3 +1045,32 @@ body.port-tenakee-springs #local-directory {
   body.port-tenakee-springs .tenakee-mast { display: none; }
   body.port-tenakee-springs .tenakee-callout, body.port-tenakee-springs #local-directory { background-image: none; }
 }
+
+/* Angoon (Kootznahoo Inlet / Turn Point tide rips / painted clan houses / Kootznoowoo, Fortress of the Bears) — unique per-port graphics (original SVG artwork) */
+body.port-angoon .port-photo-pair__label { border-left: 3px solid #2f4f5a; }
+body.port-angoon .angoon-mast {
+  height: clamp(90px, 16vw, 150px);
+  margin: 0.5rem 0 1rem;
+  border-radius: var(--radius, 10px);
+  background: #c9d3d6 url("assets/ports/angoon/angoon-kootznahoo-mast.svg") center / cover no-repeat;
+  border: 1px solid var(--line, #d2dde6);
+}
+body.port-angoon .angoon-callout {
+  border: 1px solid var(--line, #d2dde6);
+  border-left: 4px solid #2f4f5a;
+  border-radius: var(--radius, 10px);
+  padding: 0.9rem 5.2rem 0.6rem 1rem;
+  margin: 1rem 0;
+  background: #eef2f2 url("assets/ports/angoon/angoon-turn-point-current.svg") right 0.8rem top 0.7rem / 72px 48px no-repeat;
+}
+body.port-angoon #local-directory {
+  background-image: url("assets/ports/angoon/angoon-brown-bear.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem top 0.6rem;
+  background-size: 100px auto;
+}
+body.port-angoon table.currents td:last-child { white-space: nowrap; }
+@media print {
+  body.port-angoon .angoon-mast { display: none; }
+  body.port-angoon .angoon-callout, body.port-angoon #local-directory { background-image: none; }
+}

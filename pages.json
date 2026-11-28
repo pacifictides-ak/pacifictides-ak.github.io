@@ -2,6 +2,27 @@
   "site": "Pacific Tides",
   "pages": [
     {
+      "title": "Angoon, AK tide predictions & Kootznahoo Inlet currents (Admiralty Island)",
+      "path": "pages/angoon-tides.html",
+      "date_added": "2026-11-27",
+      "station": "9451895",
+      "sources": [
+        "https://tidesandcurrents.noaa.gov/stationhome.html?id=9451895",
+        "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+        "https://tidesandcurrents.noaa.gov/noaacurrents/predictions?id=PCT4106_1",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz032.txt",
+        "https://tgftp.nws.noaa.gov/data/forecasts/marine/coastal/pk/pkz033.txt",
+        "https://cityofangoon.org/person-category/harbor-master/",
+        "https://cityofangoon.org/angoon-harbor-rates/",
+        "https://www.adfg.alaska.gov/static-sf/Region1/FishingStoryMap/Print/Harbors/Angoon%20Harbor.pdf",
+        "https://dot.alaska.gov/amhs/comm/sevillages.shtml",
+        "https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/maps/southeast_shorebased_processors.pdf",
+        "https://weathercams.faa.gov/cameras/state/AK/cameraSite/251/summary",
+        "https://kootznoowoo.com/kootzcam/",
+        "https://www.ndbc.noaa.gov/station_page.php?station=PCXA2"
+      ]
+    },
+    {
       "title": "Tenakee Springs, AK tide predictions (Tenakee Inlet, east Chichagof Island)",
       "path": "pages/tenakee-springs-tides.html",
       "date_added": "2026-11-26",

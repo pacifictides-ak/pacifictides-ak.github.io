@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="Brown bear walking the beach, for Kootznoowoo, the Fortress of the Bears">
+  <path d="M8 70 Q60 64 112 70" stroke="#9fbcc4" stroke-width="2" fill="none"/>
+  <path d="M18 62 Q16 44 30 38 Q44 26 66 30 Q78 26 88 32 L98 34 Q106 36 104 42 L96 44 Q92 48 92 54 L94 64 L86 64 L84 54 Q76 56 68 54 L66 64 L58 64 L58 54 Q46 56 38 52 L36 64 L28 64 L28 54 Q22 58 18 62 Z" fill="#6b4a33" opacity="0.88"/>
+  <circle cx="98" cy="38" r="1.4" fill="#1f1f1f"/>
+  <path d="M90 30 q2 -4 5 -1" stroke="#6b4a33" stroke-width="3" fill="none"/>
+</svg>
